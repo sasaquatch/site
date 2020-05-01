@@ -32,31 +32,31 @@ padding: 0;
 }
 
 .cube .one{
-	-webkit-transform: translateZ(75px);
-	transform: translateZ(75px);
+	-webkit-transform: translateZ(250px);
+	transform: translateZ(250px);
 }
 
 .cube .two{
-	-webkit-transform: rotateY(90deg) translateZ(75px);
-	transform: rotateY(90deg) translateZ(75px);
+	-webkit-transform: rotateY(90deg) translateZ(250);
+	transform: rotateY(90deg) translateZ(250);
 }
 
 .cube .three{
-	-webkit-transform: rotateY(180deg) translateZ(75px);
-	transform: rotateY(180deg) translateZ(75px);
+	-webkit-transform: rotateY(180deg) translateZ(250);
+	transform: rotateY(180deg) translateZ(250);
 }
 
 .cube .four{
-	-webkit-transform: rotateY(-90deg) translateZ(75px);
-	transform: rotateY(-90deg) translateZ(75px);
+	-webkit-transform: rotateY(-90deg) translateZ(250);
+	transform: rotateY(-90deg) translateZ(250);
 }
 
 .cube .five{
-	-webkit-transform: rotateX(90deg) translateZ(75px);
-	transform: rotateX(90deg) translateZ(75px);
+	-webkit-transform: rotateX(90deg) translateZ(250);
+	transform: rotateX(90deg) translateZ(250);
 }
 
 .cube .six{
-	-webkit-transform: rotateX(-90deg) translateZ(75px) rotate(0deg);
-	transform: rotateX(-90deg) translateZ(75px) rotate(0deg);
+	-webkit-transform: rotateX(-90deg) translateZ(250) rotate(0deg);
+	transform: rotateX(-90deg) translateZ(250) rotate(0deg);
 }
