@@ -9,11 +9,10 @@ padding: 0;
 }
 
 .cube{
-	margin-top: 200px;
 	width: 500px;
 	height: 500px;
 	position: relative;
-	margin: 30px auto;
+	margin: 200px auto;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	font-size: 20px;
