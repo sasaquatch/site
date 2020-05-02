@@ -47,37 +47,37 @@ h1, h2{
 .cube .one{
 	-webkit-transform: translateZ(250px);
 	transform: translateZ(250px);
-	background-color: blue;
+	background-color: orange;
 }
 
 .cube .two{
 	-webkit-transform: rotateY(90deg) translateZ(250px);
 	transform: rotateY(90deg) translateZ(250px);
-	background-color: red;
+	background-color: blue;
 }
 
 .cube .three{
 	-webkit-transform: rotateY(180deg) translateZ(250px);
 	transform: rotateY(180deg) translateZ(250px);
-	background-color: yellow;
+	background-color: red;
 }
 
 .cube .four{
 	-webkit-transform: rotateY(-90deg) translateZ(250px);
 	transform: rotateY(-90deg) translateZ(250px);
-	background-color: green;
+	background-color: yellow;
 }
 
 .cube .five{
 	-webkit-transform: rotateX(90deg) translateZ(250px);
 	transform: rotateX(90deg) translateZ(250px);
-	background-color: #9013FE;
+	background-color: green;
 }
 
 .cube .six{
 	-webkit-transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
 	transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
-	background-color: orange;
+	background-color: #9013FE;
 }
 
 
