@@ -16,8 +16,6 @@ padding: 0;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	font-size: 20px;
-	color: #fff;
-	font-family: -apple-system, sans-serif;
 }
 
 .face{
@@ -25,9 +23,15 @@ padding: 0;
 	height: 100%;
 	position: absolute;
 	font-size: 80px;
-	text-align: center;
 	line-height: 200px;
 	opacity: 0.5;
+}
+
+.cube span{
+	color: #fff;
+	font-family: -apple-system, sans-serif;
+	text-align: left;
+	padding: 50px;
 }
 
 .cube .one{
