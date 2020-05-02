@@ -47,19 +47,19 @@ h1, h2{
 .cube .one{
 	-webkit-transform: translateZ(300px);
 	transform: translateZ(300px);
-	background-color: #9013FE;
+	background-color: yellow;
 }
 
 .cube .two{
 	-webkit-transform: rotateY(90deg) translateZ(300px);
 	transform: rotateY(90deg) translateZ(300px);
-	background-color: yellow;
+	background-color: #9013FE;
 }
 
 .cube .three{
 	-webkit-transform: rotateY(180deg) translateZ(300px);
 	transform: rotateY(180deg) translateZ(300px);
-	background-color: #73ff73;
+	background-color: #00ff00;
 }
 
 .cube .four{
