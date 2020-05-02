@@ -71,7 +71,7 @@ h1, h2{
 .cube .five{
 	-webkit-transform: rotateX(90deg) translateZ(250px);
 	transform: rotateX(90deg) translateZ(250px);
-	background-color: purple;
+	background-color: #9013FE;
 }
 
 .cube .six{
