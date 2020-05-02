@@ -39,31 +39,31 @@ padding: 0;
 .cube .two{
 	-webkit-transform: rotateY(90deg) translateZ(250px);
 	transform: rotateY(90deg) translateZ(250px);
-	background-color: blue;
+	background-color: red;
 }
 
 .cube .three{
 	-webkit-transform: rotateY(180deg) translateZ(250px);
 	transform: rotateY(180deg) translateZ(250px);
-	background-color: blue;
+	background-color: yellow;
 }
 
 .cube .four{
 	-webkit-transform: rotateY(-90deg) translateZ(250px);
 	transform: rotateY(-90deg) translateZ(250px);
-	background-color: blue;
+	background-color: green;
 }
 
 .cube .five{
 	-webkit-transform: rotateX(90deg) translateZ(250px);
 	transform: rotateX(90deg) translateZ(250px);
-	background-color: blue;
+	background-color: purple;
 }
 
 .cube .six{
 	-webkit-transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
 	transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
-	background-color: blue;
+	background-color: orange;
 }
 
 
