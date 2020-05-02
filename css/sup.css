@@ -27,36 +27,54 @@ padding: 0;
 	font-size: 80px;
 	text-align: center;
 	line-height: 200px;
-	background-color: blue;
 	opacity: 0.6;
 }
 
 .cube .one{
 	-webkit-transform: translateZ(250px);
 	transform: translateZ(250px);
+	background-color: blue;
 }
 
 .cube .two{
 	-webkit-transform: rotateY(90deg) translateZ(250px);
 	transform: rotateY(90deg) translateZ(250px);
+	background-color: blue;
 }
 
 .cube .three{
 	-webkit-transform: rotateY(180deg) translateZ(250px);
 	transform: rotateY(180deg) translateZ(250px);
+	background-color: blue;
 }
 
 .cube .four{
 	-webkit-transform: rotateY(-90deg) translateZ(250px);
 	transform: rotateY(-90deg) translateZ(250px);
+	background-color: blue;
 }
 
 .cube .five{
 	-webkit-transform: rotateX(90deg) translateZ(250px);
 	transform: rotateX(90deg) translateZ(250px);
+	background-color: blue;
 }
 
 .cube .six{
 	-webkit-transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
 	transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
+	background-color: blue;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
