@@ -75,8 +75,8 @@ h1, h2{
 }
 
 .cube .six{
-	-webkit-transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
-	transform: rotateX(-90deg) translateZ(250px) rotate(0deg);
+	-webkit-transform: rotateX(-90deg) translateZ(300px) rotate(0deg);
+	transform: rotateX(-90deg) translateZ(300px) rotate(0deg);
 	background-color: #73ff73;
 }
 
