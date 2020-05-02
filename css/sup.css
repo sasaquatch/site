@@ -53,7 +53,7 @@ h1, h2{
 .cube .two{
 	-webkit-transform: rotateY(90deg) translateZ(300px);
 	transform: rotateY(90deg) translateZ(300px);
-	background-color: #ff00c8;
+	background-color: yellow;
 }
 
 .cube .three{
@@ -71,7 +71,7 @@ h1, h2{
 .cube .five{
 	-webkit-transform: rotateX(90deg) translateZ(300px);
 	transform: rotateX(90deg) translateZ(300px);
-	background-color: yellow;
+	background-color: #ff00c8;
 }
 
 .cube .six{
