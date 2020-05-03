@@ -21,6 +21,10 @@ h1, h2, h3{
 	height: 100px;
 }
 
+.statement{
+	margin-top: 50px;
+}
+
 /* 3D test */
 .hidden{
 	display: none;
