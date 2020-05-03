@@ -153,8 +153,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('scene').style.webkitTransform =
-      document.getElementById('scene').style.transform =
+      document.getElementById('sphere').style.webkitTransform =
+      document.getElementById('sphere').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
