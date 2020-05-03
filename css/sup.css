@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	font-family: -apple-system, sans-serif;
-	font-weight: 500;
 }
 
 .intro{
@@ -19,13 +18,13 @@ h1, h2, h3{
 	font-size: 5em;
 }
 
-/*h1, h2{
+h1, h3{
 	font-weight: 500;
 }
 
-h3{
-	font-weight: 300;
-}*/
+h2{
+	font-weight: 600;
+}
 
 .firstname{
 	height: 100px;
