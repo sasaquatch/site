@@ -226,8 +226,8 @@ nav a:active{
 }
 
 .sphere_eleven{
-	-webkit-transform: translateZ(100deg);
-	transform: translateZ(100deg);
+	-webkit-transform: rotateY(100deg) translateZ(0);
+	transform: rotateY(100deg) translateZ(0);
 	background-color: #555;
 }
 
@@ -270,12 +270,6 @@ nav a:active{
 .sphere_eighteen{
 	-webkit-transform: rotateY(170deg) translateZ(0);
 	transform: rotateY(170deg) translateZ(0);
-	background-color: red;
-}
-
-.sphere_nineteen{
-	-webkit-transform: rotateY(180deg) translateZ(0);
-	transform: rotateY(180deg) translateZ(0);
 	background-color: red;
 }
 
