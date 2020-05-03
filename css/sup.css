@@ -9,8 +9,11 @@ in sunny Toronto :D
 	font-family: -apple-system, sans-serif;
 }
 
-.intro{
+section{
 	margin: 20px;
+}
+
+.intro{
 	position: relative;
 	z-index: 2;
 }
@@ -43,6 +46,39 @@ h2{
 
 .hidden{
 	display: none;
+}
+
+nav{
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	font-size: 5em;
+	z-index: 3;
+}
+
+nav a{
+	color: #000;
+	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 10px;
+}
+
+nav a:hover,
+nav a:active{
+	animation: rainbow 2s infinite;
+}
+
+@keyframes rainbow {
+  0%		{color: red;}
+  25%		{color: blue;}
+  50%		{color: teal;}
+  75%		{color: blue;}
+  100%	{color: black;}
+}
+
+::selection{
+	background-color: rgba(0,0,0,0.99);
+	color: #fff;
 }
 
 /* 3D */
