@@ -9,8 +9,16 @@
 	margin: 20px;
 }
 
-h1, h2{
+.intro div{
+	display: inline-block;
+}
+
+h1, h2, h3{
 	font-size: 5em;
+}
+
+.firstname{
+	height: 100px;
 }
 
 /* 3D test */
