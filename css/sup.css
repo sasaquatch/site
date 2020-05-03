@@ -71,19 +71,19 @@ h1, h2, h3{
 .cube .three{
 	-webkit-transform: rotateY(180deg) translateZ(300px);
 	transform: rotateY(180deg) translateZ(300px);
-	background-color: #00ff00;
+	background-color: #00ff00; /* GREEN */
 }
 
 .cube .four{
 	-webkit-transform: rotateY(-90deg) translateZ(300px);
 	transform: rotateY(-90deg) translateZ(300px);
-	background-color: #9013FE; /* PURPLE */;;
+	background-color: #ff00c8; /* PINK */;
 }
 
 .cube .five{
 	-webkit-transform: rotateX(90deg) translateZ(300px);
 	transform: rotateX(90deg) translateZ(300px);
-	background-color: #ff00c8;
+	background-color: #9013FE; /* PURPLE */;
 }
 
 .cube .six{
