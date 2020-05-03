@@ -182,11 +182,16 @@ nav a:active{
   background: rgba(204,0,102, 1);
 }
 /* X Axis */
-.circle:nth-child(1) {transform: rotate3d(1, 0, 0, 0deg);}
-.circle:nth-child(2) {transform: rotate3d(1, 0, 0, 36deg);}
-.circle:nth-child(3) {transform: rotate3d(1, 0, 0, 72deg);}
-.circle:nth-child(4) {transform: rotate3d(1, 0, 0, 108deg);}
-.circle:nth-child(5) {transform: rotate3d(1, 0, 0, 144deg);}
+.circle:nth-child(1) {transform: rotate3d(1, 0, 0, 0deg);
+  transform-style: preserve-3d;}
+.circle:nth-child(2) {transform: rotate3d(1, 0, 0, 36deg);
+  transform-style: preserve-3d;}
+.circle:nth-child(3) {transform: rotate3d(1, 0, 0, 72deg);
+  transform-style: preserve-3d;}
+.circle:nth-child(4) {transform: rotate3d(1, 0, 0, 108deg);
+  transform-style: preserve-3d;}
+.circle:nth-child(5) {transform: rotate3d(1, 0, 0, 144deg);
+  transform-style: preserve-3d;}
 /* Y Axis */
 .circle:nth-child(6) {transform: rotate3d(0, 1, 0, 0deg);}
 .circle:nth-child(7) {transform: rotate3d(0, 1, 0, 36deg);}
