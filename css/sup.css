@@ -7,6 +7,7 @@
 
 .intro{
 	margin: 20px;
+	position: relative;
 	z-index: 2;
 }
 
