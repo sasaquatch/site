@@ -20,40 +20,38 @@
         <div id="name-10">薩沙</div>
         <div id="name-11">Σάσα</div>
       </div>
-      <div class="lasname">Djuki&#263;</div></h1>
+      <div class="lastname">Djuki&#263;</div></h1>
     <h2>UX / Design / Code</h2>
     <h3 class="statement">I&rsquo;m bored, give me a problem to solve.</h3>
 	</section>
 
 <div id="thecubelol">
 	<div id="cube">
-    <div class="face cube_one"></div>
-    <div class="face cube_two"></div>
-    <div class="face cube_three"></div>
-    <div class="face cube_four"></div>
-    <div class="face cube_five"></div>
-    <div class="face cube_six"></div>
+    <div class="side cube_one"></div>
+    <div class="side cube_two"></div>
+    <div class="side cube_three"></div>
+    <div class="side cube_four"></div>
+    <div class="side cube_five"></div>
+    <div class="side cube_six"></div>
 	</div>
 </div>
 
-
-
+<!-- JS -->
 <script src='js/jquery-3.5.0.min.js'></script>
 <script id="rendered-js">
-var divs = $('div[id^="name-"]').hide(),
-i = 0;
+  var divs = $('div[id^="name-"]').hide(),
+  i = 0;
 
-(function cycle() {
+  (function cycle() {
 
-  divs.eq(i).fadeIn(100).
-  delay(800).
-  fadeOut(100, cycle);
+    divs.eq(i).fadeIn(100).
+    delay(800).
+    fadeOut(100, cycle);
 
-  i = ++i % divs.length;
+    i = ++i % divs.length;
 
-})();
-//# sourceURL=pen.js
-    </script>
+  })();
+</script>
 
 <script>
  if (!window.DeviceOrientationEvent) {

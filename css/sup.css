@@ -1,3 +1,8 @@
+/*
+Written by Saša Djukić
+in sunny Toronto :D
+*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -12,6 +17,7 @@
 
 .intro div{
 	display: inline-block;
+	line-height: 0;
 }
 
 h1, h2, h3{
@@ -23,6 +29,7 @@ h1, h3{
 }
 
 h2{
+	margin-top: -50px;
 	font-weight: 600;
 }
 
@@ -31,7 +38,7 @@ h2{
 }
 
 .statement{
-	margin-top: 50px;
+	margin-top: 100px;
 }
 
 .hidden{
@@ -39,7 +46,6 @@ h2{
 }
 
 /* 3D */
-
 #cube{
 	width: 600px;
 	height: 600px;
@@ -50,7 +56,7 @@ h2{
 	z-index: 1;
 }
 
-.face{
+.side{
 	width: 100%;
 	height: 100%;
 	position: absolute;
