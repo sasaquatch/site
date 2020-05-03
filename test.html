@@ -44,9 +44,9 @@
     <h4>Latest Work</h4>
     <h3>A mobile&mdash;first Build & Price experience</h3>
 
-<div class="scene">
-  <div class="sphere">
-    <div class="hemisphere">
+<div id="scene">
+  <div id="sphere">
+    <div id="hemisphere">
       <div class="face"></div>
       <div class="face"></div>
       <div class="face"></div>
@@ -153,8 +153,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('hemisphere').style.webkitTransform =
-      document.getElementById('hemisphere').style.transform =
+      document.getElementById('scene').style.webkitTransform =
+      document.getElementById('scene').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
