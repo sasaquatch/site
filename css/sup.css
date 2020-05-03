@@ -273,6 +273,12 @@ nav a:active{
 	background-color: red;
 }
 
+.sphere_nineteen{
+	-webkit-transform: rotateY(180deg) translateZ(0);
+	transform: rotateY(180deg) translateZ(0);
+	background-color: red;
+}
+
 
 
 
