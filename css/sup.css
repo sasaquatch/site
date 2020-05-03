@@ -183,6 +183,70 @@ nav a:active{
 	background-color: yellow;
 }
 
+.sphere_four{
+	-webkit-transform: rotateY(108deg) translateZ(0);
+	transform: rotateY(108deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_five{
+	-webkit-transform: rotateY(144deg) translateZ(0);
+	transform: rotateY(144deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_six{
+	-webkit-transform: rotateY(180deg) translateZ(0);
+	transform: rotateY(180deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_seven{
+	-webkit-transform: rotateY(216deg) translateZ(0);
+	transform: rotateY(216deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_eight{
+	-webkit-transform: rotateY(252deg) translateZ(0);
+	transform: rotateY(252deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_nine{
+	-webkit-transform: rotateY(288deg) translateZ(0);
+	transform: rotateY(288deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_ten{
+	-webkit-transform: rotateY(324deg) translateZ(0);
+	transform: rotateY(324deg) translateZ(0);
+	background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
