@@ -29,16 +29,16 @@
     <a href="about.html">About</a>
   </nav>
 
-    <div id="thecubelol">
-    	<div id="cube">
-        <div class="side cube_one"></div>
-        <div class="side cube_two"></div>
-        <div class="side cube_three"></div>
-        <div class="side cube_four"></div>
-        <div class="side cube_five"></div>
-        <div class="side cube_six"></div>
-    	</div>
-    </div>
+  <section id="intrographic">
+  	<div id="cube">
+      <div class="side cube_one"></div>
+      <div class="side cube_two"></div>
+      <div class="side cube_three"></div>
+      <div class="side cube_four"></div>
+      <div class="side cube_five"></div>
+      <div class="side cube_six"></div>
+  	</div>
+  </section>
 
   <section class="project">
     <h3 class="statement">A new Build & Price experience</h3>
@@ -62,12 +62,7 @@
 </script>
 
 <script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    // document.getElementById('coordinates').classList.remove('hidden');
-
-    window.addEventListener('deviceorientation', function(event) {
+window.addEventListener('deviceorientation', function(event) {
        document.getElementById('cube').style.webkitTransform =
        document.getElementById('cube').style.transform =
                'rotateX(' + event.beta + 'deg) ' +
@@ -81,12 +76,7 @@
     });
  }
 
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    // document.getElementById('coordinates').classList.remove('hidden');
-
-    window.addEventListener('devicemotion', function(event) {
+window.addEventListener('devicemotion', function(event) {
        document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
        document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
        document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
