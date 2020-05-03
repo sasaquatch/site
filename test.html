@@ -51,62 +51,6 @@
       <div class="sphere_side sphere_five"></div>
       <div class="sphere_side sphere_six"></div>
     </div>
-
-
-
-<!-- <div id="scene">
-  <div id="sphere">
-    <div id="hemisphere">
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-    </div>
-    <div class="hemisphere">
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-      <div class="face"></div>
-    </div>
-  </div>
-</div> -->
-
-
-
-<!--     <div id="sphere">
-      <div class="sphere_side sphere_one"></div>
-      <div class="sphere_side sphere_two"></div>
-      <div class="sphere_side sphere_three"></div>
-      <div class="sphere_side sphere_four"></div>
-      <div class="sphere_side sphere_five"></div>
-      <div class="sphere_side sphere_six"></div>
-      <div class="sphere_side sphere_seven"></div>
-      <div class="sphere_side sphere_eight"></div>
-      <div class="sphere_side sphere_nine"></div>
-      <div class="sphere_side sphere_ten"></div>
-      <div class="sphere_side sphere_eleven"></div>
-      <div class="sphere_side sphere_twelve"></div>
-      <div class="sphere_side sphere_thirteen"></div>
-      <div class="sphere_side sphere_fourteen"></div>
-      <div class="sphere_side sphere_fifteen"></div>
-      <div class="sphere_side sphere_sixteen"></div>
-      <div class="sphere_side sphere_seventeen"></div>
-      <div class="sphere_side sphere_eighteen"></div>
-      <div class="sphere_side sphere_nineteen"></div>
-      <div class="sphere_side sphere_twenty"></div>
-    </div> -->
   </section>
 
 <!-- JS -->
@@ -165,9 +109,9 @@
     window.addEventListener('deviceorientation', function(event) {
       document.getElementById('sphere').style.webkitTransform =
       document.getElementById('sphere').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
+        'rotateX(' - event.beta - 'deg) ' -
+        'rotateY(' - event.gamma - 'deg) ' -
+        'rotateZ(' - event.alpha - 'deg)';
     });
  }
 
