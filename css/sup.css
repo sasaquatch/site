@@ -172,8 +172,14 @@ nav a:active{
 }
 
 .sphere_two{
-	-webkit-transform: rotateY(90deg) translateZ(0);
-	transform: rotateY(90deg) translateZ(0);
+	-webkit-transform: rotateY(36deg) translateZ(0);
+	transform: rotateY(36deg) translateZ(0);
+	background-color: yellow;
+}
+
+.sphere_three{
+	-webkit-transform: rotateY(72deg) translateZ(0);
+	transform: rotateY(72deg) translateZ(0);
 	background-color: yellow;
 }
 
