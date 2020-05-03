@@ -268,7 +268,9 @@ nav a:active{
 }
 
 .face:nth-child(1) {
-  transform: translateZ(-41.6vmin) rotateZ(36deg) translateY(-6.8vmin) rotateX(36deg);
+  -webkit-transform: rotateY(90deg) translateZ(300px);
+	transform: rotateY(90deg) translateZ(300px);
+	background-color: yellow;
 }
 
 .face:nth-child(2) {
