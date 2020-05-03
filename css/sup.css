@@ -17,6 +17,14 @@ h1, h2, h3{
 	font-size: 5em;
 }
 
+/*h1, h2{
+	font-weight: 500;
+}
+
+h3{
+	font-weight: 300;
+}*/
+
 .firstname{
 	height: 100px;
 }
@@ -34,7 +42,7 @@ h1, h2, h3{
 	width: 600px;
 	height: 600px;
 	position: relative;
-	margin: 200px auto;
+	margin: 150px auto;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	font-size: 40px;
