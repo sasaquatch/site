@@ -7,6 +7,7 @@
 
 .intro{
 	margin: 20px;
+	z-index: 2;
 }
 
 .intro div{
@@ -46,6 +47,7 @@ h3{
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	font-size: 40px;
+	z-index: 1;
 }
 
 .face{
