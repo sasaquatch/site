@@ -89,7 +89,7 @@ nav a:active{
 #cube{
 	width: 600px;
 	height: 600px;
-	margin: 0 auto; /* 150px */
+	margin: 150px auto;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
