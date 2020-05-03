@@ -168,61 +168,61 @@ nav a:active{
 .sphere_one{
 	-webkit-transform: translateZ(0deg);
 	transform: translateZ(0deg);
-	background-color: yellow;
+	background-color: #fff;
 }
 
 .sphere_two{
 	-webkit-transform: rotateY(36deg) translateZ(0);
 	transform: rotateY(36deg) translateZ(0);
-	background-color: yellow;
+	background-color: #eee;
 }
 
 .sphere_three{
 	-webkit-transform: rotateY(72deg) translateZ(0);
 	transform: rotateY(72deg) translateZ(0);
-	background-color: yellow;
+	background-color: #ddd;
 }
 
 .sphere_four{
 	-webkit-transform: rotateY(108deg) translateZ(0);
 	transform: rotateY(108deg) translateZ(0);
-	background-color: yellow;
+	background-color: #ccc;
 }
 
 .sphere_five{
 	-webkit-transform: rotateY(144deg) translateZ(0);
 	transform: rotateY(144deg) translateZ(0);
-	background-color: yellow;
+	background-color: #bbb;
 }
 
 .sphere_six{
 	-webkit-transform: rotateY(180deg) translateZ(0);
 	transform: rotateY(180deg) translateZ(0);
-	background-color: yellow;
+	background-color: #aaa;
 }
 
 .sphere_seven{
 	-webkit-transform: rotateY(216deg) translateZ(0);
 	transform: rotateY(216deg) translateZ(0);
-	background-color: yellow;
+	background-color: #999;
 }
 
 .sphere_eight{
 	-webkit-transform: rotateY(252deg) translateZ(0);
 	transform: rotateY(252deg) translateZ(0);
-	background-color: yellow;
+	background-color: #888;
 }
 
 .sphere_nine{
 	-webkit-transform: rotateY(288deg) translateZ(0);
 	transform: rotateY(288deg) translateZ(0);
-	background-color: yellow;
+	background-color: #777;
 }
 
 .sphere_ten{
 	-webkit-transform: rotateY(324deg) translateZ(0);
 	transform: rotateY(324deg) translateZ(0);
-	background-color: yellow;
+	background-color: #666;
 }
 
 
