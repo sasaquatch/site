@@ -172,8 +172,8 @@ nav a:active{
 }
 
 .sphere_two{
-	-webkit-transform: rotateY(90deg) translateZ(300px);
-	transform: rotateY(90deg) translateZ(300px);
+	-webkit-transform: rotateY(90deg) translateZ(-300px);
+	transform: rotateY(90deg) translateZ(-300px);
 	background-color: yellow;
 }
 
