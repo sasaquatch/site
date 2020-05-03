@@ -193,7 +193,7 @@ nav a:active{
 	-webkit-transform: rotateY(144deg) translateZ(0);
 	transform: rotateY(144deg) translateZ(0);
 	background-color: #bbb;
-}
+}/*
 
 .sphere_six{
 	-webkit-transform: rotateY(180deg) translateZ(0);
@@ -223,7 +223,7 @@ nav a:active{
 	-webkit-transform: rotateY(324deg) translateZ(0);
 	transform: rotateY(324deg) translateZ(0);
 	background-color: #666;
-}
+}*/
 
 
 
