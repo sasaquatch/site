@@ -56,37 +56,37 @@ h1, h2, h3{
 	font-size: 100px;*/
 }
 
-.cube .one{
+.cube_one{
 	-webkit-transform: translateZ(300px);
 	transform: translateZ(300px);
 	background-color: red
 }
 
-.cube .two{
+.cube_two{
 	-webkit-transform: rotateY(90deg) translateZ(300px);
 	transform: rotateY(90deg) translateZ(300px);
 	background-color: yellow;
 }
 
-.cube .three{
+.cube_three{
 	-webkit-transform: rotateY(180deg) translateZ(300px);
 	transform: rotateY(180deg) translateZ(300px);
-	background-color: #9013FE; /* PURPLE */;
+	background-color: #00ff00; /* GREEN */
 }
 
-.cube .four{
+.cube_four{
 	-webkit-transform: rotateY(-90deg) translateZ(300px);
 	transform: rotateY(-90deg) translateZ(300px);
 	background-color: #ff00c8; /* PINK */;
 }
 
-.cube .five{
+.cube_five{
 	-webkit-transform: rotateX(90deg) translateZ(300px);
 	transform: rotateX(90deg) translateZ(300px);
-	background-color: #00ff00; /* GREEN */
+	background-color: #9013FE; /* PURPLE */;
 }
 
-.cube .six{
+.cube_six{
 	-webkit-transform: rotateX(-90deg) translateZ(300px) rotate(0deg);
 	transform: rotateX(-90deg) translateZ(300px) rotate(0deg);
 	background-color: blue;
