@@ -38,6 +38,32 @@
   <section class="project">
     <h4>Latest Work</h4>
     <h3>A mobile&mdash;first Build & Price experience</h3>
+    <div class="scene">
+      <div class="light">
+      <div class="clip">
+      <div class="container">
+          <!-- X Axis -->
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <!-- Y Axis -->
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <div class="circle border"></div>
+          <!-- Z Axis -->
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+      </div>
+      </div>
+      </div>
+    </div>
   </section>
 
 <!-- JS -->
@@ -62,8 +88,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('cube').style.webkitTransform =
-      document.getElementById('cube').style.transform =
+      document.getElementById('cube, scene').style.webkitTransform =
+      document.getElementById('cube, scene').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
