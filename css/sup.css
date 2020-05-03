@@ -172,6 +172,12 @@ nav a:active{
 	background-color: blue;
 }
 
+.sphere_two{
+	-webkit-transform: rotateY(15deg) translateZ(300px);
+	transform: rotateY(0deg) translateZ(300px);
+	background-color: blue;
+}
+
 
 
 
