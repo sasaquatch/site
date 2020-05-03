@@ -14,7 +14,7 @@ section{
 }
 
 .project{
-	margin-top: 100px;
+	margin-top: 200px;
 }
 
 .intro{
@@ -89,7 +89,7 @@ nav a:active{
 #cube{
 	width: 600px;
 	height: 600px;
-	margin: 150px auto;
+	margin: 0 auto; /* 150px */
 	position: relative;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
