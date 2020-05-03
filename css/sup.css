@@ -305,7 +305,7 @@ nav a:active{
   transform: translateZ(-26.8vmin) rotateZ(36deg) translateY(-33.2vmin) rotateX(100deg);
 }
 
-/*@keyframes rotate {
+@keyframes rotate {
   0% {
 transform: rotateZ(25deg) rotateX(20deg) rotateY(0deg);
   }
@@ -315,7 +315,7 @@ transform: rotateZ(-25deg) rotateX(-20deg) rotateY(180deg);
   100% {
 transform: rotateZ(25deg) rotateX(20deg) rotateY(360deg);
   }
-}*/
+}
 
 
 
