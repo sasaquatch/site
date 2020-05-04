@@ -148,8 +148,8 @@ nav a:active{
 
 /* SPHERE */
 #sphere{
-	width: 500px;
-	height: 500px;
+	width: 600px;
+	height: 600px;
 	margin: 150px auto;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
@@ -166,109 +166,109 @@ nav a:active{
 }
 
 .sphere_one{
-	-webkit-transform: translateX(-200px) translateZ(0);
-	transform: translateX(-200px) translateZ(0deg);
+	-webkit-transform: translateX(-100px) translateZ(0);
+	transform: translateZ(0deg);
 	background-color: red;
 }
 
 .sphere_two{
-	-webkit-transform: rotateY(10deg) translateX(-200px) translateZ(0);
-	transform: rotateY(10deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(10deg) translateZ(0);
+	transform: rotateY(10deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_three{
-	-webkit-transform: rotateY(20deg) translateX(-200px) translateZ(0);
-	transform: rotateY(20deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(20deg) translateZ(0);
+	transform: rotateY(20deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_four{
-	-webkit-transform: rotateY(30deg) translateX(-200px) translateZ(0);
-	transform: rotateY(30deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(30deg) translateZ(0);
+	transform: rotateY(30deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_five{
-	-webkit-transform: rotateY(40deg) translateX(-200px) translateZ(0);
-	transform: rotateY(40deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(40deg) translateZ(0);
+	transform: rotateY(40deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_six{
-	-webkit-transform: rotateY(50deg) translateX(-200px) translateZ(0);
-	transform: rotateY(50deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(50deg) translateZ(0);
+	transform: rotateY(50deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_seven{
-	-webkit-transform: rotateY(60deg) translateX(-200px) translateZ(0);
-	transform: rotateY(60deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(60deg) translateZ(0);
+	transform: rotateY(60deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_eight{
-	-webkit-transform: rotateY(70deg) translateX(-200px) translateZ(0);
-	transform: rotateY(70deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(70deg) translateZ(0);
+	transform: rotateY(70deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_nine{
-	-webkit-transform: rotateY(80deg) translateX(-200px) translateZ(0);
-	transform: rotateY(80deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(80deg) translateZ(0);
+	transform: rotateY(80deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_ten{
-	-webkit-transform: rotateY(90deg) translateX(-200px) translateZ(0);
-	transform: rotateY(90deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(90deg) translateZ(0);
+	transform: rotateY(90deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_eleven{
-	-webkit-transform: rotateY(100deg) translateX(-200px) translateZ(0);
-	transform: rotateY(100deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(100deg) translateZ(0);
+	transform: rotateY(100deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_twelve{
-	-webkit-transform: rotateY(110deg) translateX(-200px) translateZ(0);
-	transform: rotateY(110deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(110deg) translateZ(0);
+	transform: rotateY(110deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_thirteen{
-	-webkit-transform: rotateY(120deg) translateX(-200px) translateZ(0);
-	transform: rotateY(120deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(120deg) translateZ(0);
+	transform: rotateY(120deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_fourteen{
-	-webkit-transform: rotateY(130deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(130deg) translateZ(0);
 	transform: rotateY(130deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_fifteen{
-	-webkit-transform: rotateY(140deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(140deg) translateZ(0);
 	transform: rotateY(140deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_sixteen{
-	-webkit-transform: rotateY(150deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(150deg) translateZ(0);
 	transform: rotateY(150deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_seventeen{
-	-webkit-transform: rotateY(160deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(160deg) translateZ(0);
 	transform: rotateY(160deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_eighteen{
-	-webkit-transform: rotateY(170deg) translateX(-200px) translateZ(0);
+	-webkit-transform: rotateY(170deg) translateZ(0);
 	transform: rotateY(170deg) translateZ(0);
 	background-color: red;
 }
