@@ -162,7 +162,7 @@ nav a:active{
 	height: 100%;
 	position: absolute;
 	opacity: 1;
-	border-radius: 80%;
+	border-radius: 50px;
 }
 
 .sphere_one{
