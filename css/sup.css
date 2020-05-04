@@ -174,7 +174,7 @@ nav a:active{
 .sphere_two{
 	-webkit-transform: rotateY(10deg) translateZ(0);
 	transform: rotateY(10deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_three{
@@ -186,7 +186,7 @@ nav a:active{
 .sphere_four{
 	-webkit-transform: rotateY(30deg) translateZ(0);
 	transform: rotateY(30deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_five{
@@ -198,7 +198,7 @@ nav a:active{
 .sphere_six{
 	-webkit-transform: rotateY(50deg) translateZ(0);
 	transform: rotateY(50deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_seven{
@@ -210,7 +210,7 @@ nav a:active{
 .sphere_eight{
 	-webkit-transform: rotateY(70deg) translateZ(0);
 	transform: rotateY(70deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_nine{
@@ -222,7 +222,7 @@ nav a:active{
 .sphere_ten{
 	-webkit-transform: rotateY(90deg) translateZ(0);
 	transform: rotateY(90deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_eleven{
@@ -234,7 +234,7 @@ nav a:active{
 .sphere_twelve{
 	-webkit-transform: rotateY(110deg) translateZ(0);
 	transform: rotateY(110deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_thirteen{
@@ -246,7 +246,7 @@ nav a:active{
 .sphere_fourteen{
 	-webkit-transform: rotateY(130deg) translateZ(0);
 	transform: rotateY(130deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_fifteen{
@@ -258,7 +258,7 @@ nav a:active{
 .sphere_sixteen{
 	-webkit-transform: rotateY(150deg) translateZ(0);
 	transform: rotateY(150deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 .sphere_seventeen{
@@ -270,7 +270,7 @@ nav a:active{
 .sphere_eighteen{
 	-webkit-transform: rotateY(170deg) translateZ(0);
 	transform: rotateY(170deg) translateZ(0);
-	background-color: plum;
+	background-color: black;
 }
 
 
