@@ -148,8 +148,8 @@ nav a:active{
 
 /* SPHERE */
 #sphere{
-	width: 600px;
-	height: 600px;
+	width: 800px;
+	height: 800px;
 	margin: 150px auto;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
