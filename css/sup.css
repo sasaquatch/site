@@ -166,8 +166,8 @@ nav a:active{
 }
 
 .sphere_one{
-	-webkit-transform: translateX(-100px) translateZ(0);
-	transform: translateZ(0deg);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 	background-color: red;
 }
 
