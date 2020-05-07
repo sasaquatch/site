@@ -166,9 +166,9 @@ nav a:active{
 }
 
 .sphere_one{
-	-webkit-transform: translateY(180);
-	transform: translateY(180);
-	background-color: blue;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	background-color: red;
 }
 
 .sphere_two{
@@ -180,7 +180,7 @@ nav a:active{
 .sphere_three{
 	-webkit-transform: rotateY(20deg) translateZ(0);
 	transform: rotateY(20deg) translateZ(0);
-	background-color: red;
+	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_four{
@@ -204,7 +204,7 @@ nav a:active{
 .sphere_seven{
 	-webkit-transform: rotateY(60deg) translateZ(0);
 	transform: rotateY(60deg) translateZ(0);
-	background-color: red;
+	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_eight{
@@ -228,7 +228,7 @@ nav a:active{
 .sphere_eleven{
 	-webkit-transform: rotateY(100deg) translateZ(0);
 	transform: rotateY(100deg) translateZ(0);
-	background-color: red;
+	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_twelve{
@@ -252,7 +252,7 @@ nav a:active{
 .sphere_fifteen{
 	-webkit-transform: rotateY(140deg) translateZ(0);
 	transform: rotateY(140deg) translateZ(0);
-	background-color: red;
+	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_sixteen{
