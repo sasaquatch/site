@@ -171,20 +171,20 @@ nav a:active{
 }
 
 .sphere_two{
-	transform: rotateY(45deg) translateZ(0) translateX(-300px);
-	-webkit-transform: rotateY(45deg) translateZ(0) translateX(-300px);
+	transform: rotateY(45deg) translateZ(0) translateX(-300px) translateY(-300px;);
+	-webkit-transform: rotateY(45deg) translateZ(0) translateX(-300px) translateY(-300px;;
 	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_three{
-	transform: rotateY(90deg) translateZ(0) translateX(-200px);
-	-webkit-transform: rotateY(90deg) translateZ(0) translateX(-200px);
+	transform: rotateY(90deg) translateZ(0) translateX(-400px);
+	-webkit-transform: rotateY(90deg) translateZ(0) translateX(-400px);
 	background-color: red;
 }
 
 .sphere_four{
-	transform: rotateY(135deg) translateZ(0) translateX(-200px);
-	-webkit-transform: rotateY(135deg) translateZ(0) translateX(-200px);
+	transform: rotateY(135deg) translateZ(0) translateX(-500px);
+	-webkit-transform: rotateY(135deg) translateZ(0) translateX(-500px);
 	background-color: #009246; /* ITALY GREEN */
 }
 
