@@ -173,55 +173,55 @@ nav a:active{
 
 .sphere_two{
 	-webkit-transform: rotateY(20deg) translateZ(0);
-	transform: rotateY(10deg) translateZ(0);
+	transform: rotateY(20deg) translateZ(0);
 	background-color: white;
 }
 
 .sphere_three{
 	-webkit-transform: rotateY(40deg) translateZ(0);
-	transform: rotateY(20deg) translateZ(0);
+	transform: rotateY(40deg) translateZ(0);
 	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_four{
 	-webkit-transform: rotateY(60deg) translateZ(0);
-	transform: rotateY(30deg) translateZ(0);
+	transform: rotateY(60deg) translateZ(0);
 	background-color: white;
 }
 
 .sphere_five{
 	-webkit-transform: rotateY(80deg) translateZ(0);
-	transform: rotateY(40deg) translateZ(0);
+	transform: rotateY(80deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_six{
 	-webkit-transform: rotateY(100deg) translateZ(0);
-	transform: rotateY(50deg) translateZ(0);
+	transform: rotateY(100deg) translateZ(0);
 	background-color: white;
 }
 
 .sphere_seven{
 	-webkit-transform: rotateY(120deg) translateZ(0);
-	transform: rotateY(60deg) translateZ(0);
+	transform: rotateY(120deg) translateZ(0);
 	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_eight{
 	-webkit-transform: rotateY(140deg) translateZ(0);
-	transform: rotateY(70deg) translateZ(0);
+	transform: rotateY(140deg) translateZ(0);
 	background-color: white;
 }
 
 .sphere_nine{
 	-webkit-transform: rotateY(160deg) translateZ(0);
-	transform: rotateY(80deg) translateZ(0);
+	transform: rotateY(160deg) translateZ(0);
 	background-color: red;
 }
 
 .sphere_ten{
 	-webkit-transform: rotateY(180deg) translateZ(0);
-	transform: rotateY(90deg) translateZ(0);
+	transform: rotateY(180deg) translateZ(0);
 	background-color: white;
 }
 
