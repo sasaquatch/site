@@ -171,8 +171,8 @@ nav a:active{
 }
 
 .sphere_two{
-	transform: rotateY(45deg) translateZ(0) translateX(-200px);
-	-webkit-transform: rotateY(45deg) translateZ(0) translateX(-200px);
+	transform: rotateY(45deg) translateZ(0) translateX(-300px);
+	-webkit-transform: rotateY(45deg) translateZ(0) translateX(-300px);
 	background-color: #009246; /* ITALY GREEN */
 }
 
