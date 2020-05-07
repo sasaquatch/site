@@ -165,26 +165,26 @@ nav a:active{
 }
 
 .sphere_one{
-	transform: translateZ(0) translateX(-100px);
-	-webkit-transform: translateZ(0) translateX(-100px);
+	transform: translateZ(0) translateX(-200px);
+	-webkit-transform: translateZ(0) translateX(-200px);
 	background-color: blue;
 }
 
 .sphere_two{
-	transform: rotateY(45deg) translateZ(0);
-	-webkit-transform: rotateY(45deg) translateZ(0);
+	transform: rotateY(45deg) translateZ(0) translateX(-200px);
+	-webkit-transform: rotateY(45deg) translateZ(0) translateX(-200px);
 	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_three{
-	transform: rotateY(90deg) translateZ(0);
-	-webkit-transform: rotateY(90deg) translateZ(0);
+	transform: rotateY(90deg) translateZ(0) translateX(-200px);
+	-webkit-transform: rotateY(90deg) translateZ(0) translateX(-200px);
 	background-color: red;
 }
 
 .sphere_four{
-	transform: rotateY(135deg) translateZ(0);
-	-webkit-transform: rotateY(135deg) translateZ(0);
+	transform: rotateY(135deg) translateZ(0) translateX(-200px);
+	-webkit-transform: rotateY(135deg) translateZ(0) translateX(-200px);
 	background-color: #009246; /* ITALY GREEN */
 }
 
