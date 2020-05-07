@@ -161,7 +161,6 @@ nav a:active{
 	position: absolute;
 	opacity: 1;
 	border-radius: 50%;
-	outline: 10px blue;
 }
 
 .sphere_one{
