@@ -146,8 +146,8 @@ nav a:active{
 
 /* SPHERE */
 #sphere{
-	width: 800px;
-	height: 800px;
+	width: 400px;
+	height: 400px;
 	margin: 150px auto;
 	position: relative;
 	-webkit-transform-style: preserve-3d;
@@ -165,8 +165,8 @@ nav a:active{
 }
 
 .sphere_one{
-	transform: translateZ(0) translateX(100px);
-	-webkit-transform: translateZ(0) translateX(100px);
+	transform: translateZ(0) translateX(-100px);
+	-webkit-transform: translateZ(0) translateX(-100px);
 	background-color: blue;
 }
 
