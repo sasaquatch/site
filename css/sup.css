@@ -219,12 +219,6 @@ nav a:active{
 	background-color: red;
 }
 
-.sphere_ten{
-	-webkit-transform: rotateY(180deg) translateZ(0);
-	transform: rotateY(180deg) translateZ(0);
-	background-color: white;
-}
-
 
 
 
