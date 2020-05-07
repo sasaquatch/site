@@ -36,7 +36,7 @@ section{
 
 .intro{
 	position: relative;
-	z-index: 2;
+	z-index: 2;=-
 }
 
 .intro div{
@@ -166,9 +166,9 @@ nav a:active{
 }
 
 .sphere_one{
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	background-color: red;
+	-webkit-transform: translateZ(180);
+	transform: translateZ(180);
+	background-color: blue;
 }
 
 .sphere_two{
