@@ -153,7 +153,6 @@ nav a:active{
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	z-index: 1;
-	outline: 10px blue;
 }
 
 .sphere_side{
@@ -162,6 +161,7 @@ nav a:active{
 	position: absolute;
 	opacity: 1;
 	border-radius: 50%;
+	outline: 10px blue;
 }
 
 .sphere_one{
