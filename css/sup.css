@@ -60,7 +60,7 @@ nav{
 	position: fixed;
 	top: 20px;
 	right: 10px;
-	font-size: 5em;
+	font-size: inherit;
 	z-index: 3;
 }
 
