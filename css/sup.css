@@ -170,20 +170,20 @@ nav a:active{
 }
 
 .sphere_two{
-	-webkit-transform: rotateY(45deg) translateY(-100px);
-	transform: rotateY(45deg) translateY(-100px);
+	-webkit-transform: rotateY(45deg) translateZ(-100px);
+	transform: rotateY(45deg) translateZ(-100px);
 	background-color: #009246; /* ITALY GREEN */
 }
 
 .sphere_three{
-	-webkit-transform: rotateY(90deg) translateY(-100px);
-	transform: rotateY(90deg) translateY(-100px);
+	-webkit-transform: rotateY(90deg) translateZ(-100px);
+	transform: rotateY(90deg) translateZ(-100px);
 	background-color: red;
 }
 
 .sphere_four{
-	-webkit-transform: rotateY(135deg) translateY(-100px);
-	transform: rotateY(135deg) translateY(-100px);
+	-webkit-transform: rotateY(135deg) translateZ(-100px);
+	transform: rotateY(135deg) translateZ(-100px);
 	background-color: #009246; /* ITALY GREEN */
 }
 
