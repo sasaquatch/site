@@ -96,8 +96,8 @@ nav a:active{
 	height: 600px;
 	margin: 150px auto;
 	position: relative;
-	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 	z-index: 1;
 }
 
@@ -150,8 +150,8 @@ nav a:active{
 	height: 800px;
 	margin: 150px auto;
 	position: relative;
-	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 	z-index: 1;
 }
 
@@ -188,7 +188,22 @@ nav a:active{
 	background-color: #009246; /* ITALY GREEN */
 }
 
+/* TRIANGLE */
+#triangle{
+	width: 800px;
+	height: 800px;
+	margin: 150px auto;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	z-index: 1;
+}
 
+.triangle_one{
+	transform: rotateX(90deg) translateZ(300px);
+	-webkit-transform: rotateX(90deg) translateZ(300px);
+	background-color: blue;
+}
 
 
 
