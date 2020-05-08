@@ -210,8 +210,9 @@ nav a:active{
       height: 0;
       border-left: 400px solid transparent;
       border-right: 400px solid transparent;
-      border-top: 100px solid red;
-	-webkit-transform:rotate(360deg)
+      border-top: 400px solid red;
+      overflow: hidden;
+			-webkit-transform:rotate(360deg)
 }
 
 .triangle_one{
