@@ -206,10 +206,10 @@ nav a:active{
 }
 
 .triangle_side{
-      width: 150px;
-      height: 150px;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
+      width: 0;
+      height: 0;
+      border-left: 400px solid transparent;
+      border-right: 400px solid transparent;
       border-top: 100px solid red;
 	-webkit-transform:rotate(360deg)
 }
