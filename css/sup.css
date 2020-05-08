@@ -206,8 +206,8 @@ nav a:active{
 }
 
 .triangle_side{
-      width: 50px;
-      height: 50px;
+      width: 150px;
+      height: 150px;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       border-top: 100px solid red;
