@@ -208,8 +208,8 @@ border-color: #007bff transparent transparent transparent;
 }
 
 .triangle_one{
-	transform: rotateX(90deg) translateZ(300px);
-	-webkit-transform: rotateX(90deg) translateZ(300px);
+	transform: rotateX(0) translateZ(300px);
+	-webkit-transform: rotateX(0) translateZ(300px);
 	background-color: blue;
 }
 
