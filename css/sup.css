@@ -199,11 +199,12 @@ nav a:active{
 }
 
 .triangle_side{
-      width: 0;
-      height: 0;
-      border-left: 50px solid transparent;
-      border-right: 50px solid transparent;
-      border-top: 100px solid red;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 692.8px 400px 0 400px;
+border-color: #007bff transparent transparent transparent;
+-webkit-transform:rotate(360deg)
 }
 
 .triangle_one{
