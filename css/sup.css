@@ -196,7 +196,6 @@ nav a:active{
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	z-index: 1;
-	overflow: hidden;
 }
 
 .cube_triangle_side{
@@ -215,6 +214,7 @@ nav a:active{
   top:50%;
   transform: translate(50%, -50%) rotate(45deg);
   background: yellow;
+	overflow: hidden;
 }
 
 .triangle_one{
