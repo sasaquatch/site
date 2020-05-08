@@ -205,6 +205,10 @@ nav a:active{
 	opacity: 1;
 }
 
+.triangle_side{
+	overflow: hidden;
+}
+
 .triangle_side::after{
   content:"";
   position:absolute;
@@ -214,7 +218,6 @@ nav a:active{
   top:50%;
   transform: translate(50%, -50%) rotate(45deg);
   background: yellow;
-	overflow: hidden;
 }
 
 .triangle_one{
