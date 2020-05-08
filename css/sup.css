@@ -206,8 +206,6 @@ nav a:active{
 }
 
 .triangle_wrapper{
-	display: block;
-	position: relative;
 	overflow: hidden;
 }
 
