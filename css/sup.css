@@ -238,7 +238,7 @@ nav a:active{
 
 
 
-/* TEST */
+/* PYRAMID */
 #pyramid{
 	width: 800px;
 	height: 800px;
@@ -259,7 +259,10 @@ nav a:active{
 	-webkit-transform: translateZ(0);
 }
 
-.pyramid_one svg{
+.pyramid_one,
+.pyramid_two,
+.pyramid_three,
+.pyramid_four svg{
 	height: 800px;
 	width: 800px;
 }
