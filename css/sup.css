@@ -257,16 +257,15 @@ nav a:active{
 	border-radius: 50%;
 }
 
-.test_side svg{
-	height: 200px;
-	width: 500px;
-	background-color: red;
-}
-
 .test_one{
 	transform: translateZ(0);
 	-webkit-transform: translateZ(0);
 	background-color: red;
+}
+
+.test_one svg{
+	height: 200px;
+	width: 500px;
 }
 
 .test_two{
