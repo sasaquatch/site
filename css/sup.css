@@ -239,7 +239,7 @@ nav a:active{
 
 
 /* TEST */
-#test{
+#pyramid{
 	width: 800px;
 	height: 800px;
 	margin: 150px auto;
@@ -249,17 +249,17 @@ nav a:active{
 	z-index: 1;
 }
 
-.test_side{
+.pyramid_side{
 	position: absolute;
 	opacity: 1;
 }
 
-.test_one{
+.pyramid_one{
 	transform: translateZ(0);
 	-webkit-transform: translateZ(0);
 }
 
-.test_one svg{
+.pyramid_one svg{
 	height: 1000px;
 	width: 1000px;
 }
