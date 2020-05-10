@@ -264,15 +264,15 @@ nav a:active{
 }
 
 .test_one svg{
-	height: 200px;
+	height: 400px;
 	width: 500px;
 }
 
-.test_two{
+/*.test_two{
 	transform: rotateY(45deg) translateZ(0);
 	-webkit-transform: rotateY(45deg) translateZ(0);
-	background-color: #009246; /* ITALY GREEN */
-}
+	background-color: green;
+}*/
 
 
 
