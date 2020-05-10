@@ -260,6 +260,7 @@ nav a:active{
 .test_side svg{
 	height: 200;
 	width: 500;
+	background-color: red;
 }
 
 .test_one{
