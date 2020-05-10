@@ -3,15 +3,6 @@ Written by Saša Djukić
 in sunny Toronto :D
 */
 
-@media all and (max-width: 2000px) and (min-width: 1200px) {
-	*, body, h1, h2, h3, h4, div, section{
-		display: none;
-	}
-}
-
-@media all and (max-width: 736px) and (min-width: 320x) {
-
-
 *{
 	margin: 0;
 	padding: 0;
@@ -282,9 +273,34 @@ nav a:active{
 	background-color: green;
 }*/
 
+@media all and (max-width: 2000px) and (min-width: 1000px) {
+  #cube{
+    transform-style: preserve-3d;
+  	animation: spinzoneX 20s infinite linear;
+  }
+  @keyframes spinzoneX {
+  	from {transform: rotateX(0);}
+  	to {transform: rotateX(360deg);}
+	}
 
+  #cubeY{
+    transform-style: preserve-3d;
+  	animation: spinzoneY 30s infinite linear;
+  }
+  @keyframes spinzoneY {
+  	from {transform: rotateY(0);}
+  	to {transform: rotateY(360deg);}
+	}
+
+  #cubeZ{
+    transform-style: preserve-3d;
+  	animation: spinzoneZ 40s infinite linear;
+  }
+  @keyframes spinzoneZ {
+  	from {transform: rotateZ(0);}
+  	to {transform: rotateZ(360deg);}
+	}
 }
-
 
 
 
