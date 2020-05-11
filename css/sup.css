@@ -102,6 +102,8 @@ nav a:active{
 /* CUBE */
 .intrographic{
 	margin-top: -600px;
+	position: relative;
+	z-index: 1;
 }
 
 #cube{
@@ -111,7 +113,6 @@ nav a:active{
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
-	z-index: 1;
 }
 
 .side{
