@@ -105,7 +105,7 @@ section{
 /* ~~~~~~~~~~~~~~~~~~~~ 3D~~~~~~~~~~~~~~~~~~~~ */
 /* CUBE */
 .intrographic{
-	margin-top: -600px;
+	margin-top: -400px;
 	transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 	-webkit-transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 }
@@ -284,7 +284,7 @@ section{
 	nav{
 	right: 20px;
 	}
-	
+
 	.statement,
 	.instruction{
 		display: none;
