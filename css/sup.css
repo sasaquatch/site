@@ -42,7 +42,7 @@ section{
 
 .intro{
 	position: relative;
-	z-index: 2;=-
+	z-index: 2;
 }
 
 .intro div{
@@ -54,9 +54,15 @@ section{
 	height: 100px;
 }
 
-.statement,
-.statement_mobile{
+#statement,
+#statement_mobile{
 	margin-top: 100px;
+}
+
+#statement,
+#statement_mobile,
+#instruction{
+	position: relative;
 }
 
 .hidden{
@@ -98,6 +104,11 @@ nav a:active{
 
 /* ~~~~~~~~~~~~~~~~~~~~ 3D~~~~~~~~~~~~~~~~~~~~ */
 /* CUBE */
+.intrographic{
+	margin-top: -600px;
+	-webkit-transform: translate3d(0,0,0);
+}
+
 #cube{
 	width: 600px;
 	height: 600px;
@@ -105,7 +116,6 @@ nav a:active{
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
-	z-index: 1;
 }
 
 .side{
@@ -273,6 +283,10 @@ nav a:active{
 	.statement,
 	.instruction{
 		display: none;
+	}
+
+	.intrographic{
+	margin-top: 0;
 	}
 }
 
