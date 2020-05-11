@@ -267,7 +267,8 @@ nav a:active{
   	to {transform: rotateZ(360deg);}
 	}
 
-	.statement_mobile + h5{
+	.statement_mobile,
+	.instruction{
 		display: none;
 	}
 }
