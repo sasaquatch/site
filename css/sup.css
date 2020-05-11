@@ -106,7 +106,8 @@ nav a:active{
 /* CUBE */
 .intrographic{
 	margin-top: -600px;
-	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
+	-webkit-transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 }
 
 #cube{
