@@ -54,14 +54,14 @@ section{
 	height: 100px;
 }
 
-#statement,
-#statement_mobile{
+.statement,
+.statement_mobile{
 	margin-top: 100px;
 }
 
-#statement,
-#statement_mobile,
-#instruction{
+.statement,
+.statement_mobile,
+.instruction{
 	position: relative;
 }
 
