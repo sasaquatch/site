@@ -57,6 +57,7 @@ section{
 .statement,
 .statement_mobile{
 	margin-top: 100px;
+	z-index: 100;
 }
 
 .hidden{
