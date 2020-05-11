@@ -267,15 +267,15 @@ nav a:active{
   	to {transform: rotateZ(360deg);}
 	}
 
-	.statement_mobile,
-	.instruction{
+	.statement_mobile{
 		display: none;
 	}
 }
 
 /* MOBILE */
 @media all and (max-width: 999px) and (min-width: 320px) {
-	.statement{
+	.statement,
+	.instruction{
 		display: none;
 	}
 }
