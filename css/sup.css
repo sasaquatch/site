@@ -26,6 +26,12 @@ h4{
 	font-weight: 600;
 }
 
+h5{
+	margin-top: 100px;
+	font-size: 2em;
+	font-weight: 400;
+}
+
 section{
 	margin: 20px;
 }
@@ -48,7 +54,8 @@ section{
 	height: 100px;
 }
 
-.statement{
+.statement,
+.statement_mobile{
 	margin-top: 100px;
 }
 
@@ -91,10 +98,14 @@ nav a:active{
 
 /* ~~~~~~~~~~~~~~~~~~~~ 3D~~~~~~~~~~~~~~~~~~~~ */
 /* CUBE */
+.intrographic{
+	margin-top: -600px;
+}
+
 #cube{
 	width: 600px;
 	height: 600px;
-	margin: 150px auto;
+	margin: 0 auto 150px;
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
@@ -187,57 +198,6 @@ nav a:active{
 	background-color: #009246; /* ITALY GREEN */
 }
 
-/* TRIANGLE */
-#triangle{
-	width: 800px;
-	height: 800px;
-	margin: 150px auto;
-	position: relative;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-	z-index: 1;
-}
-
-.cube_triangle_side{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	opacity: 1;
-}
-
-.triangle_wrapper{
-	overflow: hidden;
-}
-
-.triangle_side::after{
-  content:"";
-  position:absolute;
-  width:400px;
-  height:400px;
-  right:0px;
-  top:50%;
-  transform: translate(50%, -50%) rotate(45deg);
-  background: yellow;
-}
-
-.triangle_one{
-	transform: rotateX(90deg) translateZ(300px);
-	-webkit-transform: rotateX(90deg) translateZ(300px);
-	background-color: blue;
-}
-
-
-#cone {
-      width: 0;
-      height: 0;
-      border-left: 70px solid transparent;
-      border-right: 70px solid transparent;
-      border-top: 100px solid red;
-      border-radius: 50%;
-    }
-
-
-
 /* PYRAMID */
 #pyramid{
 	width: 800px;
@@ -273,8 +233,12 @@ nav a:active{
 	background-color: green;
 }*/
 
+
+/* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES~~~~~~~~~~~~~~~~~~~~ */
+/* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube{
+  #cube,
+  #sphere{
     transform-style: preserve-3d;
   	animation: spinzoneX 20s infinite linear;
   }
@@ -283,27 +247,37 @@ nav a:active{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY{
+  #cubeY,
+  #sphereY{
     transform-style: preserve-3d;
-  	animation: spinzoneY 30s infinite linear;
+  	animation: spinzoneY 40s infinite linear;
   }
   @keyframes spinzoneY {
   	from {transform: rotateY(0);}
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ{
+  #cubeZ,
+  #sphereZ{
     transform-style: preserve-3d;
-  	animation: spinzoneZ 40s infinite linear;
+  	animation: spinzoneZ 60s infinite linear;
   }
   @keyframes spinzoneZ {
   	from {transform: rotateZ(0);}
   	to {transform: rotateZ(360deg);}
 	}
+
+	.statement_mobile{
+		display: none;
+	}
 }
 
-
-
+/* MOBILE */
+@media all and (max-width: 999px) and (min-width: 320px) {
+	.statement{
+		display: none;
+	}
+}
 
 
 
