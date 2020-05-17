@@ -227,8 +227,8 @@ section{
 }
 
 .pyramid_two{ /* x-axis */ /* y-axis */ /* y-axis */
-	transform: rotateY(90deg) rotateX(-30deg) translateY(-62px);
-	-webkit-transform: rotateY(90deg) rotateX(-30deg) translateY(-62px);
+	transform: rotateY(90deg) rotateX(-30deg) translateY(-62px) translateZ(100px);
+	-webkit-transform: rotateY(90deg) rotateX(-30deg) translateY(-62px) translateZ(100px);
 }
 
 .pyramid_one svg,
