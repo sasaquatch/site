@@ -222,8 +222,13 @@ section{
 }
 
 .pyramid_one{
-	transform: translateZ(0);
-	-webkit-transform: translateZ(0);
+	transform: rotateZ(0);
+	-webkit-transform: rotateZ(0);
+}
+
+.pyramid_two{ /* x-axis */ /* y-axis */ /* y-axis */
+	transform: rotateY(90deg) rotateX(-30deg) translateY(-62px);
+	-webkit-transform: rotateY(90deg) rotateX(-30deg) translateY(-62px);
 }
 
 .pyramid_one svg,
@@ -233,12 +238,6 @@ section{
 	height: 800px;
 	width: 800px;
 }
-
-/*.test_two{
-	transform: rotateY(45deg) translateZ(0);
-	-webkit-transform: rotateY(45deg) translateZ(0);
-	background-color: green;
-}*/
 
 
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES~~~~~~~~~~~~~~~~~~~~ */
