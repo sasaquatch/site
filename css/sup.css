@@ -86,11 +86,6 @@ section{
 .firstname{
 	height: 100px;
 }
-
-.statement_mobile{
-	margin: 100px 50px 0 0;
-}
-
 .statement,
 .statement_mobile{
 	margin-top: 100px;
