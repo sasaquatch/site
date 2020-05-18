@@ -296,6 +296,7 @@ section{
 	.statement,
 	.instruction{
 		display: none;
+		margin-right: 10px;
 	}
 
 	.intrographic{
