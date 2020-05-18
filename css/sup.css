@@ -222,13 +222,19 @@ section{
 }
 
 .pyramid_one{
-	transform: rotateZ(0);
-	-webkit-transform: rotateZ(0);
+	-webkit-transform: rotateY(-90deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
-.pyramid_two{ /* x-axis */ /* y-axis */ /* y-axis */
-	transform: rotateY(90deg) rotateX(-30deg) translateY(-62px) translateZ(100px);
-	-webkit-transform: rotateY(90deg) rotateX(-30deg) translateY(-62px) translateZ(100px);
+.pyramid_two{
+	-webkit-transform: rotateY(0deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
+}
+
+.pyramid_three{
+	-webkit-transform: rotateY(-90deg) rotateX(41.8deg) translateZ(-90px) translateY(-97px);
+}
+
+.pyramid_four{
+	-webkit-transform: rotateY(180deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
 .pyramid_one svg,
@@ -244,9 +250,10 @@ section{
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
   #cube,
-  #sphere{
+  #sphere,
+  #pyramid{
     transform-style: preserve-3d;
-  	animation: spinzoneX 20s infinite linear;
+  	animation: spinzoneX 40s infinite linear;
   }
   @keyframes spinzoneX {
   	from {transform: rotateX(0);}
@@ -254,7 +261,8 @@ section{
 	}
 
   #cubeY,
-  #sphereY{
+  #sphereY,
+  #pyramidY{
     transform-style: preserve-3d;
   	animation: spinzoneY 40s infinite linear;
   }
@@ -264,9 +272,10 @@ section{
 	}
 
   #cubeZ,
-  #sphereZ{
+  #sphereZ,
+  #pyramidZ{
     transform-style: preserve-3d;
-  	animation: spinzoneZ 60s infinite linear;
+  	animation: spinzoneZ 40s infinite linear;
   }
   @keyframes spinzoneZ {
   	from {transform: rotateZ(0);}
