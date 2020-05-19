@@ -249,11 +249,11 @@ section{
 }
 
 .sparkle1{
-	-webkit-transform: translateY(100px) translateX(200px);
+	-webkit-transform: translateY(540px) translateX(200px);
 }
 
 .sparkle2{
-	-webkit-transform: translateY(-300px) translateX(200px) rotateY(90deg);
+	-webkit-transform: translateY(140px) translateX(200px) rotateY(90deg);
 }
 
 
