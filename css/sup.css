@@ -244,12 +244,16 @@ section{
 	width: 800px;
 }
 
+.sparkle{
+	display: block;
+}
+
 .sparkle1{
 	-webkit-transform: translateY(100px) translateX(200px);
 }
 
 .sparkle2{
-	-webkit-transform: rotateY(80deg) translateY(100px) translateX(1100px);
+	-webkit-transform: translateY(-300px) translateX(200px) rotateY(45deg);
 }
 
 
