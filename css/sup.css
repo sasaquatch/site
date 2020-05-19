@@ -32,6 +32,17 @@ h5{
 	font-weight: 400;
 }
 
+h3 span{
+
+}
+
+h4 span.ampersand{
+	font-family: serif;
+	font-weight: 100;
+	font-style: italic;
+	margin: 0 -8px 0 -10px;
+}
+
 nav{
 	position: fixed;
 	top: 29px;
@@ -272,7 +283,8 @@ section{
 	}
 
   #cubeY,
-  #sphereY{
+  #sphereY,
+  #pyramidY{
     transform-style: preserve-3d;
   	animation: spinzoneY 120s infinite linear;
   }
