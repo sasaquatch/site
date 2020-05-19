@@ -248,12 +248,17 @@ section{
 	-webkit-transform: translateY(100px) translateX(200px);
 }
 
+.sparkle2{
+	-webkit-transform: rotateY(80deg) translateY(100px) translateX(1100px);
+}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
   #cube,
-  #sphere,{
+  #sphere,
+  #pyramid{
     transform-style: preserve-3d;
   	animation: spinzoneX 120s infinite linear;
   }
