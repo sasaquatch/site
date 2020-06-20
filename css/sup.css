@@ -250,7 +250,7 @@ section{
 #sphere{
 	width: 800px;
 	height: 800px;
-	margin: 50px auto;
+	margin: 100px auto;
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
@@ -321,7 +321,7 @@ section{
 #pyramid{
 	width: 800px;
 	height: 800px;
-	margin: 50px auto;
+	margin: 100px auto;
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
