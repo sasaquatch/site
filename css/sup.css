@@ -189,7 +189,7 @@ section{
 /* ~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~ */
 /* CUBE */
 .intrographic{
-	margin-top: -400px;
+	margin-top: -200px;
 	transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 	-webkit-transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 }
