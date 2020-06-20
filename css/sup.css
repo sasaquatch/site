@@ -9,6 +9,15 @@ in sunny Toronto :D
 	font-family: -apple-system, sans-serif;
 }
 
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a h4:hover{
+	color: red;
+}
+
 h1, h2, h3, h4{
 	font-size: 5em;
 }
@@ -43,6 +52,41 @@ h4 span.ampersand{
 	margin: 0 -8px 0 -10px;
 }
 
+p{
+	padding: .5em 0;
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+.paragraph{
+	/*padding: 100px 20%;*/
+	max-width: 50rem;
+	margin: 50px auto;
+}
+
+.paragraph_link{
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.paragraph_link:hover,
+.paragraph_link:active{
+	animation: rainbow 2s infinite;
+}
+
+figure img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+figure figcaption{
+	width: 50%;
+	display: block;
+	margin: 10px auto;
+	font-size: 0.8em;
+}
+
 nav{
 	position: fixed;
 	top: 29px;
@@ -63,14 +107,6 @@ nav a:active{
 	animation: rainbow 2s infinite;
 }
 
-@keyframes rainbow {
-  0%		{color: red;}
-  25%		{color: blue;}
-  50%		{color: teal;}
-  75%		{color: blue;}
-  100%	{color: black;}
-}
-
 ::selection{
 	background-color: rgba(0,0,0,0.99);
 	color: #fff;
@@ -81,7 +117,7 @@ section{
 }
 
 .project{
-	margin-top: 600px;
+	margin-top: 500px;
 }
 
 .intro{
@@ -112,7 +148,41 @@ section{
 	display: none;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ 3D~~~~~~~~~~~~~~~~~~~~ */
+.centered{
+	text-align: center;
+}
+
+.rightaligned{
+	text-align: right;
+}
+
+
+.leftaligned{
+	text-align: left;
+}
+
+.about{
+	animation: about 60s linear infinite;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~ */
+@keyframes about{
+	0%		{background-color: #dbe0ff;}
+	25%		{background-color: #ffe8ef;}
+	50%		{background-color: #e5c7ff;}
+	75%		{background-color: #d6fff2;}
+	100%	{background-color: #dbe0ff;}
+}
+
+@keyframes rainbow {
+  0%		{color: red;}
+  25%		{color: blue;}
+  50%		{color: teal;}
+  75%		{color: blue;}
+  100%	{color: black;}
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~ */
 /* CUBE */
 .intrographic{
 	margin-top: -600px;

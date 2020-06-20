@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Saša Djukic — Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/sup.css">
+</head>
+<body class="about">
+	<section class="intro">
+		<h1>
+      <div class="firstname">
+        <div id="name-1">Sa&scaron;a</div>
+        <div id="name-4">Sasha</div>
+        <div id="name-9">Sacha</div>
+        <div id="name-2">Саша</div>
+        <div id="name-3">サシャ</div>
+        <div id="name-5">사샤</div>
+        <div id="name-6">沙紗</div>
+        <div id="name-7">ساشا</div>
+        <div id="name-8">薩沙</div>
+        <div id="name-10">סשה</div>
+        <div id="name-11">Σάσα</div>
+      </div>
+      <div class="lastname">Djuki&#263;</div></h1>
+	</section>
+
+  <nav>
+    <a href="about.html">About</a>
+  </nav>
+
+  <section>
+    <h1 class="centered">Hey</h1>
+    <div class="paragraph">
+      <p>20 years ago I started coding, 14 years ago I started designing, 8 years ago I started building experiences.</p>
+      <p>I like to study literature, transportation, speech and languages, quantum mechanics, cooking, and energy behaviours. From 9&mdash;5 I design systems and from 5&mdash;9 I destroy them. Come at me with your thoughts on typography, food, or the smell of campfire and we might talk through the night.</p>
+    </div>
+      <figure>
+        <img src="images/aoyama.JPG" alt="me in Tokyo">
+        <figcaption class="rightaligned">in Aoyama, Shibuya, Tokyo</figcaption>
+      </figure>
+    <div class="paragraph">
+      <p>This is my site and I can have the type as large as I want. This is my digital address, this is a professional and personal portrayal. If you're into it, let's work together cuz I'm sure we'd make something great.</p>
+    </div>
+
+    <div class="paragraph">
+      <h5><b>Languages</b></h5>
+      <h5>Code</h5>
+      <p>HTML<br>CSS<br>JS</p>
+      <h5>Human</h5>
+      <p>English<br>Français<br>Srpski<br>~ Español<br>~ Italiano</p>
+    </div>
+
+    <p>Sketch<br>XD<br>InVision<br>CC</p>
+    <div class="paragraph">
+      <h5><b>Food</b></h5>
+      <p>Ramen<br>Pizza<br>A simple pasta<br>Gelato<br>Katsu sando</p>
+    </div>
+    do like a book thing<br><br>
+
+    do like a city thing
+  </section>
+
+
+
+<!-- JS -->
+<script src='js/jquery-3.5.0.min.js'></script>
+<script id="rendered-js">
+  var divs = $('div[id^="name-"]').hide(),
+  i = 0;
+
+  (function cycle() {
+
+    divs.eq(i).fadeIn(0).
+    delay(1000).
+    fadeOut(0, cycle);
+
+    i = ++i % divs.length;
+
+  })();
+</script>
+
+</body>
+</html>
