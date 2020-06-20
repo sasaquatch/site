@@ -23,7 +23,7 @@ h1, h2, h4{
 }
 
 h3{
-	font-size: 3em;
+	font-size: 2em;
 }
 
 h1, h3{
@@ -415,6 +415,10 @@ section{
 @media all and (max-width: 999px) and (min-width: 320px) {
 	nav{
 	right: 20px;
+	}
+
+	h3{
+		font-size: 3em;
 	}
 
 	.statement,
