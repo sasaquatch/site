@@ -219,7 +219,7 @@ section{
 .cube_two{
 	transform: rotateY(90deg) translateZ(300px);
 	-webkit-transform: rotateY(90deg) translateZ(300px);
-	background-color: black;
+	background-color: #ffff00; /* YELLOW */
 }
 
 .cube_three{
