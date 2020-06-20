@@ -18,8 +18,12 @@ a h4:hover{
 	color: red;
 }
 
-h1, h2, h3, h4{
+h1, h2, h4{
 	font-size: 5em;
+}
+
+h3{
+	font-size: 2em;
 }
 
 h1, h3{
@@ -283,6 +287,34 @@ section{
 	transform: rotateY(135deg) translateZ(0);
 	-webkit-transform: rotateY(135deg) translateZ(0);
 	background-color: #009246; /* ITALY GREEN */
+}
+
+/* SYSTEM */
+#system{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto 150px;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.system-side{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.8;
+}
+
+.system-side svg{
+	height: 300px;
+	width: 300px;
+}
+
+.system1{
+	transform: translateZ(300px);
+	-webkit-transform: translateZ(300px);
+	background-color: red
 }
 
 /* PYRAMID */
