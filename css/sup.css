@@ -124,9 +124,9 @@ nav a{
 	padding: 0 10px;
 	border-radius: 10px;
 	cursor: pointer;
-	position: fixed;
-	bottom: 0;
-	left: 0;
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
 }
 
 #night,
@@ -159,6 +159,10 @@ section{
 
 .project{
 	margin-top: 300px;
+}
+
+.intro-wrapper{
+	height: 100vh;
 }
 
 .intro{
