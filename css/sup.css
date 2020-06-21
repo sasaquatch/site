@@ -3,6 +3,7 @@ Written by Saša Djukić
 in sunny Toronto :D
 */
 
+/* ~~~~~~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~~~ */
 *{
 	margin: 0;
 	padding: 0;
@@ -22,76 +23,6 @@ in sunny Toronto :D
 
 .nav-night{
 	color: #fff;
-}
-
-a{
-	text-decoration: none;
-	color: #000;
-}
-
-a h4:hover{
-	color: red;
-}
-
-h1, h2, h4{
-	font-size: 5em;
-}
-
-h3{
-	font-size: 2em;
-}
-
-h1, h3{
-	font-weight: 400;
-}
-
-h2{
-	margin-top: -50px;
-	font-weight: 600;
-}
-
-h4{
-	padding-top: 30px;
-	font-weight: 600;
-}
-
-h5{
-	margin-top: 50px;
-	font-size: 2em;
-	font-weight: 400;
-}
-
-h3 span{
-
-}
-
-h4 span.ampersand{
-	font-family: serif;
-	font-weight: 100;
-	font-style: italic;
-	margin: 0 -8px 0 -10px;
-}
-
-p{
-	padding: .5em 0;
-	font-size: 2em;
-	line-height: 1.4em;
-}
-
-.paragraph{
-	/*padding: 100px 20%;*/
-	max-width: 50rem;
-	margin: 50px auto;
-}
-
-.paragraph_link{
-	font-weight: 700;
-	text-decoration: underline;
-}
-
-.paragraph_link:hover,
-.paragraph_link:active{
-	animation: rainbow 2s infinite;
 }
 
 nav{
@@ -136,7 +67,76 @@ nav a{
 	right: 30px;
 }
 
-nav a:hover{
+nav a:hover,
+.toggle a:hover{
+	animation: rainbow 2s infinite;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a h4:hover{
+	color: red;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ HEADINGS ~~~~~~~~~~~~~~~~~~~~ */
+h1, h2, h4{
+	font-size: 5em;
+}
+
+h3{
+	font-size: 2em;
+}
+
+h1, h3{
+	font-weight: 400;
+}
+
+h2{
+	margin-top: -50px;
+	font-weight: 600;
+}
+
+h4{
+	/*padding-top: 30px;*/
+	font-weight: 600;
+}
+
+h5{
+	margin-top: 50px;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+h4 span.ampersand{
+	font-family: serif;
+	font-weight: 100;
+	font-style: italic;
+	margin: 0 -8px 0 -10px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ COPY ~~~~~~~~~~~~~~~~~~~~ */
+p{
+	padding: .5em 0;
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+.paragraph{
+	/*padding: 100px 20%;*/
+	max-width: 50rem;
+	margin: 50px auto;
+}
+
+.paragraph_link{
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.paragraph_link:hover,
+.paragraph_link:active{
 	animation: rainbow 2s infinite;
 }
 
@@ -153,12 +153,53 @@ figure figcaption{
 	font-size: 0.8em;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~ */
 section{
-	margin: 30px;
+	margin: 0 30px;
+}
+
+.projects{
 }
 
 .project{
+}
+
+.toggle{
+	padding-top: 30px;
+}
+
+.toggle a,
+.toggle span{
+	font-size: 5em;
+	color: #aaa;
+}
+
+.toggle span{
+	padding: 0 20px;
+	color: #aaa;
+}
+
+.fivetonine{
+}
+
+a.active{
+	color: #000;
+}
+
+.margin-top30{
+	margin-top: 30px;
+}
+
+.margin-top50{
+	margin-top: 50px;
+}
+
+.margin-top300{
 	margin-top: 300px;
+}
+
+.margin-top-negative{
+	margin-top: 0px;
 }
 
 .intro-wrapper{

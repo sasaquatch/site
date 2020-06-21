@@ -12,7 +12,7 @@
   </nav>
 
 <div class="intro-wrapper">
-	<section class="intro">
+	<section class="intro margin-top30">
 		<h1>
       <div class="firstname">
         <div id="name-1">Sa&scaron;a</div>
@@ -54,7 +54,14 @@
   <a id="down" href="#">&darr;</a>
 </div>
 
-  <section class="project">
+<section class="projects margin-top100">
+
+  <div class="toggle">
+    <a class="ninetofive active" href="#">9&mdash;5</a><span>/</span>
+    <a class="fivetonine" href="#">5&mdash;9</a>
+  </div>
+
+  <div class="project margin-top50">
     <h4>Alfa Romeo</h4>
     <h3>A mobile&mdash;first configuration experience <span>&#8627;</span></h3>
     <div id="sphereZ">
@@ -67,9 +74,9 @@
     </div>
     </div>
     </div>
-  </section>
+  </div>
 
-  <section class="project">
+  <div class="project margin-top300">
     <h4>System Design</h4>
     <h3>Flexibility <span class="ampersand">&</span> Evolution<span>&#8627;</span></h3>
 
@@ -130,9 +137,9 @@
     </div>
     </div>
     </div> -->
-  </section>
+  </div>
 
-  <section class="project">
+  <div class="project">
     <a href="simple.html">
     <h4>Simple is hard</h4>
     <h3>Reducing friction and encouraging discussions <span>&#8627;</span></h3>
@@ -147,7 +154,9 @@
     </div>
     </div>
     </a>
-  </section>
+  </div>
+
+</section>
 
 <!-- JS -->
 <script src='js/jquery-3.5.0.min.js'></script>
@@ -179,7 +188,7 @@
 <script>
   $("#down").click(function() {
     $('html, body').animate({
-    scrollTop: $(".project").offset().top
+    scrollTop: $(".toggle").offset().top
     }, 1500);
   });
 
