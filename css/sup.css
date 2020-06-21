@@ -9,6 +9,12 @@ in sunny Toronto :D
 	font-family: -apple-system, sans-serif;
 }
 
+.night{
+	background-color: #000;
+	color: #fff;
+	animation: fadein 1s;
+}
+
 a{
 	text-decoration: none;
 	color: #000;
@@ -92,11 +98,10 @@ figure figcaption{
 }
 
 nav{
-	position: fixed;
-	top: 29px;
-	right: 30px;
 	font-size: 5em;
 	z-index: 3;
+	background-color: none;
+	position: fixed;
 }
 
 nav a{
@@ -104,6 +109,19 @@ nav a{
 	text-decoration: none;
 	padding: 0 10px;
 	border-radius: 10px;
+	cursor: pointer;
+}
+
+#aboutme{
+	position: fixed;
+	top: 29px;
+	right: 30px;
+}
+
+#night{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
 }
 
 nav a:hover,
@@ -184,6 +202,11 @@ section{
   50%		{color: teal;}
   75%		{color: blue;}
   100%	{color: black;}
+}
+
+@keyframes fadein{
+	0%		{opacity: 0;}
+	100%	{opacity: 100;}
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~ */
@@ -413,7 +436,8 @@ section{
 
 /* MOBILE */
 @media all and (max-width: 999px) and (min-width: 320px) {
-	nav{
+	nav.about,
+	nav.night{
 	right: 20px;
 	}
 

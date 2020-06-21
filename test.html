@@ -30,7 +30,8 @@
 	</section>
 
   <nav>
-    <a href="about.html">About</a>
+    <a id="aboutme" href="about.html">About</a>
+    <a id="night" href="#">Night</a>
   </nav>
 
   <section class="intrographic">
@@ -158,6 +159,12 @@
     i = ++i % divs.length;
 
   })();
+</script>
+
+<script>
+  $('#night').click(function() {
+    $('body').addClass('night').fadeIn(100);
+  });
 </script>
 
 <script>
