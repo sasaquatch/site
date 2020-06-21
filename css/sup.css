@@ -9,10 +9,19 @@ in sunny Toronto :D
 	font-family: -apple-system, sans-serif;
 }
 
+::selection{
+	background-color: rgba(0,0,0,0.99);
+	color: #fff;
+}
+
 .night{
 	background-color: #000;
 	color: #fff;
 	animation: fadein 1s;
+}
+
+.nav-night{
+	color: #fff;
 }
 
 a{
@@ -42,6 +51,7 @@ h2{
 }
 
 h4{
+	padding-top: 30px;
 	font-weight: 600;
 }
 
@@ -84,24 +94,11 @@ p{
 	animation: rainbow 2s infinite;
 }
 
-figure img{
-	width: 50%;
-	display: block;
-	margin: 0 auto;
-}
-
-figure figcaption{
-	width: 50%;
-	display: block;
-	margin: 10px auto;
-	font-size: 0.8em;
-}
-
 nav{
 	font-size: 5em;
 	z-index: 3;
 	background-color: none;
-	position: fixed;
+	position: relative;
 }
 
 nav a{
@@ -118,20 +115,42 @@ nav a{
 	right: 30px;
 }
 
-#night{
+#down{
+	font-size: 5em;
+	z-index: 3;
+	background-color: none;
+	color: #000;
+	text-decoration: none;
+	padding: 0 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#night,
+#day{
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
 }
 
-nav a:hover,
-nav a:active{
+nav a:hover{
 	animation: rainbow 2s infinite;
 }
 
-::selection{
-	background-color: rgba(0,0,0,0.99);
-	color: #fff;
+figure img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+figure figcaption{
+	width: 50%;
+	display: block;
+	margin: 10px auto;
+	font-size: 0.8em;
 }
 
 section{

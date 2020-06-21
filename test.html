@@ -24,7 +24,7 @@
     <h2>UX / Design / Code</h2>
     <h3 class="statement"><!-- I&rsquo;m bored, give me a problem to solve. -->
       I design systems from 9&mdash;5<br> and explore the unknown from 5&mdash;9.
-      <br><br>I recommend opening this site on your<br> phone if you want to have some fun.</h3>
+      <br><br>I recommend opening this site on your<br> phone if you'd like to have some fun.</h3>
     <!-- <h5 class="instruction">If you want to have fun, open this site on your phone.</h5> -->
     <h3 class="statement_mobile">I design systems from 9&mdash;5<br> and explore the unknown from 5&mdash;9.</h3>
 	</section>
@@ -32,6 +32,7 @@
   <nav>
     <a id="aboutme" href="about.html">About</a>
     <a id="night" href="#">Night</a>
+    <a id="day" class="hidden" href="#">Day</a>
   </nav>
 
   <section class="intrographic">
@@ -47,6 +48,7 @@
   	</div>
     </div>
     </div>
+    <a id="down" href="#">&darr;</a>
   </section>
 
   <section class="project">
@@ -65,8 +67,8 @@
   </section>
 
   <section class="project">
-    <h4>The purpose of a system</h4>
-    <h3>Stability <span class="ampersand">&</span> Evolution<span>&#8627;</span></h3>
+    <h4>System Design</h4>
+    <h3>Flexibility <span class="ampersand">&</span> Evolution<span>&#8627;</span></h3>
 
     <div id="system">
       <div class="system-side system1">
@@ -162,10 +164,40 @@
 </script>
 
 <script>
-  $('#night').click(function() {
-    $('body').addClass('night').fadeIn(100);
+  $("#night").click(function() {
+    $("#night" ).animate({
+      opacity: 1
+    }, 100, function() {
+       $("body").addClass("night");
+    });
   });
 </script>
+
+<script>
+  $("#down").click(function() {
+    $('html, body').animate({
+    scrollTop: $(".project").offset().top
+    }, 1500);
+  });
+
+</script>
+
+// <script>
+//   $('#night').click(function() {
+//     $('body').addClass('night');
+//     $('nav a').addClass('nav-night');
+//     $('#night').addClass('hidden');
+//     $('#day').removeClass('hidden');
+//   });
+
+//   $('#day').click(function() {
+//     $('body').removeClass('night');
+//     $('nav a').removeClass('nav-night');
+//     $('#day').addClass('hidden');
+//     $('#night').removeClass('hidden');
+//   });
+// </script>
+
 
 <script>
  if (!window.DeviceOrientationEvent) {
