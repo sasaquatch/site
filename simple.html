@@ -5,8 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="css/sup.css">
 </head>
 <body>
-	<section class="intro">
-		<h1>
+
+<section class="intro margin-top30">
+  <h1>
+    <a href="index.html">
       <div class="firstname">
         <div id="name-1">Sa&scaron;a</div>
         <div id="name-4">Sasha</div>
@@ -21,28 +23,31 @@
         <div id="name-11">Σάσα</div>
       </div>
       <div class="lastname">Djuki&#263;</div></h1>
-	</section>
+    </a>
+</section>
 
-  <nav>
-    <a href="about.html">About</a>
-  </nav>
+<nav>
+  <a id="aboutme" href="about.html">About</a>
+  <a id="night" href="#">Night</a>
+  <a id="day" class="hidden" href="#">Day</a>
+</nav>
 
-  <section>
-    <h1 class="centered">Simple is hard</h1>
-    <div class="paragraph">
-      <p>Where to start...</p>
-      <p>In the context of a digital platform, or framework, complexity is natural. A platform inevitably will have numerous founding blocks and ideally interchangeable parts upon which the product stands. The offerings of a platform, though, should be seamless to the end-user, but perhaps the cunning eye will notice patterns emerge as they take in the experience.</p>
-      <p>To put it simply, no one should ever see the monster that might live under the hood, for they might close the tab faster than I can finish this sentence.</p>
-      <p>The ultimate goal (without further ado) is to somehow manage to build a multi and cross-functional set of modular elements that can perform their task in an efficient way, sending and receiving data to and from while loading fast, being simple to use and importantly, be accessible. For further musings on building and improving systems, feel free to checkout the <a href="systems.html" class="paragraph_link">page on systems.</a></p>
-      <p>Pairing this to the ever-evolving and demanding world of advertising, you're in for a treat.</p>
-      <p>I've been working on the platform team at Sapient/Razorfish for 4 years, leading projects and teams with the best intentions to create reusable components that allow for high-traffic experiences. Along the way, I've thouroughly enjoyed connecting all the disciplines in order to create things that are simple and intuitive. As an experience designer, I don't mind asking the tough or unusual questions because one way or another it gets the best out of people. It makes a developer more curious, it makes a designer more engaged in the process, it involves the project manager in a more transparent way...anyway, I might be full of shit, too, who knows.</p>
-      <p>Here's some examples where I fought for simplicity while working on projects for a client that is very explicit in nature<!--  (wanting to make sure that the user has all the information they need at any given time) -->. It might be a common trait in the industry and I don't see a problem with it as long as the client likes to have a dialog, which in our case, I'm happy to say that most of the time they do. A client that feels engaged in the process - and I don't mean micromanaging the situation, because that's awful - I mean participating in the decision-making and collaboration where everyone knows their roles and strives to come up with the best possible solution.</p>
-    </div>
-    put some image here
-    <div class="paragraph">
-      <p>The navigation</p>
-    </div>
-  </section>
+<section class="margin-top50">
+  <h1 class="centered">Simple is hard</h1>
+  <div class="paragraph">
+    <p>Where to start...</p>
+    <p>In the context of a digital platform, or framework, complexity is natural. A platform inevitably will have numerous founding blocks and ideally interchangeable parts upon which the product stands. The offerings of a platform, though, should be seamless to the end-user, but perhaps the cunning eye will notice patterns emerge as they take in the experience.</p>
+    <p>To put it simply, no one should ever see the monster that might live under the hood, for they might close the tab faster than I can finish this sentence.</p>
+    <p>The ultimate goal (without further ado) is to somehow manage to build a multi and cross-functional set of modular elements that can perform their task in an efficient way, sending and receiving data to and from while loading fast, being simple to use and importantly, be accessible. For further musings on building and improving systems, feel free to checkout the <a href="systems.html" class="paragraph_link">page on systems.</a></p>
+    <p>Pairing this to the ever-evolving and demanding world of advertising, you're in for a treat.</p>
+    <p>I've been working on the platform team at Sapient/Razorfish for 4 years, leading projects and teams with the best intentions to create reusable components that allow for high-traffic experiences. Along the way, I've thouroughly enjoyed connecting all the disciplines in order to create things that are simple and intuitive. As an experience designer, I don't mind asking the tough or unusual questions because one way or another it gets the best out of people. It makes a developer more curious, it makes a designer more engaged in the process, it involves the project manager in a more transparent way...anyway, I might be full of shit, too, who knows.</p>
+    <p>Here's some examples where I fought for simplicity while working on projects for a client that is very explicit in nature<!--  (wanting to make sure that the user has all the information they need at any given time) -->. It might be a common trait in the industry and I don't see a problem with it as long as the client likes to have a dialog, which in our case, I'm happy to say that most of the time they do. A client that feels engaged in the process - and I don't mean micromanaging the situation, because that's awful - I mean participating in the decision-making and collaboration where everyone knows their roles and strives to come up with the best possible solution.</p>
+  </div>
+  put some image here
+  <div class="paragraph">
+    <p>The navigation</p>
+  </div>
+</section>
 
 
 
@@ -61,102 +66,6 @@
     i = ++i % divs.length;
 
   })();
-</script>
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('cube').style.webkitTransform =
-      document.getElementById('cube').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
-</script>
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('sphere').style.webkitTransform =
-      document.getElementById('sphere').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
-</script>
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('pyramid').style.webkitTransform =
-      document.getElementById('pyramid').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
 </script>
 
 </body>
