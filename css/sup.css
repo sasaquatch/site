@@ -559,6 +559,11 @@ a.active:hover{
 	.intrographic{
 		margin-top: 200px;
 	}
+
+	p{
+	font-size: 32px;
+	line-height: 44px;
+	}
 }
 
 
