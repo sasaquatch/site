@@ -542,8 +542,13 @@ a.active:hover{
 	right: 20px;
 	}
 
-	h3, h5{
+	h3{
 		font-size: 3em;
+	}
+
+	h5{
+		font-size: 3em;
+		font-weight: 600;
 	}
 
 	.fifty{
@@ -562,7 +567,7 @@ a.active:hover{
 
 	p{
 	font-size: 36px;
-	line-height: 48px;
+	line-height: 52px;
 	}
 }
 
