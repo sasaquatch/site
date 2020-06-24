@@ -220,6 +220,10 @@ a.active:hover{
 	margin-top: 100px;
 }
 
+.margin-top200{
+	margin-top: 200px;
+}
+
 .margin-top300{
 	margin-top: 300px;
 }
@@ -228,11 +232,12 @@ a.active:hover{
 	margin-bottom: 300px;
 }
 
-.intro-wrapper{
-	height: 100vh;
+.notbold{
+	font-weight: 400;
 }
 
-.novh{
+.intro-wrapper{
+	height: 100vh;
 }
 
 .intro{
@@ -277,6 +282,10 @@ a.active:hover{
 
 .about{
 	animation: about 60s linear infinite;
+}
+
+.ellipsis{
+	font-size: 3em;	
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~ */
