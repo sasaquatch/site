@@ -493,8 +493,51 @@ a.active:hover{
 	-webkit-transform: translateY(140px) translateX(200px) rotateY(90deg);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
+/* ALFA */
+.phone{
+	height: 1000px;
+	padding: 110px;
+	background-color: white;
+}
 
-/* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES~~~~~~~~~~~~~~~~~~~~ */
+.phone_content{
+	width: 436px;
+	height: 666px;
+	margin: 0 auto;
+  z-index: 98;
+  overflow: scroll;
+  background-color: white;
+  -ms-overflow-style: scroll; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.phone_content img{
+	width: 375px;
+	margin: 0 31px;
+}
+
+.phone_content::-webkit-scrollbar { 
+	display: none; /* Safari and Chrome */
+}
+
+.phone_content::before{
+	position: absolute;
+	display: block;
+	margin-top: -110px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 436px;
+	height: 888px;
+  z-index: 99;
+  background-image: url('../images/phone_frame.png');
+	background-size: 100%;
+  content: "";
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
   #cube,
