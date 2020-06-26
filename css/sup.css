@@ -503,7 +503,7 @@ a.active:hover{
     transform-style: preserve-3d;
   	animation: spinzoneX 120s infinite linear;
   }
-  @keyframes spinzoneX {
+  @keyframes spinzoneX{
   	from {transform: rotateX(0);}
   	to {transform: rotateX(360deg);}
 	}
@@ -514,7 +514,7 @@ a.active:hover{
     transform-style: preserve-3d;
   	animation: spinzoneY 120s infinite linear;
   }
-  @keyframes spinzoneY {
+  @keyframes spinzoneY{
   	from {transform: rotateY(0);}
   	to {transform: rotateY(360deg);}
 	}
@@ -525,7 +525,7 @@ a.active:hover{
     transform-style: preserve-3d;
   	animation: spinzoneZ 120s infinite linear;
   }
-  @keyframes spinzoneZ {
+  @keyframes spinzoneZ{
   	from {transform: rotateZ(0);}
   	to {transform: rotateZ(360deg);}
 	}
