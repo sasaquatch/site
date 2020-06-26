@@ -259,8 +259,7 @@ a.active:hover{
 }
 
 .statement,
-.statement_mobile,
-.instruction{
+.statement_mobile{
 	position: relative;
 }
 
@@ -496,9 +495,8 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
 /* ALFA */
 .phone{
-	height: 1000px;
+	height: 700px;
 	padding: 110px;
-	background-color: white;
 }
 
 .phone_content{
@@ -507,7 +505,6 @@ a.active:hover{
 	margin: 0 auto;
   z-index: 98;
   overflow: scroll;
-  background-color: white;
   -ms-overflow-style: scroll; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
@@ -598,8 +595,7 @@ a.active:hover{
 		width: 100%;
 	}
 
-	.statement,
-	.instruction{
+	.statement{
 		display: none;
 		margin-right: 10px;
 	}
