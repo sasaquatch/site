@@ -11,83 +11,16 @@
 		<h1>
       <a href="https://sasadjukic.com/">
       <div class="firstname">
-        <div id="name-1">Sa&scaron;a</div>
-        <div id="name-4">Sasha</div>
-        <div id="name-9">Sacha</div>
-        <div id="name-2">Саша</div>
-        <div id="name-3">サシャ</div>
-        <div id="name-5">사샤</div>
-        <div id="name-6">沙紗</div>
-        <div id="name-7">ساشا</div>
-        <div id="name-8">薩沙</div>
-        <div id="name-10">סשה</div>
-        <div id="name-11">Σάσα</div>
+        <div id="name-1">Come</div>
+        <div id="name-4">back</div>
+        <div id="name-9">soon!</div>
       </div>
-      <div class="lastname">Djuki&#263;</div></h1>
       </a>
 
-    <h2>UX / Design / Code</h2>
-    <h3 class="statement"><!-- I&rsquo;m bored, give me a problem to solve. -->
-      I design systems from 9&mdash;5<br> and explore the unknown from 5&mdash;9.
-      <br><br>I recommend opening this site on your<br> phone if you'd like to have some fun.</h3>
-    <!-- <h5 class="instruction">If you want to have fun, open this site on your phone.</h5> -->
-    <h3 class="statement_mobile">I design systems from 9&mdash;5<br> and explore the unknown from 5&mdash;9.</h3>
-	</section>
 
-<nav>
-  <a id="aboutme" href="about.html">About</a>
-<!--   <a id="night" href="#">Black circle</a>
-  <a id="day" class="hidden" href="#">Day</a> -->
-</nav>
-
-  <section class="intrographic">
-    <div id="cubeZ">
-    <div id="cubeY">
-  	<div id="cube">
-      <div class="side cube_one"></div>
-      <div class="side cube_two"></div>
-      <div class="side cube_three"></div>
-      <div class="side cube_four"></div>
-      <div class="side cube_five"></div>
-      <div class="side cube_six"></div>
-  	</div>
-    </div>
-    </div>
-  </section>
-
-  <a id="down" href="#">&darr;</a>
 </div>
 
-<section class="projects margin-top100">
 
-<!--   <div class="toggle">
-    <a class="ninetofive active">9&mdash;5</a><span>/</span>
-    <a class="fivetonine" href="#">5&mdash;9</a>
-  </div> -->
-
-  <div class="project margin-top50">
-    <a href="alfa.html">
-    <h4>Alfa Romeo</h4>
-    <h3>A mobile&mdash;first configuration experience <span>&#8627;</span></h3>
-    <div id="sphereZ">
-    <div id="sphereY">
-    <div id="sphere">
-      <div class="sphere_side sphere_one"></div>
-      <div class="sphere_side sphere_two"></div>
-      <div class="sphere_side sphere_three"></div>
-      <div class="sphere_side sphere_four"></div>
-    </div>
-    </div>
-    </div>
-    </a>
-  </div>
-
-  <div class="project margin-top300 margin-bottom300">
-    <h4>More projects being added daily</h4>
-    <h3>Come back soon :)</h3>
-  </div>
-
-</section>
 
 <!-- JS -->
 <script src='js/jquery-3.5.0.min.js'></script>
@@ -104,80 +37,6 @@
     i = ++i % divs.length;
 
   })();
-</script>
-
-<script>
-  $("#down").click(function() {
-    $('html, body').animate({
-    scrollTop: $(".project").offset().top
-    }, 1500);
-  });
-
-</script>
-
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('cube').style.webkitTransform =
-      document.getElementById('cube').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
-</script>
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('sphere').style.webkitTransform =
-      document.getElementById('sphere').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
 </script>
 
 </body>

@@ -164,7 +164,7 @@ figure figcaption{
 }
 
 .quote{
-	width: 80%;
+	width: 65%;
 	margin: 0 auto;
 	font-size: 3em;
 }
@@ -495,13 +495,13 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
 /* ALFA */
 .phone{
-	height: 700px;
+	height: 800px;
 	padding: 110px 0;
 }
 
 .phone_content{
 	width: 436px;
-	height: 666px;
+	height: 669px;
 	margin: 0 auto;
   z-index: 98;
   overflow: scroll;
@@ -510,8 +510,8 @@ a.active:hover{
 }
 
 .phone_content img{
-	width: 375px;
-	margin: 0 31px;
+	width: 377px;
+	margin: 0 30px;
 }
 
 .phone_content::-webkit-scrollbar { 
@@ -521,7 +521,7 @@ a.active:hover{
 .phone_content::before{
 	position: absolute;
 	display: block;
-	margin-top: -110px;
+	margin-top: -109px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
