@@ -534,13 +534,16 @@ a.active:hover{
   content: "";
 }
 
-.instruction{
+.phone::after{
 	position: relative;
-	top: 200px;
-	left: 20%;
+	display: block;
 	width: 100px;
-	height: 100px;
-	background-color: pink;
+	height: 50px;
+	left: 100%;
+	margin: -600px 0 0 -50%;
+	padding-left: 250px;
+	color: #757575;
+	content: "Scroll inside the phone";
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
