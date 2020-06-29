@@ -608,6 +608,10 @@ a.active:hover{
 	font-size: 36px;
 	line-height: 52px;
 	}
+	
+	.block{
+		max-width: 50%;
+	}
 }
 
 
