@@ -7,7 +7,9 @@ in sunny Toronto :D
 *{
 	margin: 0;
 	padding: 0;
-	font-family: -apple-system, sans-serif;
+	/*font-family: -apple-system, sans-serif;*/
+	font-family: Neue Haas Unica;
+	/*letter-spacing: 0.1px;*/
 }
 
 ::selection{
@@ -42,7 +44,7 @@ nav a{
 
 #aboutme{
 	position: fixed;
-	top: 29px;
+	top: -1px;
 	right: 30px;
 }
 
@@ -113,18 +115,45 @@ h4 span.ampersand{
 	margin: 0 -8px 0 -10px;
 }
 
+.intro-wrapper{
+	height: 100vh;
+}
+
+.intro{
+	position: relative;
+	z-index: 2;
+}
+
+.intro div{
+	display: inline-block;
+	line-height: 0;
+}
+
+.firstname{
+	height: 100px;
+}
+.statement,
+.statement_mobile{
+	margin-top: 50px;
+}
+
+.statement,
+.statement_mobile{
+	position: relative;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~ COPY ~~~~~~~~~~~~~~~~~~~~ */
 p{
 	padding: .5em 0;
-	font-family: sans-serif;
+	font-family: Neue Haas Unica;
 	/*font-family: Calluna, serif;*/
 	font-size: 24px;
-	line-height: 38px;
+	line-height: 37px;
 }
 
 .paragraph{
 	/*padding: 100px 20%;*/
-	max-width: 45rem;
+	max-width: 40rem;
 	margin: 50px auto;
 }
 
@@ -195,9 +224,6 @@ section{
 	color: #ddd;
 }
 
-.fivetonine{
-}
-
 a.active{
 	color: #000;
 }
@@ -208,83 +234,51 @@ a.active:hover{
 	cursor: auto;
 }
 
-.margin-top30{
-	margin-top: 30px;
-}
+.margin-top20{margin-top: 20px;}
 
-.margin-top50{
-	margin-top: 50px;
-}
+.margin-top30{margin-top: 30px;}
 
-.margin-top100{
-	margin-top: 100px;
-}
+.margin-top50{margin-top: 50px;}
 
-.margin-top200{
-	margin-top: 200px;
-}
+.margin-top100{margin-top: 100px;}
 
-.margin-top300{
-	margin-top: 300px;
-}
+.margin-top200{margin-top: 200px;}
 
-.margin-bottom300{
-	margin-bottom: 300px;
-}
+.margin-top300{margin-top: 300px;}
 
-.notbold{
-	font-weight: 400;
-}
+.margin-bottom300{margin-bottom: 300px;}
 
-.intro-wrapper{
-	height: 100vh;
-}
+.notbold{font-weight: 400;}
 
-.intro{
-	position: relative;
-	z-index: 2;
-}
+.hidden{display: none;}
 
-.intro div{
-	display: inline-block;
-	line-height: 0;
-}
+.centered{text-align: center;}
 
-.firstname{
-	height: 100px;
-}
-.statement,
-.statement_mobile{
-	margin-top: 50px;
-}
+.rightaligned{text-align: right;}
 
-.statement,
-.statement_mobile{
+.leftaligned{text-align: left;}
+
+.about{animation: about 60s linear infinite;}
+
+.ellipsis{font-size: 3em;}
+
+.grey{color: #757575;}
+
+.grid{
+	width: calc(100vw - 60px);
+	background-color: pink;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
 	position: relative;
 }
 
-.hidden{
-	display: none;
-}
-
-.centered{
-	text-align: center;
-}
-
-.rightaligned{
-	text-align: right;
-}
-
-.leftaligned{
-	text-align: left;
-}
-
-.about{
-	animation: about 60s linear infinite;
-}
-
-.ellipsis{
-	font-size: 3em;	
+.block{
+	background-color: lightblue;
+	margin: 0 30px;
+	max-width: 25%;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~ */
@@ -496,7 +490,7 @@ a.active:hover{
 /* ALFA */
 .phone{
 	height: 800px;
-	padding: 110px 0;
+	padding-top: 110px;
 }
 
 .phone_content{
@@ -549,9 +543,7 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube,
-  #sphere,
-  #pyramid{
+  #cube, #sphere, #pyramid{
     transform-style: preserve-3d;
   	animation: spinzoneX 120s infinite linear;
   }
@@ -560,9 +552,7 @@ a.active:hover{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY,
-  #sphereY,
-  #pyramidY{
+  #cubeY, #sphereY, #pyramidY{
     transform-style: preserve-3d;
   	animation: spinzoneY 120s infinite linear;
   }
@@ -571,9 +561,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ,
-  #sphereZ,
-  #pyramidZ{
+  #cubeZ, #sphereZ, #pyramidZ{
     transform-style: preserve-3d;
   	animation: spinzoneZ 120s infinite linear;
   }
