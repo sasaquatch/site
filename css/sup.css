@@ -688,7 +688,7 @@ a.active:hover{
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
-	z-index: -1;
+	z-index: 1;
 }
 
 .pyramid_side{
