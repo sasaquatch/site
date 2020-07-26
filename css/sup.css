@@ -887,6 +887,11 @@ a.active:hover{
 	.block{
 		max-width: 50%;
 	}
+
+	.intro-wrapper,
+	.project{
+		height: 100vh;
+	}
 }
 
 
