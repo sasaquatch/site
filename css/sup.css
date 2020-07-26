@@ -599,82 +599,40 @@ a.active:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~ ALFA BNP ~~~~~~~~~~~~~~~~~~~~ */
 #alfa_bnp{
-	width: 500px;
-	margin: 50px auto 150px;
+	width: 800px;
+	height: 800px;
+	margin: 80px auto;
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
+	z-index: 1;
 }
 
 .alfa_bnp_side{
 	position: absolute;
 	opacity: 1;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
-.alfa_bnp_side svg{
-	height: 250px;
-	width: 250px;
+.alfa_bnp_one{
+	-webkit-transform: rotateY(-90deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
-.alfa_bnp_side_one{
-
+.alfa_bnp_two{
+	-webkit-transform: rotateY(0deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
-.alfa_bnp_side_two{
+.alfa_bnp_three{
+	-webkit-transform: rotateY(-90deg) rotateX(41.8deg) translateZ(-90px) translateY(-97px);
 }
 
-
-/* ALFA ROMEO */
-/*.alfaromeo_graphicX{
-	max-width: 1000px;
-	margin: 50px auto;
-	display: flex;
-	justify-content: center;
+.alfa_bnp_four{
+	-webkit-transform: rotateY(180deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
-#alfaromeo_one,
-#alfaromeo_two{
-	width: 300px;
-	height: 300px;
-	margin: 0 auto;
-	position: relative;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-	z-index: 1;
-	display: inline-block;
+.alfa_bnp_one svg, .alfa_bnp_two svg, .alfa_bnp_three svg, .alfa_bnp_four svg{
+	height: 800px;
+	width: 800px;
 }
-
-.alfaromeo_one_side,
-.alfaromeo_two_side{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	opacity: 1;
-	border-radius: 50%;
-}
-
-.ar_o_s1{
-	transform: translateZ(0);
-	-webkit-transform: translateZ(0);
-}
-
-.ar_o_s2{
-	transform: rotateY(45deg) translateZ(0);
-	-webkit-transform: rotateY(45deg) translateZ(0);
-}
-
-.ar_o_s3{
-	transform: rotateY(90deg) translateZ(0);
-	-webkit-transform: rotateY(90deg) translateZ(0);
-}
-
-.ar_o_s4{
-	transform: rotateY(135deg) translateZ(0);
-	-webkit-transform: rotateY(135deg) translateZ(0);
-}*/
 
 
 /* SPHERE */
@@ -720,34 +678,6 @@ a.active:hover{
 	background-color: #009246; /* ITALY GREEN */
 }
 
-/* SYSTEM */
-#system{
-	width: 600px;
-	height: 600px;
-	margin: 0 auto 150px;
-	position: relative;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-}
-
-.system-side{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	opacity: 0.8;
-}
-
-.system-side svg{
-	height: 300px;
-	width: 300px;
-}
-
-.system1{
-	transform: translateZ(300px);
-	-webkit-transform: translateZ(300px);
-	background-color: red
-}
-
 /* PYRAMID */
 #pyramid{
 	width: 800px;
@@ -780,15 +710,12 @@ a.active:hover{
 	-webkit-transform: rotateY(180deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
-.pyramid_one svg,
-.pyramid_two svg,
-.pyramid_three svg,
-.pyramid_four svg{
+.pyramid_one svg, .pyramid_two svg, .pyramid_three svg, .pyramid_four svg{
 	height: 800px;
 	width: 800px;
 }
 
-.sparkle{
+/*.sparkle{
 	display: block;
 }
 
@@ -798,7 +725,7 @@ a.active:hover{
 
 .sparkle2{
 	-webkit-transform: translateY(140px) translateX(200px) rotateY(90deg);
-}
+}*/
 
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
 .project{
@@ -891,7 +818,7 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube, #sphere, #pyramid, #alfaromeo_graphicX{
+  #cube, #sphere, #pyramid{
     transform-style: preserve-3d;
   	animation: spinzoneX 120s infinite linear;
   }
@@ -900,7 +827,7 @@ a.active:hover{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY, #sphereY, #pyramidY, #alfaromeo_graphicY{
+  #cubeY, #sphereY, #pyramidY{
     transform-style: preserve-3d;
   	animation: spinzoneY 120s infinite linear;
   }
@@ -909,7 +836,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #pyramidZ, #alfaromeo_graphicZ{
+  #cubeZ, #sphereZ, #pyramidZ{
     transform-style: preserve-3d;
   	animation: spinzoneZ 120s infinite linear;
   }

@@ -65,22 +65,32 @@
     <h6 class="centered">Mobile—first build & price configurator</h6>
 
     <div class="graphic">
-      <div id="alfa_bnp">
-        <div class="alfa_bnp_side alfa_bnp_side_one">
-          <svg>
-            <polygon points="0,0 250,0 250,250" style="fill:red;"/>
-          </svg>
-        </div>
-        <div class="alfa_bnp_side alfa_bnp_side_two"
-          <svg>
-            <polygon points="0,0 250,0 250,250" style="fill:red;"/>
-          </svg>
-        </div>
-          <svg>
-            <polygon points="0,0 250,0 250,250" style="fill:red;"/>
-          </svg>
-        </div>
+<div id="pyramidZ">
+    <div id="pyramidY">
+    <div id="pyramid">
+      <div class="pyramid_side pyramid_one">
+        <svg>
+          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
+        </svg>
       </div>
+      <div class="pyramid_side pyramid_two">
+        <svg>
+          <polygon points="0,0 800,0 400,600" style="fill:black;"/>
+        </svg>
+      </div>
+      <div class="pyramid_side pyramid_three">
+        <svg>
+          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
+        </svg>
+      </div>
+      <div class="pyramid_side pyramid_four">
+        <svg>
+          <polygon points="0,0 800,0 400,600" style="fill:black;"/>
+        </svg>
+      </div>
+    </div>
+    </div>
+    </div>
     </div>
 
 
@@ -108,45 +118,7 @@
     </a>
   </div> -->
 
-<!--   <div class="project margin-top300">
-    <h4>System Design</h4>
-    <h3>Flexibility <span class="ampersand">&</span> Evolution<span>&#8627;</span></h3>
-
-    <div id="system">
-      <div class="system-side system1">
-        <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
-        </svg>
-      </div>
-    </div> -->
-
-    <div id="pyramidZ">
-    <div id="pyramidY">
-    <div id="pyramid">
-      <div class="pyramid_side pyramid_one">
-        <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
-        </svg>
-      </div>
-      <div class="pyramid_side pyramid_two">
-        <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
-        </svg>
-      </div>
-      <div class="pyramid_side pyramid_three">
-        <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
-        </svg>
-      </div>
-      <div class="pyramid_side pyramid_four">
-        <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
-        </svg>
-      </div>
-    </div>
-    </div>
-    </div>
-  <!-- </div> -->
+    
 
   <!-- <div class="project">
     <a href="simple.html">
@@ -257,43 +229,11 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('alfaromeo_one').style.webkitTransform =
-      document.getElementById('alfaromeo_one').style.transform =
+      document.getElementById('alfa_bnp').style.webkitTransform =
+      document.getElementById('alfa_bnp').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
-</script>
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('alfaromeo_two').style.webkitTransform =
-      document.getElementById('alfaromeo_two').style.transform =
-        'rotateY(' + event.beta + 'deg) ' +
-        'rotateZ(' + event.gamma + 'deg) ' +
-        'rotateX(' + event.alpha + 'deg)';
     });
  }
 
