@@ -598,9 +598,9 @@ a.active:hover{
 }
 
 /* ALFA ROMEO */
-#alfaromeo_graphic{
+.alfaromeo_graphicX{
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 50px auto;
 	display: flex;
 	justify-content: center;
 }
@@ -614,6 +614,7 @@ a.active:hover{
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	z-index: 1;
+	display: inline-block;
 }
 
 .alfaromeo_one_side,
