@@ -8,8 +8,8 @@ in sunny Toronto :D
 	margin: 0;
 	padding: 0;
 	/*font-family: -apple-system, sans-serif;*/
-	font-family: Neue Haas Unica;
 	/*letter-spacing: 0.1px;*/
+	font-family: Neue Haas Unica;
 }
 
 ::selection{
@@ -29,7 +29,7 @@ in sunny Toronto :D
 
 nav{
 	font-size: 5em;
-	z-index: 3;
+	z-index: 100;
 	background-color: none;
 	position: relative;
 }
@@ -50,7 +50,7 @@ nav a{
 
 #down{
 	font-size: 5em;
-	z-index: 3;
+	z-index: 100;
 	background-color: none;
 	color: #000;
 	text-decoration: none;
@@ -58,14 +58,14 @@ nav a{
 	border-radius: 10px;
 	cursor: pointer;
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 	left: 30px;
 }
 
 #night,
 #day{
 	position: fixed;
-	bottom: 30px;
+	bottom: 20px;
 	right: 30px;
 }
 
@@ -79,33 +79,43 @@ a{
 	color: #000;
 }
 
+/*a:hover,
+a:focus{
+	animation: rainbow 2s infinite;
+}*/
+
+.rainbow{
+	animation: rainbow 2s infinite;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~ HEADINGS ~~~~~~~~~~~~~~~~~~~~ */
-h1, h2, h4{
+h1, h2, h3{
 	font-size: 5em;
 }
 
-h3{
-	font-size: 2em;
+h2{
+	font-family: Austin, serif;
+	font-style: italic;
 }
 
-h1, h3{
+h3{
+	/*font-size: 12em;*/
+	/*line-height: 1em;*/
+	text-align: center;
+	position: absolute;
+	z-index: 3;
+}
+
+h1, h2, h3{
 	font-weight: 400;
 }
 
-h2{
-	margin-top: -50px;
+.heavy{
 	font-weight: 600;
 }
 
 h4{
-	/*padding-top: 30px;*/
 	font-weight: 600;
-}
-
-h5{
-	margin-top: 50px;
-	font-size: 2em;
-	font-weight: 400;
 }
 
 h4 span.ampersand{
@@ -115,13 +125,44 @@ h4 span.ampersand{
 	margin: 0 -8px 0 -10px;
 }
 
+h5{
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+h6{
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.cities,
+.notes,
+.legend,
+.legend_separator{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.legend_separator{
+	font-weight: 100;
+}
+
+.active_link,
+.link{
+	border-bottom: 1px solid black;
+}
+
 .intro-wrapper{
-	height: 100vh;
+	/*height: 100vh;*/
+	overflow: hidden;
 }
 
 .intro{
 	position: relative;
-	z-index: 2;
+	margin-left: 30px;
+	z-index: 3;
 }
 
 .intro div{
@@ -144,27 +185,52 @@ h4 span.ampersand{
 
 /* ~~~~~~~~~~~~~~~~~~~~ COPY ~~~~~~~~~~~~~~~~~~~~ */
 p{
-	padding: .5em 0;
+	padding: .5em 0 .5em 0;
 	font-family: Neue Haas Unica;
-	/*font-family: Calluna, serif;*/
-	font-size: 24px;
-	line-height: 37px;
+/*	font-size: 24px;
+	line-height: 36px;*/
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.thin{
+	font-weight: 200;
+}
+
+.serif{
+	font-family: Austin, serif;
+	font-size: 2.5em;
+	font-style: italic;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.smaller_copy{
+	font-size: 20px;
+	line-height: 26px;
+	padding-right: 60px;
 }
 
 .paragraph{
-	/*padding: 100px 20%;*/
-	max-width: 40rem;
-	margin: 50px auto;
+	max-width: 29rem;
+	z-index: 100;
+	display: inline-block;
 }
 
 .paragraph_link{
-	font-weight: 700;
-	text-decoration: none;
+	margin-right: 20px;
+	font-size: 24px;
+	line-height: 35px;
+	border-bottom: 1px solid black;
 }
 
 .paragraph_link:hover,
 .paragraph_link:active{
 	animation: rainbow 2s infinite;
+}
+
+.about_links{
+	margin-top: 50px;
 }
 
 figure img{
@@ -174,9 +240,8 @@ figure img{
 }
 
 figure figcaption{
-	width: 50%;
 	display: block;
-	margin: 20px auto;
+	margin: 10px 30px;
 	font-size: 0.8em;
 }
 
@@ -198,15 +263,147 @@ figure figcaption{
 	font-size: 3em;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ CLASSIFICATION ~~~~~~~~~~~~~~~~~~~~ */
+.favouritespots{
+	background-color: #FFE633;
+	margin: 100px 0 0 !important;
+	padding: 0 30px;
+}
+
+.favouritethings{
+	background-color: #7BFFBB;
+	margin: 0 !important;
+	padding: 50px 30px;
+}
+
+.skills{
+	background-color: #605EFF;
+	margin: 0 !important;
+	padding: 50px 30px;
+}
+
+.classification{
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	top: -6px;
+}
+
+.classification_mini{
+	width: 10px;
+	height: 10px;
+	margin-right: 6px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.restaurant{background-color: white;} /* yellow: f07e5d */
+
+.nature{background-color: #04cc5a;}
+
+.place{background-color: #6450ff;}
+
+.book{background-color: black;}
+
+.film{background-color: red;}
+
+.music{background-color: pink;}
+
+.fooddrink{background-color: yellow;}
+
+.object{background-color: white;}
+
+/*[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}*/
+
 /* ~~~~~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~~~~~ */
 section{
-	margin: 0 30px;
+	/*margin: 0 30px;*/
+	/*padding: 0 30px;*/
 }
 
-.projects{
+.grid3070{
+	display: flex;
 }
 
-.project{
+.offset30{
+	margin-left: calc(26rem + 60px);
+}
+
+.text30{
+	min-width: 23rem;
+	max-width: 23rem;
+	margin-right: 85px; 
+}
+
+.textfull{
+	max-width: 100%;
+}
+
+.image70 img{
+	width: 100%;
+	/*border-radius: 8px;*/
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start; /*horizontal*/
+	text-align: flex-start; /*vertical*/
 }
 
 .toggle{
@@ -234,6 +431,18 @@ a.active:hover{
 	cursor: auto;
 }
 
+/*NEGATIVE*/
+.margin-top-50{margin-top: -50px;}
+
+.margin-top-70{margin-top: -70px;}
+
+.margin-top-77{margin-top: -77px;}
+
+.margin-top-100{margin-top: -100px;}
+
+/*POSITIVE*/
+.margin-top5{margin-top: 5px;}
+
 .margin-top20{margin-top: 20px;}
 
 .margin-top30{margin-top: 30px;}
@@ -246,11 +455,28 @@ a.active:hover{
 
 .margin-top300{margin-top: 300px;}
 
+/*OTHER*/
+.margin-left30{margin-left: 30px;}
+
+.margin-bottom100{margin-bottom: 100px;}
+
 .margin-bottom300{margin-bottom: 300px;}
+
+.padding-top30{padding-top: 30px;}
+
+.padding-top50{padding-top: 50px;}
+
+.padding-bottom50{padding-bottom: 50px;}
+
+.floatleft{float: left;}
+
+.floatright{float: right;}
 
 .notbold{font-weight: 400;}
 
 .hidden{display: none;}
+
+.display{display: auto;}
 
 .centered{text-align: center;}
 
@@ -263,6 +489,14 @@ a.active:hover{
 .ellipsis{font-size: 3em;}
 
 .grey{color: #757575;}
+
+.black{color: black;}
+
+.white{color: white}
+
+.red{background-color: red;}
+
+.blackbg{background-color: black;}
 
 .grid{
 	width: calc(100vw - 60px);
@@ -306,7 +540,7 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~ */
 /* CUBE */
 .intrographic{
-	margin-top: -400px;
+	margin-top: -200px;
 	transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 	-webkit-transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
 }
@@ -363,10 +597,61 @@ a.active:hover{
 	background-color: blue;
 }
 
+/* ALFA ROMEO */
+#alfaromeo_graphic{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+#alfaromeo_one,
+#alfaromeo_two{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	z-index: 1;
+}
+
+.alfaromeo_one_side,
+.alfaromeo_two_side{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 1;
+	border-radius: 50%;
+}
+
+.ar_o_s1{
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+
+.ar_o_s2{
+	transform: rotateY(45deg) translateZ(0);
+	-webkit-transform: rotateY(45deg) translateZ(0);
+	background-color: #009246; /* ITALY GREEN */
+}
+
+.ar_o_s3{
+	transform: rotateY(90deg) translateZ(0);
+	-webkit-transform: rotateY(90deg) translateZ(0);
+}
+
+.ar_o_s4{
+	transform: rotateY(135deg) translateZ(0);
+	-webkit-transform: rotateY(135deg) translateZ(0);
+	background-color: #009246; /* ITALY GREEN */
+}
+
+
 /* SPHERE */
 #sphere{
-	width: 800px;
-	height: 800px;
+	width: 600px;
+	height: 600px;
 	margin: 80px auto;
 	position: relative;
 	transform-style: preserve-3d;
@@ -488,6 +773,24 @@ a.active:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
 /* ALFA */
+.alfaromeo{
+	/*background-color: aqua;*/
+}
+
+.project{
+	height: 100vh;
+}
+
+.project_headline{
+	position: relative;
+	margin: 0 auto;
+	/*padding-top: 50px;*/
+}
+
+.graphic{
+	margin-top: 50px;
+}
+
 .phone{
 	height: 800px;
 	padding-top: 110px;
@@ -540,10 +843,25 @@ a.active:hover{
 	content: "Scroll inside the phone";
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ PHOTO ~~~~~~~~~~~~~~~~~~~~ */
+.photo{
+	background-color: black;
+	color: white;
+	margin: 0 !important;
+	padding: 30px;
+}
+
+.photo img{
+	padding: 100px;
+	max-width: 45%;
+}
+
+.margin-left40p{margin-left: 40%;}
+
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube, #sphere, #pyramid{
+  #cube, #sphere, #pyramid, #alfaromeo_graphicX{
     transform-style: preserve-3d;
   	animation: spinzoneX 120s infinite linear;
   }
@@ -552,7 +870,7 @@ a.active:hover{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY, #sphereY, #pyramidY{
+  #cubeY, #sphereY, #pyramidY, #alfaromeo_graphicX{
     transform-style: preserve-3d;
   	animation: spinzoneY 120s infinite linear;
   }
@@ -561,7 +879,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #pyramidZ{
+  #cubeZ, #sphereZ, #pyramidZ, #alfaromeo_graphicX{
     transform-style: preserve-3d;
   	animation: spinzoneZ 120s infinite linear;
   }
@@ -608,7 +926,7 @@ a.active:hover{
 	font-size: 36px;
 	line-height: 52px;
 	}
-	
+
 	.block{
 		max-width: 50%;
 	}
