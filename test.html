@@ -311,9 +311,9 @@
     window.addEventListener('deviceorientation', function(event) {
       document.getElementById('alfaromeo_two').style.webkitTransform =
       document.getElementById('alfaromeo_two').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
+        'rotateZ(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
+        'rotateX(' + event.alpha + 'deg)';
     });
  }
 
