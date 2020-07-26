@@ -63,7 +63,7 @@
   <div class="project alfaromeo">
     <h3 class="project_headline">Alfa Romeo</h3>
     <h6 class="centered">Mobile—first build & price configurator</h6>
-    <div class="graphic margin-top50">
+    <div id="graphic" class="margin-top50">
       <div id="alfaromeo_graphicZ">
       <div id="alfaromeo_graphicY">
       <div id="alfaromeo_graphicX">
@@ -281,8 +281,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('sphere').style.webkitTransform =
-      document.getElementById('sphere').style.transform =
+      document.getElementById('graphic').style.webkitTransform =
+      document.getElementById('graphic').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
