@@ -870,7 +870,7 @@ a.active:hover{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY, #sphereY, #pyramidY, #alfaromeo_graphicX{
+  #cubeY, #sphereY, #pyramidY, #alfaromeo_graphicY{
     transform-style: preserve-3d;
   	animation: spinzoneY 120s infinite linear;
   }
@@ -879,7 +879,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #pyramidZ, #alfaromeo_graphicX{
+  #cubeZ, #sphereZ, #pyramidZ, #alfaromeo_graphicZ{
     transform-style: preserve-3d;
   	animation: spinzoneZ 120s infinite linear;
   }
