@@ -888,8 +888,7 @@ a.active:hover{
 		max-width: 50%;
 	}
 
-	.intro-wrapper,
-	.project{
+	.intro-wrapper{
 		height: 100vh;
 	}
 }
