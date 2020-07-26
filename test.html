@@ -277,8 +277,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('alfaromeo_graphicX').style.webkitTransform =
-      document.getElementById('alfaromeo_graphicX').style.transform =
+      document.getElementById('alfaromeo_one').style.webkitTransform =
+      document.getElementById('alfaromeo_one').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
