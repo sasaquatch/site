@@ -633,7 +633,6 @@ a.active:hover{
 .ar_o_s2{
 	transform: rotateY(45deg) translateZ(0);
 	-webkit-transform: rotateY(45deg) translateZ(0);
-	background-color: #009246; /* ITALY GREEN */
 }
 
 .ar_o_s3{
@@ -644,7 +643,6 @@ a.active:hover{
 .ar_o_s4{
 	transform: rotateY(135deg) translateZ(0);
 	-webkit-transform: rotateY(135deg) translateZ(0);
-	background-color: #009246; /* ITALY GREEN */
 }
 
 
