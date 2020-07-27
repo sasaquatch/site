@@ -526,6 +526,14 @@ a.active:hover{
 	100%	{background-color: #dbe0ff;}
 }
 
+@keyframes cloverfill{
+	0%		{fill: blue;}
+	25%		{fill: green;}
+	50%		{fill: black}
+	75%		{fill: green;}
+	100%	{fill: blue;}
+}
+
 @keyframes rainbow {
   0%		{color: red;}
   25%		{color: blue;}
@@ -693,7 +701,8 @@ a.active:hover{
 
 .clover_side{
 	position: absolute;
-	opacity: .9;
+	opacity: 1;
+	animation: cloverfill 120s infinite;
 }
 
 .clover_three{
