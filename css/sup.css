@@ -656,7 +656,7 @@ a.active:hover{
 
 .pyramid_side{
 	position: absolute;
-	opacity: .9;
+	opacity: 1;
 }
 
 .pyramid_one{
