@@ -693,7 +693,7 @@ a.active:hover{
 
 .clover_side{
 	position: absolute;
-	opacity: 1;
+	opacity: .9;
 }
 
 .clover_three{
