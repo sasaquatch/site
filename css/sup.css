@@ -701,8 +701,8 @@ a.active:hover{
 
 .clover_side{
 	position: absolute;
-	opacity: 1;
-	animation: cloverfill 120s infinite;
+	opacity: .9;
+	animation: cloverfill 60s infinite;
 }
 
 .clover_three{
