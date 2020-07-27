@@ -696,14 +696,6 @@ a.active:hover{
 	opacity: 1;
 }
 
-.clover_one{
-	/*background-color: blue;*/
-}
-
-.clover_two{
-
-}
-
 .clover_three{
 	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(100px) translateY(3px) translateZ(0);
 }
@@ -713,11 +705,11 @@ a.active:hover{
 }
 
 .clover_five{
-	-webkit-transform: rotateX(90deg) rotateY(135deg) translateX(200px) translateY(3px) translateZ(-85px);
+	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(-85px);
 }
 
 .clover_six{
-	-webkit-transform: rotateX(90deg) rotateY(135deg) translateX(200px) translateY(3px) translateZ(-85px);
+	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(-85px);
 }
 
 .clover_one svg, .clover_two svg, .clover_three svg, .clover_four svg, .clover_five svg, .clover_six svg{
