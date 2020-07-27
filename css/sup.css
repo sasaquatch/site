@@ -852,7 +852,7 @@ a.active:hover{
 	}
 }
 
-/* MOBILE */
+/* ~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~ */
 @media all and (max-width: 999px) and (min-width: 320px) {
 	nav.about,
 	nav.night{
@@ -893,6 +893,12 @@ a.active:hover{
 	.intro-wrapper{
 		height: 100vh;
 	}
+
+/* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
+	#pyramid{
+	width: 800px;
+	height: 800px;
+	margin: 200px auto;
 }
 
 
