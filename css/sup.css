@@ -680,6 +680,51 @@ a.active:hover{
 	width: 800px;
 }
 
+/* CLOVER */
+#clover{
+	width: 800px;
+	height: 800px;
+	margin: 80px auto;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	z-index: 1;
+}
+
+.clover_side{
+	position: absolute;
+	opacity: 1;
+}
+
+.clover_one{
+	/*background-color: blue;*/
+}
+
+.clover_two{
+
+}
+
+.clover_three{
+	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(100px) translateY(3px) translateZ(0);
+}
+
+.clover_four{
+	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(100px) translateY(3px) translateZ(0);
+}
+
+.clover_five{
+	-webkit-transform: rotateX(90deg) rotateY(135deg) translateX(200px) translateY(3px) translateZ(-85px);
+}
+
+.clover_six{
+	-webkit-transform: rotateX(90deg) rotateY(135deg) translateX(200px) translateY(3px) translateZ(-85px);
+}
+
+.clover_one svg, .clover_two svg, .clover_three svg, .clover_four svg, .clover_five svg, .clover_six svg{
+	height: 800px;
+	width: 800px;
+}
+
 /*.sparkle{
 	display: block;
 }
@@ -783,27 +828,27 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube, #sphere, #pyramid{
+  #cube, #sphere, #pyramid, #clover{
     transform-style: preserve-3d;
-  	animation: spinzoneX 120s infinite linear;
+  	animation: spinzoneX 30s infinite linear;
   }
   @keyframes spinzoneX{
   	from {transform: rotateX(0);}
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY, #sphereY, #pyramidY{
+  #cubeY, #sphereY, #pyramidY, #cloverY{
     transform-style: preserve-3d;
-  	animation: spinzoneY 120s infinite linear;
+  	animation: spinzoneY 30s infinite linear;
   }
   @keyframes spinzoneY{
   	from {transform: rotateY(0);}
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #pyramidZ{
+  #cubeZ, #sphereZ, #pyramidZ, #cloverZ{
     transform-style: preserve-3d;
-  	animation: spinzoneZ 120s infinite linear;
+  	animation: spinzoneZ 30s infinite linear;
   }
   @keyframes spinzoneZ{
   	from {transform: rotateZ(0);}

@@ -59,13 +59,18 @@
   <a id="down" href="#">&darr;</a>
 </div>
 
+<!--   <div class="toggle">
+    <a class="ninetofive active">9&mdash;5</a><span>/</span>
+    <a class="fivetonine" href="#">5&mdash;9</a>
+  </div> -->
+
 <section class="projects">
   <div class="project alfaromeo">
     <h3 class="project_headline">Alfa Romeo</h3>
-    <h6 class="centered">Mobile—first build & price configurator</h6>
+    <h4 class="centered serif">Mobile—first build & price configurator</h4>
 
     <div class="graphic">
-<div id="pyramidZ">
+    <div id="pyramidZ">
     <div id="pyramidY">
     <div id="pyramid">
       <div class="pyramid_side pyramid_one">
@@ -93,50 +98,48 @@
     </div>
     </div>
 
+  <div class="project quadrifoglio">
+    <h3 class="project_headline">Quadrifoglio</h3>
+    <h4 class="centered serif">System design & scroll—based interaction paradigm</h4>
 
-<!--   <div class="toggle">
-    <a class="ninetofive active">9&mdash;5</a><span>/</span>
-    <a class="fivetonine" href="#">5&mdash;9</a>
-  </div> -->
-
-  <!-- <div class="project alfa">
-    <a href="alfa.html">
-      <h3>Alfa</h3>
-    <div class="paragraph">
-    <p>Alfa Romeo <span>&#8594;</span> <i>A mobile-first configuration experience. Desktop-class experience on your phone &mdash; and I'd argue it's better.</i><br>Continue reading...</p>
-    </div>
-    <div id="sphereZ">
-    <div id="sphereY">
-    <div id="sphere">
-      <div class="sphere_side sphere_one"></div>
-      <div class="sphere_side sphere_two"></div>
-      <div class="sphere_side sphere_three"></div>
-      <div class="sphere_side sphere_four"></div>
-    </div>
-    </div>
-    </div>
-    </a>
-  </div> -->
-
-    
-
-  <!-- <div class="project">
-    <a href="simple.html">
-    <h4>Simple is hard</h4>
-    <h3>Reducing friction and encouraging discussions <span>&#8627;</span></h3>
-    <div id="sphereZ">
-    <div id="sphereY">
-    <div id="sphere">
-      <div class="sphere_side sphere_one"></div>
-      <div class="sphere_side sphere_two"></div>
-      <div class="sphere_side sphere_three"></div>
-      <div class="sphere_side sphere_four"></div>
+    <div class="graphic">
+    <div id="cloverZ">
+    <div id="cloverY">
+    <div id="clover">
+      <div class="clover_side clover_one">
+        <svg>
+          <circle cx="200" cy="200" r="200" fill="green"/>
+        </svg>
+      </div>
+      <div class="clover_side clover_two">
+        <svg>
+          <circle cx="482" cy="482" r="200" fill="green"/>
+        </svg>
+      </div>
+      <div class="clover_side clover_three">
+        <svg>
+          <circle cx="200" cy="200" r="200" fill="red"/>
+        </svg>
+      </div>
+      <div class="clover_side clover_four">
+        <svg>
+          <circle cx="200" cy="600" r="200" fill="red"/>
+        </svg>
+      </div>
+      <div class="clover_side clover_five">
+        <svg>
+          <circle cx="200" cy="200" r="200" fill="blue"/>
+        </svg>
+      </div>
+      <div class="clover_side clover_six">
+        <svg>
+          <circle cx="200" cy="600" r="200" fill="pink"/>
+        </svg>
+      </div>
     </div>
     </div>
     </div>
-    </a>
-  </div> -->
-
+    </div>
 </section>
 
 <!-- JS -->
@@ -229,8 +232,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('alfa_bnp').style.webkitTransform =
-      document.getElementById('alfa_bnp').style.transform =
+      document.getElementById('pyramid').style.webkitTransform =
+      document.getElementById('pyramid').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
@@ -261,8 +264,8 @@
     document.getElementById('do-unsupported').classList.remove('hidden');
  } else {
     window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('pyramid').style.webkitTransform =
-      document.getElementById('pyramid').style.transform =
+      document.getElementById('clover').style.webkitTransform =
+      document.getElementById('clover').style.transform =
         'rotateX(' + event.beta + 'deg) ' +
         'rotateY(' + event.gamma + 'deg) ' +
         'rotateZ(' + event.alpha + 'deg)';
