@@ -706,11 +706,11 @@ a.active:hover{
 }
 
 .clover_three{
-	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(100px) translateY(3px) translateZ(0);
+	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(200px) translateY(3px) translateZ(0);
 }
 
 .clover_four{
-	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(100px) translateY(3px) translateZ(0);
+	-webkit-transform: rotateX(90deg) rotateY(45deg) translateX(200px) translateY(3px) translateZ(0);
 }
 
 .clover_five{
