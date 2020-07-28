@@ -701,7 +701,7 @@ a.active:hover{
 
 .clover_side{
 	position: absolute;
-	opacity: .9;
+	opacity: 1;
 	/*animation: cloverfill 60s infinite;*/
 }
 
