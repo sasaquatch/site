@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <head>
-	<meta charset="UTF-8">
-	<title>Saša Djukic — Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/sup.css">
+  <meta charset="UTF-8">
+  <title>Saša Djukic — Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
 </head>
 <body>
 
-
-
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INTRO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="intro-wrapper margin-bottom300">
-	<section class="intro">
-		<h1>
+<div class="container">
+<div class="intro-wrapper margin-bottom100">
+  <section class="intro">
+    <h1>
       <a href="index.html">
       <div class="firstname">
         <div id="name-1">Sa&scaron;a</div>
@@ -31,26 +28,26 @@
       <div class="lastname">Djuki&#263;</div></h1>
       </a>
 
-    <!-- <h4 class="margin-top-50 serif">UX * Design * Code</h4> -->
+    <!-- <h2 class="margin-top-50">UX / Design / Code</h2> -->
 <!--     <h6 class="margin-top20">
       I design systems from 9&mdash;5<br> and explore the unknown from 5&mdash;9.
     </h6> -->
 
-    <h6> <!-- class="margin-top20" -->
-      Computers are fun, but<br> if you open this site on<br> your phone you can see<br> what <i>turbo</i> fun is like ✌️
-      <!-- Computers are fun, but<br>try this site on your<br> phone for extra fun. -->
+    <h6 class="margin-top20">
+      Open this site on your phone for some fun.
+      <!-- I recommend opening this site<br> on your phone for some fun. -->
     </h6>
 
     <h6 class="statement_mobile">I design systems from 9&mdash;5<br> and explore the unknown from 5&mdash;9.</h6>
-	</section>
+  </section>
 
-  <nav>
-    <a id="aboutme" href="about.html">About</a>
-    <a id="night" href="#">Black circle</a>
-    <a id="day" class="hidden" href="#">Day</a>
-  </nav>
+<nav>
+  <a id="aboutme" href="about.html">About</a>
+  <a id="night" href="#">Black circle</a>
+  <a id="day" class="hidden" href="#">Day</a>
+</nav>
 
-  <div class="graphic">
+  <div class="intrographic">
     <div id="cubeZ"><div id="cubeY"><div id="cube">
       <div class="side cube_one"></div>
       <div class="side cube_two"></div>
@@ -68,18 +65,13 @@
     <a class="ninetofive active">9&mdash;5</a><span>/</span>
     <a class="fivetonine" href="#">5&mdash;9</a>
   </div> -->
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /INTRO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section class="projects">
   <div class="project alfaromeo">
     <h3 class="project_headline">Alfa Romeo</h3>
     <h4 class="centered serif">Mobile—first build & price configurator</h4>
 
-    <div class="graphic margin-top50">
+    <div class="graphic">
     <div id="pyramidZ">
     <div id="pyramidY">
     <div id="pyramid">
@@ -106,13 +98,13 @@
     </div>
     </div>
     </div>
-  </div>
+    </div>
 
   <div class="project quadrifoglio">
     <h3 class="project_headline">Quadrifoglio</h3>
     <h4 class="centered serif">System design & scroll—based interaction paradigm</h4>
 
-    <div class="graphic margin-top20">
+    <div class="graphic">
     <div id="cloverZ">
     <div id="cloverY">
     <div id="clover">
@@ -128,12 +120,12 @@
       </div>
       <div class="clover_side clover_three">
         <svg>
-          <circle cx="200" cy="200" r="200" fill="lightgrey"/>
+          <circle cx="200" cy="200" r="200" fill="red"/>
         </svg>
       </div>
       <div class="clover_side clover_four">
         <svg>
-          <circle cx="200" cy="600" r="200" fill="lightgrey"/>
+          <circle cx="200" cy="600" r="200" fill="red"/>
         </svg>
       </div>
       <div class="clover_side clover_five">
@@ -149,32 +141,9 @@
     </div>
     </div>
     </div>
-  </div>
-
-  <div class="project hta margin-top200">
-    <h3 class="project_headline">HT—Architects</h3>
-    <h4 class="centered serif">Scalable and open brand system</h4>
-
-    <div class="graphic">
-    <div id="htaZ">
-    <div id="htaY">
-    <div id="hta">
-      <div class="hta_side hta_one">
-      </div>
-      <div class="hta_side hta_two">
-      </div>
-      <div class="hta_side hta_three">
-      </div>
-      <div class="hta_side hta_four">
-      </div>
-      <!-- <div class="hta_side hta_five"> -->
-      </div>
     </div>
-    </div>
-    </div>
-  </div>
 
-  <div class="project bp margin-top200">
+  <div class="project bp">
     <h3 class="project_headline">Bloomberg Philanthrophies</h3>
     <h4 class="centered serif">CSS3 Animations & Contest Platform</h4>
 
@@ -195,17 +164,11 @@
     </div>
     </div>
     </div>
-  </div>
+    </div>
 </section>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /PROJECTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-
-
-
-
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- JS -->
 <script src='js/jquery-3.5.0.min.js'></script>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <script id="rendered-js">
   var divs = $('div[id^="name-"]').hide(),
   i = 0;
@@ -213,7 +176,7 @@
   (function cycle() {
 
     divs.eq(i).fadeIn(0).
-    delay(1500).
+    delay(1000).
     fadeOut(0, cycle);
 
     i = ++i % divs.length;
@@ -221,7 +184,6 @@
   })();
 </script>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THEME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <script>
   $("#night").click(function() {
     $("#night" ).animate({
@@ -232,7 +194,6 @@
   });
 </script>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DOWN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <script>
   $("#down").click(function() {
     $('html, body').animate({
@@ -258,7 +219,7 @@
 //   });
 </script>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
 <script>
  if (!window.DeviceOrientationEvent) {
     document.getElementById('do-unsupported').classList.remove('hidden');
@@ -386,39 +347,5 @@
     });
  }
 </script>
-
-<script>
- if (!window.DeviceOrientationEvent) {
-    document.getElementById('do-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('deviceorientation', function(event) {
-      document.getElementById('hta').style.webkitTransform =
-      document.getElementById('hta').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
-    });
- }
-
- if (!window.DeviceMotionEvent) {
-    document.getElementById('dm-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('devicemotion', function(event) {
-      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
-      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
-      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
-    });
- }
-
- if (!('oncompassneedscalibration' in window)) {
-    document.getElementById('cnc-unsupported').classList.remove('hidden');
- } else {
-    window.addEventListener('compassneedscalibration', function(event) {
-      alert('To calibrate your compass, wave your device in a figure-eight motion');
-    });
- }
-</script>
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
 </body>
 </html>
