@@ -1971,34 +1971,38 @@ a.active:hover{
 }
 
 .hta_one{
-	-webkit-transform: rotateY(102.8deg);
+	-webkit-transform: rotateY(90deg);
 }	
 
 .hta_two{
-	-webkit-transform: rotateY(154.2deg);
+	-webkit-transform: rotateY(135deg);
 }
 
 .hta_three{
-	-webkit-transform: rotateY(-205.6deg);
+	-webkit-transform: rotateY(-180deg);
 }
 
 .hta_four{
-	-webkit-transform: rotateY(-154.2deg);
+	-webkit-transform: rotateY(-135deg);
 }
 
 .hta_five{
-	-webkit-transform: rotateY(-102.8deg);
+	-webkit-transform: rotateY(-90deg);
 }
 
 .hta_six{
-	-webkit-transform: rotateY(-51.4deg);
+	-webkit-transform: rotateY(-45deg);
 }
 
 .hta_seven{
 	-webkit-transform: rotateY(0deg);
 }
 
-.hta_one svg, .hta_two svg, .hta_three svg, .hta_four svg, .hta_five svg, .hta_six svg, .hta_seven svg{
+.hta_seven{
+	-webkit-transform: rotateY(45deg);
+}
+
+.hta_one svg, .hta_two svg, .hta_three svg, .hta_four svg, .hta_five svg, .hta_six svg, .hta_seven svg, .hta_eight svg{
 	height: 800px;
 	width: 800px;
 }
