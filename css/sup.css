@@ -1623,6 +1623,8 @@ a.active:hover{
 
 .margin-top300{margin-top: 300px;}
 
+.margin-top400{margin-top: 400px;}
+
 /*OTHER*/
 .margin-left30{margin-left: 30px;}
 
@@ -1750,7 +1752,6 @@ a.active:hover{
 	transform: rotateY(90deg) translateZ(300px);
 	-webkit-transform: rotateY(90deg) translateZ(300px);
 	background-color: white;
-	opacity: .8;
 }
 
 .cube_three{
@@ -1873,7 +1874,7 @@ a.active:hover{
 
 .clover_side{
 	position: absolute;
-	opacity: 1;
+	/*opacity: 1;*/
 	/*animation: cloverfill 60s infinite;*/
 }
 
@@ -1999,6 +2000,52 @@ a.active:hover{
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /HTA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 5—9 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#fton{
+	width: 800px;
+	height: 800px;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	z-index: 1;
+}
+
+.fton_side{
+	position: absolute;
+	opacity: 1;
+	/*animation: ftonfill 60s infinite;*/
+}
+
+.fton_one{
+	/*-webkit-transform: rotateZ(45deg);*/
+}	
+
+.fton_two{
+	-webkit-transform: translateZ(-100px);
+}
+
+.fton_three{
+	-webkit-transform: translateZ(-200px);
+}
+
+.fton_four{
+	-webkit-transform: translateZ(-300px);
+}
+
+.fton_five{
+	-webkit-transform: rotateX(45deg) translateZ(150px) translateY(150px);
+}
+
+.fton_six{
+	-webkit-transform: rotateX(45deg) translateZ(150px) translateY(150px);
+}
+
+.fton_one svg, .fton_two svg, .fton_three svg, .fton_four svg, .fton_five svg, .fton_six svg{
+	height: 800px;
+	width: 800px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /5—9 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
 .project{
 	height: 100vh;
@@ -2100,7 +2147,7 @@ a.active:hover{
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
 @media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube, #sphere, #clover, #bp, #hta{
+  #cube, #sphere, #clover, #bp, #hta, #fton{
     transform-style: preserve-3d;
   	animation: spinzoneX 30s infinite linear;
   }
@@ -2109,7 +2156,7 @@ a.active:hover{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY, #sphereY, #pyramidY, #cloverY, #bpY{
+  #cubeY, #sphereY, #pyramidY, #cloverY, #bpY, #ftonY{
     transform-style: preserve-3d;
   	animation: spinzoneY 30s infinite linear;
   }
@@ -2118,7 +2165,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #cloverZ, #bpZ{
+  #cubeZ, #sphereZ, #cloverZ, #bpZ, #ftonZ{
     transform-style: preserve-3d;
   	animation: spinzoneZ 30s infinite linear;
   }
