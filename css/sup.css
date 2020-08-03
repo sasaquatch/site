@@ -1978,27 +1978,27 @@ a.active:hover{
 }
 
 .hta_two{
-	-webkit-transform: rotateY(45deg) translateX(-200px);
+	-webkit-transform: rotateY(45deg) rotateX(30deg) translateX(-200px);
 	background-color: black;
 }
 
 .hta_three{
-	-webkit-transform: rotateY(90deg) translateX(-200px) translateZ(140px);
+	-webkit-transform: rotateY(90deg) rotateX(60deg) translateX(-200px) translateZ(140px);
 	background-color: black;
 }
 
 .hta_four{
-	-webkit-transform: rotateY(135deg) translateX(-200px) translateZ(280px);
+	-webkit-transform: rotateY(135deg) rotateX(90deg) translateX(-200px) translateZ(280px);
 	background-color: black;
 }
 
 .hta_five{
-	-webkit-transform: rotateY(180deg) translateX(-200px) translateZ(420px);
+	-webkit-transform: rotateY(180deg) rotateX(120deg) translateX(-200px) translateZ(420px);
 	background-color: black;
 }
 
 .hta_six{
-	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
+	-webkit-transform: rotateX(90deg) rotateX(150deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
 }
 
 .hta_one svg, .hta_two svg, .hta_three svg, .hta_four svg, .hta_five svg, .hta_six svg{
