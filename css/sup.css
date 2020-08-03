@@ -1971,27 +1971,27 @@ a.active:hover{
 }
 
 .hta_one{
-	-webkit-transform: rotateY(90deg);
+	-webkit-transform: rotateY(102.8deg);
 }	
 
 .hta_two{
-	-webkit-transform: rotateY(135deg);
+	-webkit-transform: rotateY(154.2deg);
 }
 
 .hta_three{
-	-webkit-transform: rotateY(-180deg);
+	-webkit-transform: rotateY(-205.6deg);
 }
 
 .hta_four{
-	-webkit-transform: rotateY(-135deg);
+	-webkit-transform: rotateY(-154.2deg);
 }
 
 .hta_five{
-	-webkit-transform: rotateY(-90deg);
+	-webkit-transform: rotateY(-102.8deg);
 }
 
 .hta_six{
-	-webkit-transform: rotateY(-45deg);
+	-webkit-transform: rotateY(-51.4deg);
 }
 
 .hta_seven{
