@@ -85,22 +85,22 @@
     <div id="pyramid">
       <div class="pyramid_side pyramid_one">
         <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
+          <polygon points="400,0 800,600 0,600" style="fill:red;"/>
         </svg>
       </div>
       <div class="pyramid_side pyramid_two">
         <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:black;"/>
+          <polygon points="400,0 800,600 0,600" style="fill:black;"/>
         </svg>
       </div>
       <div class="pyramid_side pyramid_three">
         <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:red;"/>
+          <polygon points="400,0 800,600 0,600" style="fill:red;"/>
         </svg>
       </div>
       <div class="pyramid_side pyramid_four">
         <svg>
-          <polygon points="0,0 800,0 400,600" style="fill:black;"/>
+          <polygon points="400,0 800,600 0,600" style="fill:black;"/>
         </svg>
       </div>
     </div>
@@ -319,9 +319,9 @@
     window.addEventListener('deviceorientation', function(event) {
       document.getElementById('pyramid').style.webkitTransform =
       document.getElementById('pyramid').style.transform =
-        'rotateZ(' + event.beta + 'deg) ' +
-        'rotateX(' + event.gamma + 'deg) ' +
-        'rotateY(' + event.alpha + 'deg)';
+        'rotateX(' + event.beta + 'deg) ' +
+        'rotateY(' + event.gamma + 'deg) ' +
+        'rotateZ(' + event.alpha + 'deg)';
     });
  }
 

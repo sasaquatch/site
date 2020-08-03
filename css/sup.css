@@ -1833,17 +1833,13 @@ a.active:hover{
 	z-index: 1;
 }
 
-#pyramid{
-	-webkit-transform: rotateX(-5deg);
-}
-
 .pyramid_side{
 	position: absolute;
 	opacity: 1;
 }
 
 .pyramid_one{
-	-webkit-transform: rotateY(-90deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
+	-webkit-transform: rotateY(90deg) rotateX(-41.8deg) translateZ(90px) translateY(-97px);
 }
 
 .pyramid_two{
@@ -1851,7 +1847,7 @@ a.active:hover{
 }
 
 .pyramid_three{
-	-webkit-transform: rotateY(-90deg) rotateX(41.8deg) translateZ(-90px) translateY(-97px);
+	-webkit-transform: rotateY(90deg) rotateX(41.8deg) translateZ(-90px) translateY(-97px);
 }
 
 .pyramid_four{
