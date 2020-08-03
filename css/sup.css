@@ -2219,7 +2219,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #cloverZ, #bpZ, #htaZ #ftonZ{
+  #cubeZ, #sphereZ, #cloverZ, #bpZ, #htaZ, #ftonZ{
     transform-style: preserve-3d;
   	animation: spinzoneZ 30s infinite linear;
   }

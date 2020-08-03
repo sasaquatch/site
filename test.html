@@ -542,6 +542,38 @@
     });
  }
 </script>
+
+<script>
+ if (!window.DeviceOrientationEvent) {
+    document.getElementById('do-unsupported').classList.remove('hidden');
+ } else {
+    window.addEventListener('deviceorientation', function(event) {
+      document.getElementById('fca').style.webkitTransform =
+      document.getElementById('fca').style.transform =
+        'rotateX(' + event.beta + 'deg) ' +
+        'rotateY(' + event.gamma + 'deg) ' +
+        'rotateZ(' + event.alpha + 'deg)';
+    });
+ }
+
+ if (!window.DeviceMotionEvent) {
+    document.getElementById('dm-unsupported').classList.remove('hidden');
+ } else {
+    window.addEventListener('devicemotion', function(event) {
+      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
+      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
+      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
+    });
+ }
+
+ if (!('oncompassneedscalibration' in window)) {
+    document.getElementById('cnc-unsupported').classList.remove('hidden');
+ } else {
+    window.addEventListener('compassneedscalibration', function(event) {
+      alert('To calibrate your compass, wave your device in a figure-eight motion');
+    });
+ }
+</script>
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ /JS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 </body>
