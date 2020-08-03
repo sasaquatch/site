@@ -2200,8 +2200,7 @@ a.active:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~ MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~ */
 /* DESKTOP */
-@media all and (max-width: 2000px) and (min-width: 1000px) {
-  #cube, #sphere, #clover, #bp, #fca{
+#cube, #sphere, #clover, #bp, #fca{
     transform-style: preserve-3d;
   	animation: spinzoneX 30s infinite linear;
   }
@@ -2231,7 +2230,7 @@ a.active:hover{
 	.statement_mobile{
 		display: none;
 	}
-}
+
 
 /* ~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~ */
 @media all and (max-width: 999px) and (min-width: 320px) {
