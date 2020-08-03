@@ -118,22 +118,22 @@
     <div id="clover">
       <div class="clover_side clover_one">
         <svg>
-          <circle cx="265" cy="265" r="200" fill="green"/>
+          <circle cx="265" cy="265" r="200" fill="#00FF00"/>
         </svg>
       </div>
       <div class="clover_side clover_two">
         <svg>
-          <circle cx="547" cy="547" r="200" fill="green"/>
+          <circle cx="547" cy="547" r="200" fill="#00FF00"/>
         </svg>
       </div>
       <div class="clover_side clover_three">
         <svg>
-          <circle cx="200" cy="200" r="200" fill="lightgrey"/>
+          <circle cx="200" cy="200" r="200" fill="#00C000"/>
         </svg>
       </div>
       <div class="clover_side clover_four">
         <svg>
-          <circle cx="200" cy="600" r="200" fill="lightgrey"/>
+          <circle cx="200" cy="600" r="200" fill="#00C000"/>
         </svg>
       </div>
       <div class="clover_side clover_five">
@@ -319,9 +319,9 @@
     window.addEventListener('deviceorientation', function(event) {
       document.getElementById('pyramid').style.webkitTransform =
       document.getElementById('pyramid').style.transform =
-        'rotateX(' + event.beta + 'deg) ' +
-        'rotateY(' + event.gamma + 'deg) ' +
-        'rotateZ(' + event.alpha + 'deg)';
+        'rotateY(' + event.beta + 'deg) ' +
+        'rotateZ(' + event.gamma + 'deg) ' +
+        'rotateX(' + event.alpha + 'deg)';
     });
  }
 
