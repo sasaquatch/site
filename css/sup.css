@@ -1975,7 +1975,7 @@ a.active:hover{
 }	
 
 .hta_two{
-	/*-webkit-transform: rotateX(90deg) rotateZ(45deg) translateZ(150px);*/
+	-webkit-transform: rotateX(90deg) translateY(3px) translateZ(2px);
 }
 
 .hta_three{
