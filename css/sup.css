@@ -1737,7 +1737,7 @@ a.active:hover{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 .cube_one{
@@ -1750,7 +1750,7 @@ a.active:hover{
 	transform: rotateY(90deg) translateZ(300px);
 	-webkit-transform: rotateY(90deg) translateZ(300px);
 	background-color: white; /* YELLOW: ffff00 */
-	opacity: .7;
+	opacity: .8;
 }
 
 .cube_three{
@@ -1763,7 +1763,6 @@ a.active:hover{
 	transform: rotateY(-90deg) translateZ(300px);
 	-webkit-transform: rotateY(-90deg) translateZ(300px);
 	background-color: #7BFFBB; /* TEAL */;
-	/*opacity: .9;*/
 }
 
 .cube_five{
@@ -1956,9 +1955,9 @@ a.active:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HTA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #hta{
-	width: 400px;
-	height: 20px;
-	margin: 80px auto;
+	width: 800px;
+	height: 800px;
+	/*margin: 80px auto;*/
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
@@ -1966,39 +1965,33 @@ a.active:hover{
 }
 
 .hta_side{
-	width: 100%;
-	height: 100%;
 	position: absolute;
 	opacity: 1;
+	/*animation: htafill 60s infinite;*/
 }
 
 .hta_one{
-	-webkit-transform: rotateY(0) translateX(-400px);
-	background-color: black;
-}
+	/*-webkit-transform: rotateZ(45deg);*/
+}	
 
 .hta_two{
-	-webkit-transform: rotateY(45deg) rotateX(30deg) translateX(-200px);
-	background-color: black;
+	/*-webkit-transform: rotateX(90deg) rotateZ(45deg) translateZ(150px);*/
 }
 
 .hta_three{
-	-webkit-transform: rotateY(90deg) rotateX(60deg) translateX(-200px) translateZ(140px);
-	background-color: black;
+	-webkit-transform: rotateX(90deg) translateZ(200px) translateY(200px);
 }
 
 .hta_four{
-	-webkit-transform: rotateY(135deg) rotateX(90deg) translateX(-200px) translateZ(280px);
-	background-color: black;
+	-webkit-transform: rotateX(90deg) translateZ(200px) translateY(200px);
 }
 
 .hta_five{
-	-webkit-transform: rotateY(180deg) rotateX(120deg) translateX(-200px) translateZ(420px);
-	background-color: black;
+	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
 }
 
 .hta_six{
-	-webkit-transform: rotateX(90deg) rotateX(150deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
+	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
 }
 
 .hta_one svg, .hta_two svg, .hta_three svg, .hta_four svg, .hta_five svg, .hta_six svg{
