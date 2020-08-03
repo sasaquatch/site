@@ -1833,6 +1833,10 @@ a.active:hover{
 	z-index: 1;
 }
 
+#pyramid{
+	-webkit-transform: rotateX(-5deg);
+}
+
 .pyramid_side{
 	position: absolute;
 	opacity: 1;
@@ -1957,7 +1961,6 @@ a.active:hover{
 #hta{
 	width: 800px;
 	height: 800px;
-	/*margin: 80px auto;*/
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
@@ -1975,7 +1978,7 @@ a.active:hover{
 }	
 
 .hta_two{
-	-webkit-transform: rotateX(90deg) translateY(3px) translateZ(2px);
+	-webkit-transform: rotateX(90deg) translateY(2px) translateZ(2px);
 }
 
 .hta_three{
