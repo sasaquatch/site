@@ -1979,19 +1979,19 @@ a.active:hover{
 }
 
 .hta_three{
-	-webkit-transform: rotateX(90deg) translateZ(200px) translateY(200px);
+	-webkit-transform: rotateX(90deg) translateZ(202px) translateY(202px);
 }
 
 .hta_four{
-	-webkit-transform: rotateX(90deg) translateZ(200px) translateY(200px);
+	-webkit-transform: rotateX(90deg) translateZ(202px) translateY(202px);
 }
 
 .hta_five{
-	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
+	-webkit-transform: rotateX(45deg) translateZ(150px) translateY(150px);
 }
 
 .hta_six{
-	-webkit-transform: rotateX(90deg) rotateY(135deg) rotateZ(90deg) translateX(200px) translateY(3px) translateZ(7px);
+	-webkit-transform: rotateX(45deg) translateZ(150px) translateY(150px);
 }
 
 .hta_one svg, .hta_two svg, .hta_three svg, .hta_four svg, .hta_five svg, .hta_six svg{
@@ -2110,7 +2110,7 @@ a.active:hover{
   	to {transform: rotateX(360deg);}
 	}
 
-  #cubeY, #sphereY, #pyramidY, #cloverY, #bpY, #htaY{
+  #cubeY, #sphereY, #pyramidY, #cloverY, #bpY{
     transform-style: preserve-3d;
   	animation: spinzoneY 30s infinite linear;
   }
