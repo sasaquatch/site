@@ -1335,7 +1335,8 @@ h6{
 .firstname{
 	height: 100px;
 }
-.statement,
+
+/*.statement,
 .statement_mobile{
 	margin-top: 50px;
 }
@@ -1343,7 +1344,7 @@ h6{
 .statement,
 .statement_mobile{
 	position: relative;
-}
+}*/
 
 /* ~~~~~~~~~~~~~~~~~~~~ COPY ~~~~~~~~~~~~~~~~~~~~ */
 p{
@@ -2113,22 +2114,32 @@ a.active:hover{
 
 /* ALFA */
 .alfaromeo{
-	/*background-color: aqua;*/
+	background-color: aqua;
 }
 
 /* QUADRIFOGLIO */
 .quadrifoglio{
-	/*background-color: lime;*/
+	background-color: lime;
 }
 
 /* HTA */
 .hta{
-	/*background-color: fuschia;*/
+	background-color: pink;
 }
 
 /* BP */
 .bp{
-	/*background-color: lightgrey;*/
+	background-color: lightgrey;
+}
+
+/* FCA */
+.fca{
+	background-color: beige;
+}
+
+/* fton */
+.fton{
+	background-color: silver;
 }
 
 .phone{
@@ -2269,6 +2280,14 @@ a.active:hover{
 
 	.intro-wrapper{
 		height: 100vh;
+	}
+
+	.project{
+	height: 65vh;
+	}
+
+	.graphic{
+	height: 50vh;
 	}
 
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
