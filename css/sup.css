@@ -2114,32 +2114,32 @@ a.active:hover{
 
 /* ALFA */
 .alfaromeo{
-	background-color: aqua;
+	/*background-color: aqua;*/
 }
 
 /* QUADRIFOGLIO */
 .quadrifoglio{
-	background-color: lime;
+	/*background-color: lime;*/
 }
 
 /* HTA */
 .hta{
-	background-color: pink;
+	/*background-color: pink;*/
 }
 
 /* BP */
 .bp{
-	background-color: lightgrey;
+	/*background-color: lightgrey;*/
 }
 
 /* FCA */
 .fca{
-	background-color: beige;
+	/*background-color: beige;*/
 }
 
 /* fton */
 .fton{
-	background-color: silver;
+	/*background-color: silver;*/
 }
 
 .phone{
@@ -2230,7 +2230,7 @@ a.active:hover{
   	to {transform: rotateY(360deg);}
 	}
 
-  #cubeZ, #sphereZ, #cloverZ, #bpZ, #htaZ, #ftonZ{
+  #cubeZ, #sphereZ, #cloverZ, #bpZ, #ftonZ{
     transform-style: preserve-3d;
   	animation: spinzoneZ 30s infinite linear;
   }
@@ -2281,15 +2281,6 @@ a.active:hover{
 	.intro-wrapper{
 		height: 100vh;
 	}
-
-	.project{
-	height: 100vh;
-	}
-
-	.graphic{
-	height: 65vh;
-	}
-
 /* ~~~~~~~~~~~~~~~~~~~~ PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
 
 
