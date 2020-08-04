@@ -1751,7 +1751,7 @@ a.active:hover{
 .cube_two{
 	transform: rotateY(90deg) translateZ(300px);
 	-webkit-transform: rotateY(90deg) translateZ(300px);
-	background-color: white;
+	background-color: #ffff00; /* YELLOW */ /* ORANGE: #FF7000 */
 }
 
 .cube_three{
@@ -1769,7 +1769,7 @@ a.active:hover{
 .cube_five{
 	transform: rotateX(90deg) translateZ(300px);
 	-webkit-transform: rotateX(90deg) translateZ(300px);
-	background-color: #ffff00; /* YELLOW */ /* ORANGE: #FF7000 */
+	background-color: white;
 }
 
 .cube_six{
