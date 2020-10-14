@@ -334,8 +334,9 @@ a.buttonsalt:hover{color: blue;}
 	}
 
 	.centered{
-    width: 90%;
+    width: 50%;
     margin: 0 auto 50px;
+    font-size: 28px;
     line-height: 40px;
 	}
 
