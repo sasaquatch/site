@@ -391,9 +391,10 @@ a.buttonstab:hover{
 }
 
 .text{
-	margin: 0 40px;
+	padding: 0 40px;
+	/*margin: 0 40px;*/
 /*	display: flex;
-	width: 100%;*/
+	width: 100%;*/ /* LEAVE THIS OFF TO FIX GRID */
 	position: relative;
 	z-index: 99;
 }
@@ -718,6 +719,10 @@ a.buttonstab:hover{
     margin: 0 auto 50px;
     font-size: 28px;
     line-height: 40px;
+	}
+
+	.text{
+		padding: 0 130px;
 	}
 
 }
