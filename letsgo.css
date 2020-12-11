@@ -10,6 +10,13 @@
 	/*cursor: url('images/cursor.png') 50 50, auto;*/
 	/*cursor: none;*/
   transition: background-color 1s ease;
+  background: pink;
+}
+
+body{
+	background: yellow !important;
+  display: grid;
+  width: fit-content;	
 }
 
 .light{
