@@ -6,6 +6,10 @@
 	line-height: 115px;
 	letter-spacing: -3.33px;
 	/*color: black;*/
+	/*cursor: url('images/cursor.png'), auto;*/
+	/*cursor: url('images/cursor.png') 50 50, auto;*/
+	/*cursor: none;*/
+  transition: background-color 1s ease;
 }
 
 .light{
@@ -20,21 +24,50 @@
 	animation: fadein 1s;
 }
 
+/*a:hover{
+	cursor: url('images/cursor_pointer.png') 50 -100, auto;
+}*/
+
 h1, h2, h3, h4{
 	margin: 0;
 }
 
+h3.marquee{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	transform: translateX(0);
+}
+
 h4{
 	font-size: 30px;
+	line-height: 30px;
 	letter-spacing: -1px;
 	font-weight: 400;
 }
 
-p{
-	font-size: 22px;
-	line-height: 30px;
-	letter-spacing: -0.73px;
+h5{
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
 	font-weight: 400;
+	/*color: #757575;*/
+	/*text-transform: uppercase;*/
+}
+
+p,
+p a{
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: -0.1px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+p a{
+	color: blue;
 }
 
 nav{
@@ -44,10 +77,35 @@ nav{
 
 nav a{
 	color: black;
+	text-decoration: none;
 }
 
 nav a:hover{
-	color: red;
+	color: blue;
+	/*cursor: url('images/cursor_tree.png') 50 -100, auto;*/
+}
+
+#overlay{
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  background-color: rgba(255,0,0,0.9);
+  /*background-color: white;*/
+  z-index: 99;
+  cursor: alias;
+  /*overflow-y: hidden;*/
+  /*animation: fadein 1s forwards;*/
+	/*cursor: url('images/cursor.png') -75 12, auto;*/
+}
+
+#overlay a:hover{
+	/*cursor: url('images/cursor.png'), auto;*/
 }
 
 ul{
@@ -62,10 +120,43 @@ section{
 }
 
 ::selection{
-	animation: rainbow 2s infinite;
+	/*animation: rainbow 2s infinite;*/
+	/*background: red;*/
+	color: red;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ GRID ~~~~~~~~~~~~~~~~~~~~ */
+/*.cursor {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: -75%;
+  left: -75%;
+  margin: -35px 0 0 -35px;
+  border-radius: 50%;
+  background-color: fuchsia;
+  backface-visibility: hidden;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  pointer-events: none;
+}*/
+
+.progress_container{
+	width: 100%;
+	height: 5px;
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+}
+
+.progress_indicator{
+	height: 5px;
+	/*background: #ff8000;*/
+	background: blue; /* #ffbf00 */
+	width: 0%;
+	position: relative;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRID ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .row{
 	max-width: 1440px;
 	margin: 0 auto;
@@ -82,8 +173,10 @@ section{
 }
 
 .col3{
-	width: 280px;
-	padding: 0 40px;
+/*	width: 280px;
+	padding: 0 40px;*/
+	width: 300px;
+	padding-left: 40px;
 }
 
 .col9{
@@ -96,18 +189,26 @@ section{
 	width: 100%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~~~ */
-/* SPACING */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GLOBAL ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* MARGINS */
 .margin-top10{margin-top: 10px;}
+.margin-top20{margin-top: 20px;}
 .margin-top40{margin-top: 40px;}
 .margin-top50{margin-top: 50px;}
+.margin-top60{margin-top: 60px;}
+.margin-top70{margin-top: 70px;}
 .margin-top80{margin-top: 80px;}
 .margin-top100{margin-top: 100px;}
+.margin-top120{margin-top: 120px;}
 .margin-top150{margin-top: 150px;}
 .margin-top200{margin-top: 200px;}
 .margin-top250{margin-top: 250px;}
+.margin-top300{margin-top: 300px;}
+.margin-top-minus100{margin-top: -100px;}
 .margin-bottom20{margin-bottom: 20px;}
+.margin-bottom50{margin-bottom: 50px;}
 .margin-bottom100{margin-bottom: 100px;}
+.margin-bottom150{margin-bottom: 150px;}
 .margin-bottom250{margin-bottom: 250px;}
 .margin-left40{margin-left: 40px;}
 .margin-right40{margin-right: 40px;}
@@ -118,17 +219,26 @@ section{
 .pink{background: pink;}
 .green{background: #50A958;}
 .orange{background: orange;}
-.violet{background: #6236FF;}
+.purple{background: #6236FF;}
 .teal{background: #44D7B6;}
 .yellow{background: #F9C600;}
+.silver{background: silver}
+.blue{background: #9EAAFF}
 
 /* VISIBILITY */
 .visible{display: block;}
+.visible_favs{display: flex;}
 .hidden{display: none;}
 
 /* TEXT */
 .centered{text-align: center;}
 .secondary{color: #757575;}
+.bottom_aligned{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
 
 .massive{
 	font-size: 320px;
@@ -151,7 +261,7 @@ section{
 }
 
 /* BUTTONS */
-.buttons, .eye, .metext{text-align: center;}
+.buttons, .tabs, .eye, .metext{text-align: center;}
 
 a.buttonsreg{
 	padding: 6px 24px 9px;
@@ -165,7 +275,6 @@ a.buttonsreg{
 	text-decoration: none;
 	color: white;
 }
-
 a.buttonsreg:hover{background: black;}
 
 a.buttonsalt{
@@ -177,46 +286,117 @@ a.buttonsalt{
 	letter-spacing: -1px;
 	border-radius: 225px;
 	text-decoration: none;
-	color: #757575;
+	color: black;
 }
-
 a.buttonsalt:hover{color: blue;}
 
-/* ~~~~~~~~~~~~~~~~~~~~ INTRO SECTION ~~~~~~~~~~~~~~~~~~~~ */
+a.buttonstab{
+	padding: 6px 24px 9px;
+	display: inline;
+	font-size: 30px !important;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: -1px;
+	border-radius: 225px;
+	text-decoration: none;
+	color: black;
+	border: 2px white solid;
+}
+a.buttonstab:hover{
+	color: blue;
+	border: 2px blue solid;
+	cursor: pointer;
+}
+
+.active_tab{
+	color: blue !important;
+	border: 2px blue solid !important;
+}
+
+.color-lightgray{background-color: #ccc;}
+.color-blue{background-color: blue;}
+.color-lightgreen{background-color: #A2FFD4;}
+.color-yellow{background-color: #FFC122;}
+.color-orange{background-color: #ff8077;}
+/*.color-orange{background: url(images/trx.jpg);}*/
+.color-black{background-color: black}
+.color-bottom{background-color: #FFA337;
+	/*background-color: rgb(0,0,255);
+	background-color: linear-gradient(0deg, rgba(0,0,255,1) 0%, rgba(0,0,0,1) 100%);*/
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INTRO SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .intro{
-	width: 1440px;
+	/*width: 1440px;*/
   position: relative;
 }
 
-.intro img{
-	width: 100%;
+.hero{
+	margin: 0 auto;
+	position: relative;
+}
+
+.hero img{
+	height: 100vh;
 	position: absolute;
 	z-index: -100;
 }
 
 .name{
-	/*position: fixed;*/
-	position: absolute;
+	/*position: absolute;*/
+	position: relative;
 	z-index: 0;
-	float: left;
+	/*float: left;*/
 	margin: 25px 40px 0;
+	/*margin-top: 25px;*/
+	/*text-align: center;*/
 }
 
 .title{
-	margin: 0 40px;
+	margin-left: 40px;
+	/*text-align: center;*/
 }
 
-.contact{
-	position: absolute;
+.asterisk,
+.asterisk_close{
+	position: fixed;
 	top: 25px;
-	right: 40px;
+	right: 20px;
+}
+
+.asterisk:hover{
+	/*cursor: url('images/cursor_thinking.png') 50 -100, auto;*/
+	cursor: pointer;
+}
+
+.menu{
+	background: #FFC122;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 101;
+}
+
+.fadein{
+	animation: fadein .5s;
 }
 
 .text{
 	margin: 0 40px;
+	display: flex;
+	width: 100%;
+	position: relative;
+	z-index: 99;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~~~~~~~~~ */
+.narrow_md{
+	width: 1200px;
+	padding: 0 100px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PROJECTS SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .projects{
 	/*background: beige;*/
 	margin: 0 40px;
@@ -225,43 +405,217 @@ a.buttonsalt:hover{color: blue;}
 .projects a,
 .bio a{
 	margin: 0;
+	/*padding-right: 50px;*/
 	color: black;
 	text-decoration: none;
 }
 
 .projects a:hover,
 .bio a:hover{
-	color: red;
+	color: black;
+	background: blue;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ INDIVIDUAL PROJECTS ~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~ WIDE IMAGES ~~~~~~~~~~~~~~~~~~~~ */
-.wide img{
-	width: 1800px;
+.projects_content{
+	position: absolute;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+}
+
+.phone{
+	height: 800px;
+	padding-top: 110px;
+}
+
+.phone_content11{
+	width: 436px;
+	height: 650px;
+	margin: 0 auto;
+  z-index: 98;
+  overflow: scroll;
+  -ms-overflow-style: scroll; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.phone_content11 img{
+	width: 272px;
+  height: 590px;
+  margin: 0px 82px;
+}
+
+.phone_content11::-webkit-scrollbar { 
+	display: none; /* Safari and Chrome */
+}
+
+.phone_content11::before{
+	position: absolute;
+	display: block;
+	margin-top: -30px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 334px;
+	height: 650px;
+  z-index: 99;
+  background-image: url('images/phone_frame11.png');
+	background-size: 100%;
+  content: "";
+}
+
+/*.phone::after{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 50px;
+	left: 100%;
+	margin: -600px 0 0 -50%;
+	padding-left: 250px;
+	color: #757575;
+	content: "Scroll inside the phone";
+}*/
+
+.swish{
+	height: 600px;
+	/*background: pink;*/
+}
+
+.swishtext{
+	font-size: 200px;
+	letter-spacing: 10px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INDIVIDUAL PROJECTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ WIDE IMAGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.wide,
+.thin{
+	cursor: auto;
+}
+
+.wide img,
+.wide video{
+	/*width: 1800px;*/
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	border-radius: 15px;
+}
+
+.thin img{
+	width: 1000px;
 	margin: 0 auto;
 	position: relative;
 	display: block;
 	/*border-radius: 6px;*/
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ DARK ROOM ~~~~~~~~~~~~~~~~~~~~ */
+.grid img,
+.grid video{
+	width: 100%;
+}
+
+.zoomin img:hover,
+.zoomin video:hover{
+	/*cursor: pointer;*/
+	/*animation: scaleup 0.5s forwards;*/
+	animation: zoomin 3s forwards;
+	/*cursor: url('images/cursor_thinking.png') 50 -100, auto;*/
+	cursor: pointer;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HTA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*.gallery {
+  height: 0;
+  overflow: hidden;
+}
+
+.photoroller {
+  float: left;
+  width: 48%;
+  height: auto;
+  margin-right: 2%;
+}
+
+.photoroller img {
+  width: 100% !important;
+  height: auto !important;
+}*/
+
+.hta ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.hta ul li{
+	width: auto;
+	font-family: 'CircularStd-Book';
+	font-size: 90px;
+	line-height: 90px;
+	letter-spacing: -3.33px;
+	position: relative;
+}
+
+/*.hta ul li:hover{
+	color: white;
+	background: black;
+	cursor: pointer;
+}*/
+
+.hta1 span,
+.hta2 span{
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	z-index:9999;
+	pointer-events: all;
+}
+
+.hta1:hover span,
+.hta2:hover span{
+	position: fixed;
+	top: 0; 
+  left: 50%;
+  transform: translate(-50%, 25%);
+  right: 0;
+  bottom: 0;
+  overflow: inherit;
+  pointer-events: none;
+}
+
+.hta img{
+	width: 800px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FAVOURITES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.toronto{
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DARK ROOM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .darkroom{
 	width: 100%;
 	/*background: beige;*/
 }
 
 .darkroom a{
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 .darkroom img{
 	max-width: 500px;
 }
 
+.eye{
+	cursor: auto;
+}
+
 .eye img{
 	width: 214px;
 	/*padding: 50px;*/
 	margin: 0 auto;
+	/*cursor: pointer;*/
 }
 
 #open_light{
@@ -284,7 +638,7 @@ a.buttonsalt:hover{color: blue;}
 	z-index: -1;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ ME ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .photosofme{
 	/*background: pink;*/
 	display: flex;
@@ -303,15 +657,34 @@ a.buttonsalt:hover{color: blue;}
 	margin-left: -78px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ TRY AGAIN ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TRY AGAIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .tryagain img{
 	width: 100%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ANIMATIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @keyframes fadein{
 	0%		{opacity: 0;}
 	100%	{opacity: 100;}
+}
+
+@keyframes scaleup{
+	0%		{transform: scale(1);}
+	100%	{transform: scale(1.025);}
+}
+
+@keyframes zoomin{
+	0%		{transform: scale(1);}
+	100%	{transform: scale(1.025);}
 }
 
 @keyframes rainbow {
@@ -322,7 +695,7 @@ a.buttonsalt:hover{color: blue;}
   100%	{background: black;}
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media all and (max-width: 999px) and (min-width: 320px) {
 	*{
 		font-size: 80px;
