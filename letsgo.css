@@ -14,7 +14,7 @@
 }
 
 body{
-	background: yellow !important;
+	background: magenta !important;
   display: grid;
   width: fit-content;	
 }
@@ -396,7 +396,8 @@ a.buttonstab:hover{
 /*	display: flex;
 	width: 100%;*/ /* LEAVE THIS OFF TO FIX GRID */
 	position: relative;
-	z-index: 99;
+	background: #44D7B6;
+	/*z-index: 99;*/
 }
 
 .narrow_md{
