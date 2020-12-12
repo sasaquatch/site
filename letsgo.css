@@ -712,7 +712,7 @@ a.buttonstab:hover{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media all and (max-width: 999px) and (min-width: 320px) {
+@media all and (max-width: 999px) and (min-width: 412px) {
 	*{
 		font-size: 95px;
 		line-height: 118px;
@@ -763,16 +763,16 @@ a.buttonstab:hover{
 	/* BUTTONS */
 
 	a.buttonsreg{
-		padding: 10px 26px 11px;
-		font-size: 36px !important;
-		line-height: 36px;
+		padding: 12px 26px 14px;
+		font-size: 38px !important;
+		line-height: 38px;
 		border-radius: 225px;
 	}
 
 
 }
 
+@media all and (max-width: 411px){
 
-
-
+}
 
