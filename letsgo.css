@@ -763,9 +763,9 @@ a.buttonstab:hover{
 	/* BUTTONS */
 
 	a.buttonsreg{
-		padding: 8px 24px 10px;
-		font-size: 40px !important;
-		line-height: 40px;
+		padding: 10px 26px 11px;
+		font-size: 36px !important;
+		line-height: 36px;
 		border-radius: 225px;
 	}
 
