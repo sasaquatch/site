@@ -778,18 +778,21 @@ a.buttonstab:hover{
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
 
+	/* MARGINS */
+	.mobile-margin-top80{margin-top: 80px}
+
 	/* BUTTONS */
-	.buttons{
-		margin-top: 50px;
-	}
 	a.buttonsreg{
 		padding: 22px 60px 28px;
 		font-size: 95px !important;
 		border-radius: 225px;
 	}
 	a.buttonsalt{
-	padding: 22px 0 28px;
-	font-size: 95px !important;
+		margin: 50px 0;
+		padding: 22px 28px 28px;
+		display: inline-block;
+		font-size: 95px !important;
+		line-height: 95px;
 	}
 }
 
