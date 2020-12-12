@@ -66,8 +66,8 @@ h5{
 
 p,
 p a{
-	font-size: 18px;
-	line-height: 28px;
+	font-size: 16px;
+	line-height: 23px;
 	letter-spacing: -0.1px;
 	font-weight: 400;
 	text-decoration: none;
@@ -182,14 +182,20 @@ section{
 .col3{
 /*	width: 280px;
 	padding: 0 40px;*/
-	width: 300px;
-	padding-left: 40px;
+/*	width: 300px;
+	padding-left: 40px;*/
+	width: 280px;
+	padding: 0 40px;
+}
+
+.empty{
+	display: block;
 }
 
 .col9{
-	width: calc(100% - 400px);
+	width: calc(100% - 440px);
 	min-width: 280px;
-	padding: 0 0 0 40px;
+	padding: 0 40px;
 }
 
 .col9 img{
@@ -220,6 +226,7 @@ section{
 .margin-left40{margin-left: 40px;}
 .margin-right40{margin-right: 40px;}
 .padding-top350{padding-top: 350px;}
+.padding-bottom60{padding-bottom: 60px;}
 /* COLOURS */
 .red{background: red;}
 .pinkred{background: #FF1C38;}
@@ -711,6 +718,16 @@ a.buttonstab:hover{
 		line-height: 118px;
 	}
 
+	h4{
+		font-size: 94px;
+		line-height: 86px;
+	}
+
+	p, p a{
+		font-size: 32px;
+		line-height: 46px;
+	}
+
 	.intro{
 		width: auto;
 	}
@@ -725,6 +742,18 @@ a.buttonstab:hover{
 	.text{
 		/*padding: 0 130px;*/
 	}
+
+	.col3{
+		width: 610px;
+		padding: 0 40px 100px;
+	}
+
+	.empty{
+		display: none;
+	}
+
+
+
 
 }
 
