@@ -763,47 +763,10 @@ a.buttonstab:hover{
 	/* BUTTONS */
 
 	a.buttonsreg{
-		padding: 6px 24px 9px;
-		font-size: 44px !important;
-		line-height: 44px;
+		padding: 8px 24px 10px;
+		font-size: 40px !important;
+		line-height: 40px;
 		border-radius: 225px;
-	}
-	a.buttonsreg:hover{background: black;}
-
-	a.buttonsalt{
-		padding: 6px 0 9px;
-		display: inline;
-		font-size: 30px !important;
-		font-weight: 300;
-		line-height: 30px;
-		letter-spacing: -1px;
-		border-radius: 225px;
-		text-decoration: none;
-		color: black;
-	}
-	a.buttonsalt:hover{color: blue;}
-
-	a.buttonstab{
-		padding: 6px 24px 9px;
-		display: inline;
-		font-size: 30px !important;
-		font-weight: 300;
-		line-height: 30px;
-		letter-spacing: -1px;
-		border-radius: 225px;
-		text-decoration: none;
-		color: black;
-		border: 2px white solid;
-	}
-	a.buttonstab:hover{
-		color: blue;
-		border: 2px blue solid;
-		cursor: pointer;
-	}
-
-	.active_tab{
-		color: blue !important;
-		border: 2px blue solid !important;
 	}
 
 
