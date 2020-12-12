@@ -719,13 +719,15 @@ a.buttonstab:hover{
 	}
 
 	h4{
-		font-size: 94px;
+		font-size: 95px;
 		line-height: 86px;
+		letter-spacing: -3.33px;
 	}
 
 	p, p a{
 		font-size: 32px;
 		line-height: 46px;
+		letter-spacing: -0.1px;
 	}
 
 	.intro{
@@ -750,6 +752,12 @@ a.buttonstab:hover{
 
 	.empty{
 		display: none;
+	}
+
+	.col9{
+		width: 100%;
+		min-width: 280px;
+		padding: 0 40px;
 	}
 
 
