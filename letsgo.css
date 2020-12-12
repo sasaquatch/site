@@ -255,7 +255,7 @@ section{
 }
 
 .massive{
-	font-size: 215px;
+	font-size: 320px;
 	line-height: 250px;
 	letter-spacing: -10.67px;
 	font-weight: 400;
@@ -733,8 +733,8 @@ a.buttonstab:hover{
 	}
 
 	.massive{
-		font-size: 320px;
-		line-height: 250px;
+		font-size: 215px;
+		line-height: 200px;
 	}
 
 	.intro{
