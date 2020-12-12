@@ -779,8 +779,10 @@ a.buttonstab:hover{
   and (orientation: portrait) { 
 
 	/* BUTTONS */
-	a.buttonsreg{
+	.buttons{
 		margin-top: 50px;
+	}
+	a.buttonsreg{
 		padding: 22px 60px 28px;
 		font-size: 95px !important;
 		border-radius: 225px;
