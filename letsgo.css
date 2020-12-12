@@ -767,6 +767,11 @@ a.buttonstab:hover{
 		font-size: 38px !important;
 		border-radius: 225px;
 	}
+	a.buttonsalt{
+		padding: 22px 10px 28px;
+		display: inline-block;
+		font-size: 38px !important;
+	}
 
 
 }
@@ -777,6 +782,19 @@ a.buttonstab:hover{
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
+
+	/* TEXT */
+	h4{
+		font-size: 75px;
+		line-height: 75px;
+		letter-spacing: -3.33px;
+	}
+
+	p, p a{
+		font-size: 40px;
+		line-height: 58px;
+		letter-spacing: -0.1px;
+	}
 
 	/* MARGINS */
 	.mobile-margin-top80{margin-top: 80px}
@@ -790,7 +808,7 @@ a.buttonstab:hover{
 	}
 	a.buttonsalt{
 		margin: 50px 0;
-		padding: 22px 28px 28px;
+		padding: 22px 30px 28px;
 		display: inline-block;
 		font-size: 95px !important;
 		line-height: 95px;
