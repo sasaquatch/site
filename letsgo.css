@@ -719,8 +719,8 @@ a.buttonstab:hover{
 	}
 
 	h4{
-		font-size: 95px;
-		line-height: 86px;
+		font-size: 75px;
+		line-height: 75px;
 		letter-spacing: -3.33px;
 	}
 
@@ -760,7 +760,51 @@ a.buttonstab:hover{
 		padding: 0 40px;
 	}
 
+	/* BUTTONS */
 
+	a.buttonsreg{
+		padding: 6px 24px 9px;
+		font-size: 44px !important;
+		line-height: 44px;
+		border-radius: 225px;
+	}
+	a.buttonsreg:hover{background: black;}
+
+	a.buttonsalt{
+		padding: 6px 0 9px;
+		display: inline;
+		font-size: 30px !important;
+		font-weight: 300;
+		line-height: 30px;
+		letter-spacing: -1px;
+		border-radius: 225px;
+		text-decoration: none;
+		color: black;
+	}
+	a.buttonsalt:hover{color: blue;}
+
+	a.buttonstab{
+		padding: 6px 24px 9px;
+		display: inline;
+		font-size: 30px !important;
+		font-weight: 300;
+		line-height: 30px;
+		letter-spacing: -1px;
+		border-radius: 225px;
+		text-decoration: none;
+		color: black;
+		border: 2px white solid;
+	}
+	a.buttonstab:hover{
+		color: blue;
+		border: 2px blue solid;
+		cursor: pointer;
+	}
+
+	.active_tab{
+		color: blue !important;
+		border: 2px blue solid !important;
+	}
 
 
 }
