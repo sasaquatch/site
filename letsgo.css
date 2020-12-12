@@ -259,6 +259,7 @@ section{
 	line-height: 250px;
 	letter-spacing: -10.67px;
 	font-weight: 400;
+	padding: 0 40px;
 }
 
 .massivealt{
@@ -731,6 +732,11 @@ a.buttonstab:hover{
 		letter-spacing: -0.1px;
 	}
 
+	.massive{
+		font-size: 320px;
+		line-height: 250px;
+	}
+
 	.intro{
 		width: auto;
 	}
@@ -776,7 +782,7 @@ a.buttonstab:hover{
 
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Portrait */
 @media only screen 
   and (min-device-width: 375px) 
