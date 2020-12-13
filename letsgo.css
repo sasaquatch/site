@@ -735,7 +735,7 @@ a.buttonstab:hover{
 	.massive{
 		font-size: 320%;
 		line-height: 250px;
-		padding: 0 50px 0 40px;
+		/*padding: 0 50px 0 40px;*/
 	}
 
 	.intro{
