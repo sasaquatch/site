@@ -804,6 +804,11 @@ a.buttonstab:hover{
   and (orientation: portrait) { 
 
 	/* TEXT */
+
+	*{
+		font-size: 90px;
+		line-height: 112px;
+	}
 	h4{
 		font-size: 95px;
 		line-height: 95px;
