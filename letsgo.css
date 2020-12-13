@@ -725,16 +725,14 @@ a.buttonstab:hover{
 		line-height: 75px;
 		letter-spacing: -3.33px;
 	}
-
 	p, p a{
 		font-size: 32px;
 		line-height: 46px;
 		letter-spacing: -0.1px;
 	}
-
-	.massive{/*
-		font-size: 310px;
-		line-height: 250px;*/
+	.massive{
+		font-size: 280px;
+		line-height: 250px;
 		/*padding: 0 50px 0 40px;*/
 	}
 
@@ -755,20 +753,16 @@ a.buttonstab:hover{
     line-height: 40px;
     text-align: left;
 	}
-
 	.text{
 		/*padding: 0 130px;*/
 	}
-
 	.col3{
 		width: 610px;
 		padding: 0 40px 100px;
 	}
-
 	.empty{
 		display: none;
 	}
-
 	.col9{
 		width: 100%;
 		min-width: 280px;
@@ -804,11 +798,15 @@ a.buttonstab:hover{
 		line-height: 95px;
 		letter-spacing: -3.33px;
 	}
-
 	p, p a{
 		font-size: 40px;
 		line-height: 56px;
 		letter-spacing: -0.1px;
+	}
+	.massive{
+		font-size: 300px;
+		line-height: 250px;
+		/*padding: 0 50px 0 40px;*/
 	}
 
 	/* MARGINS */
