@@ -512,7 +512,8 @@ a.buttonstab:hover{
 .wide img,
 .wide video{
 	/*width: 1800px;*/
-	width: calc(100% - 100px);
+	/*width: calc(100% - 100px);*/
+	width: calc(100% - 90px);
 	margin: 0 auto;
 	position: relative;
 	display: block;
@@ -716,19 +717,21 @@ a.buttonstab:hover{
 /*@media all and (max-width: 999px) and (min-width: 320px) {*/
 @media(max-width: 999px) and (min-width: 412px) {
 	*{
-		font-size: 95px;
-		line-height: 118px;
+/*		font-size: 95px;
+		line-height: 118px;*/
+		font-size: 90px;
+		line-height: 112px;
 	}
 
 	h4{
 		font-size: 75px;
 		line-height: 75px;
-		letter-spacing: -3.33px;
+		letter-spacing: -3px;
 	}
 	p, p a{
 		font-size: 32px;
 		line-height: 46px;
-		letter-spacing: -0.1px;
+		letter-spacing: -0.5px;
 	}
 	.massive{
 		font-size: 280px;
@@ -736,10 +739,10 @@ a.buttonstab:hover{
 		/*padding: 0 50px 0 40px;*/
 	}
 
-	.centered{
-    width: 60% !important;
+	.caption{
+    /*width: 60% !important;*/
     font-size: 32px;
-    line-height: 46px;
+    line-height: 48px;
 	}
 
 	.intro{
@@ -748,7 +751,9 @@ a.buttonstab:hover{
 
 	.mobile-description{
 		/*width: 100% !important;*/ /**************** THIS IS THE PROBLEM */
-    padding: 0 40px;
+		width: 650px;
+		margin: 20px 0;
+    padding: 0 45px;
     font-size: 28px;
     line-height: 40px;
     text-align: left;
@@ -801,12 +806,15 @@ a.buttonstab:hover{
 	p, p a{
 		font-size: 40px;
 		line-height: 56px;
-		letter-spacing: -0.1px;
+		letter-spacing: -0.5px;
 	}
 	.massive{
 		font-size: 300px;
 		line-height: 250px;
 		/*padding: 0 50px 0 40px;*/
+	}
+	.mobile-description{
+		line-height: 46px;
 	}
 
 	/* MARGINS */
