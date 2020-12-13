@@ -741,13 +741,15 @@ a.buttonstab:hover{
 	*{
 /*		font-size: 95px;
 		line-height: 118px;*/
-		font-size: 88px;
-		line-height: 106px;
+/*		font-size: 88px;
+		line-height: 106px;*/
+		font-size: 86px;
+		line-height: 100px;
 	}
 
 	h4{
-		font-size: 75px;
-		line-height: 75px;
+		font-size: 70px;
+		line-height: 70px;
 		letter-spacing: -3px;
 	}
 	p, p a{
@@ -819,6 +821,10 @@ a.buttonstab:hover{
 
 	.progress_indicator{
 		height: 10px;
+	}
+	/* SIGNATURE */
+	.signature{
+		margin-bottom: 500px;
 	}
 
 }
