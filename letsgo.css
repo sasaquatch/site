@@ -732,9 +732,9 @@ a.buttonstab:hover{
 		letter-spacing: -0.1px;
 	}
 
-	.massive{
-		font-size: 320%;
-		line-height: 250px;
+	.massive{/*
+		font-size: 310px;
+		line-height: 250px;*/
 		/*padding: 0 50px 0 40px;*/
 	}
 
@@ -749,7 +749,7 @@ a.buttonstab:hover{
 	}
 
 	.mobile-description{
-		width: 100% !important;
+		width: 100% !important; /**************** THIS IS THE PROBLEM */
     padding: 0 40px;
     font-size: 28px;
     line-height: 40px;
