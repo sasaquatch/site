@@ -191,7 +191,7 @@ section{
 /*	width: 300px;
 	padding-left: 40px;*/
 	width: 280px;
-	padding: 0 40px;
+	padding: 0 40px 80px;
 }
 
 .empty{
@@ -201,7 +201,7 @@ section{
 .col9{
 	width: calc(100% - 440px);
 	min-width: 280px;
-	padding: 0 40px;
+	padding: 0 40px 80px;
 }
 
 .col9 img{
@@ -751,6 +751,10 @@ a.buttonstab:hover{
 		line-height: 100px;
 	}
 
+	.contact{
+    font-size: 100px;
+	}
+
 	h4{
 		font-size: 70px;
 		line-height: 70px;
@@ -849,6 +853,12 @@ a.buttonstab:hover{
 	*{
 		font-size: 90px;
 		line-height: 112px;
+	}
+	.asterisk{
+		top: 90px;
+	}
+	.contact{
+    font-size: 200px;
 	}
 	h4{
 		font-size: 95px;
