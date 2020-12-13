@@ -820,7 +820,9 @@ a.buttonstab:hover{
 		/*padding: 0 50px 0 40px;*/
 	}
 	.mobile-description{
-		line-height: 46px;
+		width: auto;
+		font-size: 44px;
+    line-height: 74px;
 	}
 
 	/* MARGINS */
