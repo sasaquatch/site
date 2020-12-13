@@ -10,11 +10,11 @@
 	/*cursor: url('images/cursor.png') 50 50, auto;*/
 	/*cursor: none;*/
   transition: background-color 1s ease;
-  background: pink;
+  /*background: pink;*/
 }
 
 body{
-	background: magenta !important;
+	/*background: magenta !important;*/
   display: grid;
   width: fit-content;	
 }
@@ -37,6 +37,10 @@ body{
 
 h1, h2, h3, h4{
 	margin: 0;
+}
+
+h2{
+	font-weight: 500;
 }
 
 h3.marquee{
@@ -404,7 +408,7 @@ a.buttonstab:hover{
 /*	display: flex;
 	width: 100%;*/ /* LEAVE THIS OFF TO FIX GRID */
 	position: relative;
-	background: #44D7B6;
+	/*background: #44D7B6;*/
 	/*z-index: 99;*/
 }
 
@@ -719,6 +723,18 @@ a.buttonstab:hover{
   100%	{background: black;}
 }
 
+@keyframes amongotherthings {
+  0%		{color: black;}
+  25%		{color: blue;}
+  50%		{color: lime;}
+  75%		{color: blue;}
+  100%	{color: black;}
+}
+
+.amongotherthings{
+	animation: amongotherthings 3s infinite;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*@media all and (max-width: 999px) and (min-width: 320px) {*/
 @media(max-width: 999px) and (min-width: 412px) {
@@ -769,7 +785,7 @@ a.buttonstab:hover{
 	}
 	.col3{
 		width: 560px;
-		padding: 0 40px 100px;
+		padding: 0 40px 120px;
 	}
 	.empty{
 		display: none;
@@ -777,7 +793,7 @@ a.buttonstab:hover{
 	.col9{
 		width: 100%;
 		min-width: 280px;
-		padding: 0 40px 50px;
+		padding: 0 40px 80px;
 	}
 
 	/* BUTTONS */
