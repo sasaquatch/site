@@ -255,7 +255,7 @@ section{
 }
 
 .massive{
-	font-size: 320px;
+	font-size: 310px;
 	line-height: 250px;
 	letter-spacing: -10.67px;
 	font-weight: 400;
@@ -749,7 +749,7 @@ a.buttonstab:hover{
 	}
 
 	.mobile-description{
-		width: 100% !important; /**************** THIS IS THE PROBLEM */
+		/*width: 100% !important;*/ /**************** THIS IS THE PROBLEM */
     padding: 0 40px;
     font-size: 28px;
     line-height: 40px;
