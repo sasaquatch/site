@@ -797,6 +797,13 @@ a.buttonstab:hover{
 		border-radius: 225px;
 	}
 
+	.progress_container{
+		height: 10px;
+	}
+
+	.progress_indicator{
+		height: 10px;
+	}
 
 }
 
