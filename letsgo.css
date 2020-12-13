@@ -56,8 +56,8 @@ h4{
 }
 
 h5{
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 23px;
 	letter-spacing: 0.2px;
 	font-weight: 400;
 	/*color: #757575;*/
@@ -542,6 +542,16 @@ a.buttonstab:hover{
 	cursor: pointer;
 }
 
+.caption{
+	/*width: 100% !important;*/ /**************** THIS IS THE PROBLEM */
+/*	width: 650px;
+	margin: 20px 0;*/
+  padding: 0 45px;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: left;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ HTA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*.gallery {
   height: 0;
@@ -622,7 +632,7 @@ a.buttonstab:hover{
 }
 
 .darkroom img{
-	max-width: 500px;
+	max-width: 560px;
 }
 
 .eye{
@@ -665,10 +675,6 @@ a.buttonstab:hover{
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-}
-
-.darkroom img{
-	max-width: 600px;
 }
 
 .me2alignment{
