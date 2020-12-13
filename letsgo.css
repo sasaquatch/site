@@ -253,6 +253,7 @@ section{
 /* TEXT */
 .centered{text-align: center;}
 .inverted{color: #eee !important;}
+a.inverted:hover{color: blue !important}
 .secondary{color: #757575;}
 .bottom_aligned{
 	height: 500px;
