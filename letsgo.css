@@ -101,14 +101,14 @@ nav a:hover{
 #overlay{
   position: fixed;
   display: none;
-  width: 100vw;
-  height: 100vh;
+/*  width: 100vw;
+  height: 100vh;*/
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 15px;
-  background-color: rgba(255,0,0,0.9);
+  background-color: rgba(255,0,0,0.3);
   /*background-color: white;*/
   z-index: 99;
   cursor: alias;
@@ -380,16 +380,26 @@ a.buttonstab:hover{
 	/*text-align: center;*/
 }
 
-.asterisk,
-.asterisk_close{
+.asterisk{
 	position: fixed;
 	top: 25px;
 	right: 20px;
 }
 
+.asterisk_close{
+	position: fixed;
+	top: -6px;
+	right: 39px;
+}
+
 .asterisk:hover{
 	/*cursor: url('images/cursor_thinking.png') 50 -100, auto;*/
 	cursor: pointer;
+}
+
+.contact_close{
+  font-size: 95px;
+  transform: rotate(110deg);
 }
 
 .menu{
@@ -751,8 +761,15 @@ a.buttonstab:hover{
 		line-height: 100px;
 	}
 
-	.contact{
-    font-size: 100px;
+	.asterisk_close{
+		position: fixed;
+		top: -2px;
+		right: 38px;
+	}
+
+	.contact_close{
+	  font-size: 84px;
+	  transform: rotate(110deg);
 	}
 
 	h4{
@@ -854,12 +871,15 @@ a.buttonstab:hover{
 		font-size: 90px;
 		line-height: 112px;
 	}
-	.asterisk{
-		top: 60px;
-		right: 0;
+	.asterisk_close{
+		position: fixed;
+		top: -2px;
+		right: 40px;
 	}
-	.contact{
-    font-size: 200px;
+
+	.contact_close{
+	  font-size: 84px;
+	  transform: rotate(110deg);
 	}
 	h4{
 		font-size: 95px;
