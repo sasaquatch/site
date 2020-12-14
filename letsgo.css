@@ -871,14 +871,21 @@ a.buttonstab:hover{
 		font-size: 90px;
 		line-height: 112px;
 	}
+	.asterisk{
+		position: fixed;
+		top: 60px;
+		right: 0;
+	}
 	.asterisk_close{
 		position: fixed;
 		top: -2px;
 		right: 40px;
 	}
-
+	.contact{
+		font-size: 200px;
+	}
 	.contact_close{
-	  font-size: 84px;
+	  font-size: 200px;
 	  transform: rotate(110deg);
 	}
 	h4{
