@@ -942,10 +942,10 @@ a.buttonstab:hover{
     line-height: 74px;
 	}
 	.overlay_content a {
-    margin: -10px 0;
+    margin: -20px 0;
     display: block;
-    font-size: 130px;
-    line-height: 150px;
+    font-size: 110px;
+    line-height: 130px;
 	}
 
 	/* MARGINS */
