@@ -138,12 +138,44 @@ nav a:hover{
 }
 
 .overlay_content a{
+	display: block;
+	font-size: 65px;
+	line-height: 90px;
 	color: white;
 }
 
 .overlay_content a:hover{
 	color: black;
 }
+
+.overlay_inlinelinks a{
+	display: inline-block;
+}
+
+/*.overlay_emoji:hover + .hide{
+	display: block;
+	background: red;
+}
+.overlay_emoji_hidden{
+	display: none;
+}*/
+
+.overlay_emoji_hidden{
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay_emoji:hover + .overlay_emoji_hidden{
+  display: block;
+}
+
+
+
+
+
 
 ul{
 	list-style-type: none;
