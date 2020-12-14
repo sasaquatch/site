@@ -815,6 +815,10 @@ a.buttonstab:hover{
 		line-height: 250px;
 		/*padding: 0 50px 0 40px;*/
 	}
+	.overlay_content a {
+    margin: -30px 0;
+    display: block;
+	}
 
 	.caption{
     /*width: 60% !important;*/
@@ -936,6 +940,12 @@ a.buttonstab:hover{
 		width: auto;
 		font-size: 44px;
     line-height: 74px;
+	}
+	.overlay_content a {
+    margin: -10px 0;
+    display: block;
+    font-size: 130px;
+    line-height: 150px;
 	}
 
 	/* MARGINS */
