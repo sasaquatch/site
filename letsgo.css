@@ -107,9 +107,9 @@ nav a:hover{
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 15px;
-  background-color: rgba(255,0,0,0.3);
-  /*background-color: white;*/
+  /*border-radius: 15px;*/
+  /*background-color: rgba(255,0,0,0.3);*/
+  background-color: blue;
   z-index: 99;
   cursor: alias;
   /*overflow-y: hidden;*/
@@ -119,6 +119,30 @@ nav a:hover{
 
 #overlay a:hover{
 	/*cursor: url('images/cursor.png'), auto;*/
+}
+
+.overlay_container{
+	display: block;
+	margin: 0 auto;
+	background: red;
+}
+
+.overlay_content{
+	/*display: block;*/
+	/*background: pink;*/
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+	text-align: center;
+}
+
+.overlay_content a{
+	color: white;
+}
+
+.overlay_content a:hover{
+	color: black;
 }
 
 ul{
@@ -400,6 +424,10 @@ a.buttonstab:hover{
 .contact_close{
   font-size: 95px;
   transform: rotate(110deg);
+  color: white;
+}
+.contact_close:hover{
+	color: black;
 }
 
 .menu{
@@ -878,7 +906,7 @@ a.buttonstab:hover{
 	}
 	.asterisk_close{
 		position: fixed;
-		top: -2px;
+		top: -1px;
 		right: 40px;
 	}
 	.contact{
@@ -887,6 +915,7 @@ a.buttonstab:hover{
 	.contact_close{
 	  font-size: 200px;
 	  transform: rotate(110deg);
+	  color: white;
 	}
 	h4{
 		font-size: 95px;
