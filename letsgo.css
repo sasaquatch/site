@@ -150,6 +150,7 @@ nav a:hover{
 
 .overlay_inlinelinks a{
 	display: inline-block;
+	line-height: 65px;
 }
 
 /*.overlay_emoji:hover + .hide{
