@@ -905,12 +905,12 @@ a.buttonstab:hover{
 	}
 	.asterisk{
 		position: fixed;
-		top: 60px;
+		top: 70px;
 		right: 0;
 	}
 	.asterisk_close{
 		position: fixed;
-		top: -1px;
+		top: 9px;
 		right: 40px;
 	}
 	.contact{
