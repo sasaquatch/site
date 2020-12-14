@@ -855,7 +855,8 @@ a.buttonstab:hover{
 		line-height: 112px;
 	}
 	.asterisk{
-		top: 90px;
+		top: 60px;
+		right: 0;
 	}
 	.contact{
     font-size: 200px;
