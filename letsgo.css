@@ -135,6 +135,7 @@ nav a:hover{
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 	text-align: center;
+	width: 75%;
 }
 
 .overlay_content a{
@@ -454,7 +455,7 @@ a.buttonstab:hover{
 
 .contact_close{
   font-size: 95px;
-  transform: rotate(110deg);
+  transform: rotate(109deg);
   color: white;
 }
 .contact_close:hover{
