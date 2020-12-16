@@ -124,7 +124,7 @@ nav a:hover{
 .overlay_container{
 	display: block;
 	margin: 0 auto;
-	background: red;
+	width: 100%;
 }
 
 .overlay_content{
@@ -135,7 +135,6 @@ nav a:hover{
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
 	text-align: center;
-	width: 100%;
 }
 
 .overlay_content a{
