@@ -22,7 +22,7 @@
 <section class="section padding-bottom200" data-color="white">
   <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
   
-<canvas touch-action="none"></canvas>
+<canvas touch-action="manipulation"></canvas>
 
 	<div class="row" data-color="white">
 		<div class="text">
@@ -90,10 +90,16 @@
 
 			</nav>
 		</div>
-	</div>
+	</div><!-- 
+
+	<div class="row margin-top150" data-color="white">
+		<div class="text" id="trx">
+			This site is much different on desktop than on mobile. Thank you for your visit. The case studies are just below.  &#x21b4;
+		</div>
+	</div> -->
 
 	<div class="row margin-top150" id="latest_work" data-color="white">
-		<div class="text" id="trx">
+		<div class="text margin-top150" id="trx">
 			TRX Augmented Reality iOS & Android App &#x21b4;
 		</div>
 	</div>
@@ -161,7 +167,7 @@
 		<div class="text">
 			My name is Saša Đukić. 
 			I help humans interact with technology.<br><br>
-			I currently lead Systems & Experience Design on the FCA account @Razorfish, working with some really clever and funny folk.<br><br>20 years ago I wrote my first website. In 2006 I started working as a Graphic Designer, which in 2012 has led me to work in UX. Form always follows function, unless it's fashion ☺
+			I lead Systems and Experience Design @Razorfish, working with some really clever and funny folk.<br><br>20 years ago I wrote my first website and in 2006 I started working as a Graphic Designer, which in 2012 led me to work in UX. Form always follows function, unless it's fashion ☺
 		</div>
 	</div>
 </section>
@@ -178,7 +184,7 @@
 <section data-color="violet">
 	<div class="row flex bio">
 		<div class="text">
-			From a country that doesn’t exist anymore, via the —40°C winters of Québec, and along mountainous apéros of Genève. I learned what proper rain is like while living in the PNW. Now biking through the streets of Toronto for 6 years 🌳
+			From a country that doesn’t exist anymore, via the —40°C winters of Québec, and along mountainous apéros of Genève. I learned what proper rain is like when I lived in the PNW. 6 years of biking through the streets of Toronto, now 🌳
 		</div>
 	</div>
 
@@ -331,10 +337,10 @@
 			</div>
 			<div class="col3">
 				<p>Series of posters I made over the course of a year. Each poster celebrates the events of that week.</p><br>
-				<p>The style evolved since sometimes I had no time to make a poster, other times I had too much time.</p>
+				<p>The style evolved because sometimes I had no time to make a poster, other times I had too much time.</p>
 			</div>
 			<div class="col3">
-				<p>After doing a bunch of 30-day projects, I thought that this one was more relaxing and enjoyable, since it gives you a chance to step away, but it also makes you miss the process after a few days.</p>
+				<p>After doing a bunch of 30-day projects prior to this, I found that this structure was more relaxing and enjoyable, since it gives you a chance to step away, but it also makes you miss the process after a few days.</p>
 			</div>
 			<div class="col3 empty">
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -402,24 +408,24 @@
 		<!-- <h5 class="row caption mobile-description project_extra"> -->
 
 	<div class="row flex">
-		<div class="col3 empty">
-			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-		</div>
 		<div class="col3">
-			<p>GIFs cured my insanity and boredom. And this is a weird project, but then again life is weird, too ;)</p>
+			<p>GIFs cured my insanity and boredom last year. It's a weird one, but then again what's not weird ;)</p>
 		</div>
 		<div class="col3">
 			<p>1 — Money flying Chengdu<br>
 			2 — Mediterannean glam<br>
 			3 — Sweet and sticky smash<br>
-			4 — Murican romance dipped in football<br>
-			5 — Well-sampled sarcasm<br>
+			4 — Murican romance dipped in football</p>
+		</div>
+		<div class="col3">
+			<p>
+			5 — Well sampled<br>
 			6 — Wobbly off-beat hyperpop<br>
 			7 — Mesmerizing Osheaga hipnosis<br>
 			8 — A moment in time you want to last forever.</p>
 		</div>
-		<div class="col3 empty">
-			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="col3">
+			<p>The links will open each song in Spotify. Have a listen.</p>
 		</div>
 	</div>
 </section>
@@ -461,7 +467,7 @@
 	<div class="row margin-top250 margin-bottom150">
 		<div class="text inverted">
 			<!-- Thanks for making it this far.<br> -->
-			2020 has changed everything so let's change everything. Hit the buttons below and say hey.
+			2020 has changed everything so let's change everything. Say hey.
 		</div>
 		<div id="contact" class="buttons margin-top10 margin-bottom100">
 			<a href="mailto:sasadjukic@protonmail.com" class="buttonsreg">email</a>
@@ -620,7 +626,7 @@
 
 
 <script>
-	let canvas, ctx;
+let canvas, ctx;
 let render, init;
 let blob;
 
@@ -840,7 +846,7 @@ blob = new Blob;
 
 init = function() {
   canvas = document.createElement('canvas');
-  canvas.setAttribute('touch-action', 'none');
+  canvas.setAttribute('touch-action', 'manipulation');
 
   document.body.appendChild(canvas);
 
