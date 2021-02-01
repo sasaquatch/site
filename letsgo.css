@@ -60,7 +60,7 @@ p a{
 	font-weight: 100;
 	text-decoration: none;
 	display: block;
-	margin: 0 0 30px;
+	margin: 0 0 16px;
 }
 
 p a{
@@ -518,7 +518,6 @@ a.buttonstabblue:hover{
 	p, p a {
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: 0;
   }
 
 	.col3{width: 45%;}
@@ -549,13 +548,13 @@ a.buttonstabblue:hover{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*@media only (max-width: 411px) and (min-width: 320px) {
+@media all and (max-width: 411px) and (min-width: 320px) {
 
 	canvas{
 		display: none;
 	}
 
-}*/
+}
 
 
 
