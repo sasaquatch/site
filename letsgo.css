@@ -311,6 +311,7 @@ nav a:hover{
 .text span{ /* #favourites h3 */
 	font-family: "MigraItalic-ExtralightItalic";
 	letter-spacing: -2px;
+	line-height: inherit;
 }
 
 .original_source{
@@ -503,8 +504,8 @@ a.buttonstabblue:hover{
 	*{
 /*		font-size: 56px;
 		line-height: 74px;*/
-		font-size: 86px;
-		line-height: 95px;
+		font-size: 76px;
+		line-height: 86px;
 		letter-spacing: -2px;
 	}
 
