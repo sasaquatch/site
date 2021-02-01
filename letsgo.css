@@ -501,8 +501,11 @@ a.buttonstabblue:hover{
 @media all and (max-width: 999px) and (min-width: 320px) {
 
 	*{
-		font-size: 56px;
-		line-height: 74px;
+/*		font-size: 56px;
+		line-height: 74px;*/
+		font-size: 86px;
+		line-height: 95px;
+		letter-spacing: -2px;
 	}
 
 	h3{
