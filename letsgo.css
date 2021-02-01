@@ -30,7 +30,7 @@ h1, h2, h3, h4{margin: 0;}
 
 h2{font-weight: 500;}
 h3{
-	font-size: 310px;
+	font-size: 200px;
 	line-height: 250px;
 	letter-spacing: -8px;
 	font-weight: 400;
@@ -60,7 +60,7 @@ p a{
 	font-weight: 100;
 	text-decoration: none;
 	display: block;
-	margin: 0 0 16px;
+	margin: 0 0 30px;
 }
 
 p a{
@@ -509,9 +509,17 @@ a.buttonstabblue:hover{
 		letter-spacing: -2px;
 	}
 
-	h3{
-		font-size: 200px;
+	h3{font-size: 200px;}
+	h4{
+		font-size: 40px;
+		line-height: 34px;
 	}
+
+	p, p a {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
 
 	.col3{width: 45%;}
 	.col6{width: 45%;}
@@ -544,10 +552,10 @@ a.buttonstabblue:hover{
 
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media only (max-width: 411px) and (min-width: 320px) {
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media all and (max-width: 411px) and (min-width: 320px) {
 
 }
 
