@@ -528,6 +528,8 @@ a.buttonstabblue:hover{
 	.col9{width: 100%;}
 	.col12{max-width: 1440px;}
 
+	.margin-top-mobile250{margin-top: 250px;}
+
 	.fullheight{
 		height: 600px;
 	}
