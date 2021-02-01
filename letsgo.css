@@ -549,18 +549,20 @@ a.buttonstabblue:hover{
 	h2.amongotherthings,
 	h2.amongotherthings span{
 		font-size: 100px;
-	}/*
+	}
 
 	canvas{
 		display: none;
-	}*/
+	}
 
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media only (max-width: 411px) and (min-width: 320px) {
 
-
+	canvas{
+		display: none;
+	}
 
 }
 
