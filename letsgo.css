@@ -527,7 +527,10 @@ a.buttonstabblue:hover{
 	.col6{width: 45%;}
 	.col9{width: 100%;}
 	.col12{max-width: 1440px;}
-	.col9 img.fullheight, .col9 video.fullheight{width: 50%;}
+
+	.col9 img.fullheight,
+	.col9 video.fullheight{width: 50%;}
+	
 	.empty{display: none;}
 
 	.info,
@@ -546,11 +549,11 @@ a.buttonstabblue:hover{
 	h2.amongotherthings,
 	h2.amongotherthings span{
 		font-size: 100px;
-	}
+	}/*
 
 	canvas{
 		display: none;
-	}
+	}*/
 
 }
 
