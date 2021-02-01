@@ -549,13 +549,13 @@ a.buttonstabblue:hover{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media all and (max-width: 411px) and (min-width: 320px) {
+/*@media only (max-width: 411px) and (min-width: 320px) {
 
 	canvas{
 		display: none;
 	}
 
-}
+}*/
 
 
 
