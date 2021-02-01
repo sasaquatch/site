@@ -30,7 +30,7 @@ h1, h2, h3, h4{margin: 0;}
 
 h2{font-weight: 500;}
 h3{
-	font-size: 200px;
+	font-size: 310px;
 	line-height: 250px;
 	letter-spacing: -8px;
 	font-weight: 400;
@@ -513,11 +513,6 @@ a.buttonstabblue:hover{
 		font-size: 200px;
 	}
 
-	p, p a {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
 	.col3{width: 45%;}
 	.col6{width: 45%;}
 	.col9{width: 100%;}
@@ -543,14 +538,16 @@ a.buttonstabblue:hover{
 		font-size: 100px;
 	}
 
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media all and (max-width: 411px) and (min-width: 320px) {
-
 	canvas{
 		display: none;
 	}
+
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media all and (max-width: 411px) and (min-width: 320px) {
 
 }
 
