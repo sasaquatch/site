@@ -528,9 +528,10 @@ a.buttonstabblue:hover{
 	.col9{width: 100%;}
 	.col12{max-width: 1440px;}
 
-	.col9 img.fullheight,
-	.col9 video.fullheight{width: 50%;}
-	
+	.fullheight{
+		height: 600px;
+	}
+
 	.empty{display: none;}
 
 	.info,
