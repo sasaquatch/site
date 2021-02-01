@@ -13,20 +13,307 @@
 
 <!-- Release 1.0 -->
 <body class="light">
-<div class="cursor"></div>
+	<!-- <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script> -->
+	<!-- <canvas touch-action="manipulation"></canvas> -->
+	<script>
+		let canvas, ctx;
+		let render, init;
+		let blob;
+
+		class Blob {
+		  constructor() {
+		    this.points = [];
+		  }
+		  
+		  init() {
+		    for(let i = 0; i < this.numPoints; i++) {
+		      let point = new Point(this.divisional * ( i + 1 ), this);
+		      // point.acceleration = -1 + Math.random() * 2;
+		      this.push(point);
+		    }
+		  }
+		  
+		  render() {
+		    let canvas = this.canvas;
+		    let ctx = this.ctx;
+		    let position = this.position;
+		    let pointsArray = this.points;
+		    let radius = this.radius;
+		    let points = this.numPoints;
+		    let divisional = this.divisional;
+		    let center = this.center;
+		    
+		    ctx.clearRect(0,0,canvas.width,canvas.height);
+		    
+		    pointsArray[0].solveWith(pointsArray[points-1], pointsArray[1]);
+
+		    let p0 = pointsArray[points-1].position;
+		    let p1 = pointsArray[0].position;
+		    let _p2 = p1;
+
+		    ctx.beginPath();
+		    ctx.moveTo(center.x, center.y);
+		    ctx.moveTo( (p0.x + p1.x) / 2, (p0.y + p1.y) / 2 );
+
+		    for(let i = 1; i < points; i++) {
+		      
+		      pointsArray[i].solveWith(pointsArray[i-1], pointsArray[i+1] || pointsArray[0]);
+
+		      let p2 = pointsArray[i].position;
+		      var xc = (p1.x + p2.x) / 2;
+		      var yc = (p1.y + p2.y) / 2;
+		      ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
+		      // ctx.lineTo(p2.x, p2.y);
+
+		      ctx.fillStyle = 'blue';
+		      // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
+
+		      p1 = p2;
+		    }
+
+		    var xc = (p1.x + _p2.x) / 2;
+		    var yc = (p1.y + _p2.y) / 2;
+		    ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
+		    // ctx.lineTo(_p2.x, _p2.y);
+
+		    // ctx.closePath();
+		    ctx.fillStyle = this.color;
+		    ctx.fill();
+		    ctx.strokeStyle = 'blue';
+		    // ctx.stroke();
+		    
+		/*
+		    ctx.fillStyle = '#000000';
+		    if(this.mousePos) {
+		      let angle = Math.atan2(this.mousePos.y, this.mousePos.x) + Math.PI;
+		      ctx.fillRect(center.x + Math.cos(angle) * this.radius, center.y + Math.sin(angle) * this.radius, 5, 5);
+		    }
+		*/
+		    requestAnimationFrame(this.render.bind(this));
+		  }
+		  
+		  push(item) {
+		    if(item instanceof Point) {
+		      this.points.push(item);
+		    }
+		  }
+		  
+		  set color(value) {
+		    this._color = value;
+		  }
+		  get color() {
+		    return this._color || 'blue';
+		  }
+		  
+		  set canvas(value) {
+		    if(value instanceof HTMLElement && value.tagName.toLowerCase() === 'canvas') {
+		      this._canvas = canvas;
+		      this.ctx = this._canvas.getContext('2d');
+		    }
+		  }
+		  get canvas() {
+		    return this._canvas;
+		  }
+		  
+		  set numPoints(value) {
+		    if(value > 2) {
+		      this._points = value;
+		    }
+		  }
+		  get numPoints() {
+		    return this._points || 50;
+		  }
+		  
+		  set radius(value) {
+		    if(value > 0) {
+		      this._radius = value;
+		    }
+		  }
+		  get radius() {
+		    return this._radius || 400;
+		  }
+		  
+		  set position(value) {
+		    if(typeof value == 'object' && value.x && value.y) {
+		      this._position = value;
+		    }
+		  }
+		  get position() {
+		    return this._position || { x: 0.5, y: 0.5 };
+		  }
+		  
+		  get divisional() {
+		    return Math.PI * 2 / this.numPoints;
+		  }
+		  
+		  get center() {
+		    return { x: this.canvas.width * this.position.x, y: this.canvas.height * this.position.y };
+		  }
+		  
+		  set running(value) {
+		    this._running = value === true;
+		  }
+		  get running() {
+		    return this.running !== false;
+		  }
+		}
+
+		class Point {
+		  constructor(azimuth, parent) {
+		    this.parent = parent;
+		    this.azimuth = Math.PI - azimuth;
+		    this._components = { 
+		      x: Math.cos(this.azimuth),
+		      y: Math.sin(this.azimuth)
+		    };
+		    
+		    this.acceleration = -0.3 + Math.random() * 0.5;
+		  }
+		  
+		  solveWith(leftPoint, rightPoint) {
+		    this.acceleration = (-0.3 * this.radialEffect + ( leftPoint.radialEffect - this.radialEffect ) + ( rightPoint.radialEffect - this.radialEffect )) * this.elasticity - this.speed * this.friction;
+		  }
+		  
+		  set acceleration(value) {
+		    if(typeof value == 'number') {
+		      this._acceleration = value;
+		      this.speed += this._acceleration * 2;
+		    }
+		  }
+		  get acceleration() {
+		    return this._acceleration || 0;
+		  }
+		  
+		  set speed(value) {
+		    if(typeof value == 'number') {
+		      this._speed = value;
+		      this.radialEffect += this._speed * 1;
+		    }
+		  }
+		  get speed() {
+		    return this._speed || 0;
+		  }
+		  
+		  set radialEffect(value) {
+		    if(typeof value == 'number') {
+		      this._radialEffect = value;
+		    }
+		  }
+		  get radialEffect() {
+		    return this._radialEffect || 0;
+		  }
+		  
+		  get position() {
+		    return { 
+		      x: this.parent.center.x + this.components.x * (this.parent.radius + this.radialEffect), 
+		      y: this.parent.center.y + this.components.y * (this.parent.radius + this.radialEffect) 
+		    }
+		  }
+		  
+		  get components() {
+		    return this._components;
+		  }
+
+		  set elasticity(value) {
+		    if(typeof value === 'number') {
+		      this._elasticity = value;
+		    }
+		  }
+		  get elasticity() {
+		    return this._elasticity || 0.001;
+		  }
+		  set friction(value) {
+		    if(typeof value === 'number') {
+		      this._friction = value;
+		    }
+		  }
+		  get friction() {
+		    return this._friction || 0.0085;
+		  }
+		}
+
+		blob = new Blob;
+
+		init = function() {
+		  canvas = document.createElement('canvas');
+		  canvas.setAttribute('touch-action', 'manipulation');
+
+		  document.body.appendChild(canvas);
+
+		  let resize = function() {
+		    canvas.width = window.innerWidth;
+		    canvas.height = window.innerHeight;
+		  }
+		  window.addEventListener('resize', resize);
+		  resize();
+		  
+		  let oldMousePoint = { x: 0, y: 0};
+		  let hover = false;
+		  let mouseMove = function(e) {
+		    
+		    let pos = blob.center;
+		    let diff = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+		    let dist = Math.sqrt((diff.x * diff.x) + (diff.y * diff.y));
+		    let angle = null;
+		    
+		    blob.mousePos = { x: pos.x - e.clientX, y: pos.y - e.clientY };
+		    
+		    if(dist < blob.radius && hover === false) {
+		      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+		      angle = Math.atan2(vector.y, vector.x);
+		      hover = true;
+		      // blob.color = '#77FF00';
+		    } else if(dist > blob.radius && hover === true){ 
+		      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
+		      angle = Math.atan2(vector.y, vector.x);
+		      hover = false;
+		      blob.color = null;
+		    }
+		    
+		    if(typeof angle == 'number') {
+		      
+		      let nearestPoint = null;
+		      let distanceFromPoint = 100;
+		      
+		      blob.points.forEach((point)=> {
+		        if(Math.abs(angle - point.azimuth) < distanceFromPoint) {
+		          // console.log(point.azimuth, angle, distanceFromPoint);
+		          nearestPoint = point;
+		          distanceFromPoint = Math.abs(angle - point.azimuth);
+		        }
+		        
+		      });
+		      
+		      if(nearestPoint) {
+		        let strength = { x: oldMousePoint.x - e.clientX, y: oldMousePoint.y - e.clientY };
+		        strength = Math.sqrt((strength.x * strength.x) + (strength.y * strength.y)) * 10;
+		        if(strength > 2000) strength = 2000;
+		        nearestPoint.acceleration = strength / 100 * (hover ? -1 : 1);
+		      }
+		    }
+		    
+		    oldMousePoint.x = e.clientX;
+		    oldMousePoint.y = e.clientY;
+		  }
+		  // window.addEventListener('mousemove', mouseMove);
+		  window.addEventListener('pointermove', mouseMove);
+		  
+		  blob.canvas = canvas;
+		  blob.init();
+		  blob.render();
+		}
+
+		init();
+	</script>
 
 <div class="progress_container">
   <div class="progress_indicator" id="progress_bar"></div>
 </div>
 
 <section class="section padding-bottom200" data-color="white">
-  <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-  
-<canvas touch-action="manipulation"></canvas>
 
 	<div class="row" data-color="white">
-		<div class="text">
-			<nav>
+		<nav>
 			<div class="name">
 				<div id="name-1"><a href="http://sasadjukic.com">Sa&scaron;a</a></div>
         <div id="name-4"><a href="http://sasadjukic.com">Sasha</a></div>
@@ -42,57 +329,14 @@
 			</div>
 			<div class="info"><a href="index.html#about">Info</a></div>
 			
-			<div class="title margin-top150">
+			<div class="text row margin-top150">
 				Systems, logic & experiences<br>
-				*among other things
+				*<span><a href="#amongotherthings" class="hover">among other things</a></span>
 			</div>
+		</nav>
+	</div>
 
-			<!-- <a class="asterisk" onclick="on()">
-				<div class="contact">&nbsp;*&nbsp;</div>
-			</a>
-			
-				<div id="overlay" class="centered" onclick="off()">
-					<a href="index.html" class="name_overlay">Sa&scaron;a</a>
-					<a class="asterisk_close" onclick="on()">
-						<div class="contact_close">&nbsp;*&nbsp;</div>
-					</a>
-
-					<div class="overlay_container">
-						<div class="overlay_content">
-
-							<section class="section">
-								
-								<div class="row flex margin-top100">
-									<div class="col6 lfa margin-bottom200">
-										<a href="quadrifoglio-design-system.html">
-											<video autoplay loop muted playsinline class="rounded">
-											  <source src="videos/qf.mp4" type="video/mp4">
-											  <source src="videos/qf.ogg" type="video/ogg">
-											  Your browser does not support HTML video.
-											</video>
-											<h4 class="margin-top20">Quadrifoglio Design System &#x21b4;</h4>
-										</a>
-									</div>
-
-									<div class="col6 lfa">
-										<a href="alfa-romeo-build-and-price.html">
-											<img src="images/iphonesdiagonal.png" class="rounded">
-											<h4 class="margin-top20">Alfa Romeo Build & Price &#x21b4;</h4>
-										</a>
-									</div>
-								</div>
-
-							</section>
-
-						</div>
-					</div>
-				</div> -->
-
-			</nav>
-		</div>
-	</div><!-- 
-
-	<div class="row margin-top150" data-color="white">
+	<!-- <div class="row margin-top150" data-color="white">
 		<div class="text" id="trx">
 			This site is much different on desktop than on mobile. Thank you for your visit. The case studies are just below.  &#x21b4;
 		</div>
@@ -100,128 +344,129 @@
 
 	<div class="row margin-top150" id="latest_work" data-color="white">
 		<div class="text margin-top150" id="trx">
-			TRX Augmented Reality iOS & Android App &#x21b4;
+			TRX Augmented Reality App &#x21b4;
 		</div>
 	</div>
 
-	<!-- <a href="#"> -->
-		<div class="wide zoomin margin-top70">
-			<a href="trx-ar-app.html">
-				<img src="images/trx_phone5.png">
-			</a>
-		</div>
-	<!-- </a> -->
+	<div class="wide zoomin margin-top70">
+		<a href="trx-ar-app.html">
+			<img src="images/trx_phone5.png" class="rounded">
+		</a>
+	</div>
+
 	<div class="buttons mobile-margin-top50">
 		<a href="trx-ar-app.html" class="buttonsreg">open project</a>
-		<!-- <a href="#" class="buttonsalt">next</a> -->
 	</div>
 
-	<div class="row margin-top200">
+	<div class="row maxwidth1440 margin-top150">
 		<div class="text" id="alfa">
-			Behind the scenes of Alfa Romeo Build & Price &#x21b4;
+			Alfa Romeo configurator.<br>Behind the scenes &#x21b4;
 		</div>
 	</div>
 
-	<!-- <a href="#"> -->
 		<div class="wide zoomin margin-top-minus20">
 			<a href="alfa-romeo-build-and-price.html">
-				<img src="images/alfa_hero2.png" id="alfa">
+				<img src="images/alfa_hero2.png" id="alfa" class="rounded">
 			</a>
 		</div>
-	<!-- </a> -->
+
 	<div class="buttons margin-top-minus40 mobile-margin-top50">
 		<a href="alfa-romeo-build-and-price.html" class="buttonsreg">open project</a>
-		<!-- <a href="#" class="buttonsalt">load more projects</a> -->
 	</div>
 
-	<div class="row margin-top200">
+	<div class="row maxwidth1440 margin-top150">
 		<div class="text" id="qf">
 			Quadrifoglio design system.<br>
 			Built for motion and flexibility &#x21b4;
 		</div>
 	</div>
 
-	<!-- <a href="#"> -->
 		<div class="wide zoomin margin-top70">
 			<a href="quadrifoglio-design-system.html">
-				<video autoplay loop muted playsinline id="qf"> <!-- controls -->
+				<video autoplay loop muted playsinline id="qf" class="rounded">
 				  <source src="videos/qf.mp4" type="video/mp4">
-				  <!-- <source src="videos/2019-AR-Overview-Hero-Stelvio-Desktop.mp4" type="video/mp4"> -->
 				  <source src="videos/qf.ogg" type="video/ogg">
 				  Your browser does not support HTML video.
 				</video>
 			</a>
 		</div>
-	<!-- </a> -->
+
 	<div class="buttons mobile-margin-top50">
 		<a href="quadrifoglio-design-system.html" class="buttonsreg">open project</a>
-		<!-- <a href="#" class="buttonsalt">next</a> -->
 	</div>
 </section>
 
 <section class="section" data-color="yellow" id="about">
-	<div class="row flex bio margin-top50">
-		<div class="text">
-			Hi there.<br>
+	<div class="row maxwidth1440 bio">
+		<div class="text margin-top50">
+			<span>Hi</span> there.<br>
 		</div>
 		<div class="text">
 			My name is Saša Đukić. 
-			I help humans interact with technology.<br><br>
-			I lead Systems and Experience Design @Razorfish, working with some really clever and funny folk.<br><br>20 years ago I wrote my first website and in 2006 I started working as a Graphic Designer, which in 2012 led me to work in UX. Form always follows function, unless it's fashion ☺
+			I help humans <span>interact</span> with technology.<br><br>
+			I lead Systems and Experience Design @Razorfish, working with some really clever and funny folk.<br><br>I've been <span>coding</span> for 20 years and designing for 15 — first as a Graphic Designer then in UX. Form always follows function, unless it's <span>fashion</span> ☺
 		</div>
 	</div>
 </section>
 
-<div class="swish" data-color="violet">
+<!-- <div class="swish" data-color="yellow">
 	<svg width="100%" height="800px" viewBox="0 0 1098.72 89.55">
 	  <path id="curve" fill="transparent" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
 	  <text width="100%" style="transform:translate3d(0,0,0);">
-	      <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startOffset="0" id="text-path" class="swishtext">Oh nice! Oh nice! Oh nice!</textPath>
+	      <textPath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startOffset="0" id="text-path" class="swishtext">That's nice.</textPath>
 	  </text>
 	</svg>
+</div> -->
+
+<div class="row marquee yellow margin-top100 margin-bottom100">
+  <div>
+    <span>That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. </span>
+  </div>
 </div>
 
-<section data-color="violet">
-	<div class="row flex bio">
+<section data-color="yellow">
+	<div class="row maxwidth1440 bio">
 		<div class="text">
-			From a country that doesn’t exist anymore, via the —40°C winters of Québec, and along mountainous apéros of Genève. I learned what proper rain is like when I lived in the PNW. 6 years of biking through the streets of Toronto, now 🌳
+			From a <span>country</span> that doesn’t exist anymore, via the —40°C winters of Québec, along <span>mountainous</span> apéros of Genève, under some proper rain in the <span>PNW</span>, now biking in the <span>streets</span> of Toronto for 6 years 🌳
 		</div>
 	</div>
 
 	<div class="row photosofme margin-top100">
 		<img src="images/me1.jpg">
-		<img src="images/me2.jpg" class="margin-top100 me2alignment">
+		<img src="images/me2.jpg" class="margin-top80 alignment">
 	</div>
 
-	<div class="row metext margin-top50">
-		34 years on this planet.
+	<div class="row margin-top50">
+		<div class="text centered">
+			34 years on this planet.
+		</div>
 	</div>
-	<div id="contact" class="buttons margin-top10">
+	<div id="contact" class="buttons">
 		<a href="mailto:sasadjukic@protonmail.com" class="buttonsreg">email</a>
 		<a href="http://instagram.com/cevapi_papi_" target="_blank" class="buttonsreg">instagram</a>
 		<!-- <a class="buttonsalt">keep scrolling for other things</a> -->
 	</div>
 </section>
 
-<section class="section" data-color="violet">
+<section class="section" data-color="yellow">
 	&nbsp;
 </section>
 
-<section class="section margin-top250 padding-bottom150" data-color="white" id="amongotherthings">
+<section class="section margin-top200 padding-bottom150" data-color="blue" id="amongotherthings">
 	<div class="row">
-		<h2 class="text centered amongotherthings padding-bottom60">*among other things.<!-- <br>maybe it's weird, maybe it's not --></h2>
+		<h2 class="text centered amongotherthings padding-bottom60">*<span>among other things</span><!-- <br>maybe it's weird, maybe it's not --></h2>
 	</div>
 </section>
 
-<section class="section" data-color="white" id="favourites">
-	<div class="row flex margin-top250">
-		<h3 class="massive">Favourites</h3>
+<section class="section blue" data-color="blue" id="favourites">
+	<div class="row margin-top150">
+		<h3>Favourites</h3>
 	</div>
 
-	<div class="row tabs margin-top10">
-		<a class="buttonstab toronto active_tab">toronto</a>
+	<div class="row tabs">
+		<a class="buttonstabblue toronto active_tab_blue">toronto</a>
 
-		<a class="buttonstab tokyo">adding more soon</a><!-- 東京 -->
+		<a class="buttonstabblue tokyo">adding more soon</a><!-- 東京 -->
 
 		<!-- <a class="buttonstab taipei">台北</a> -->
 
@@ -238,29 +483,30 @@
 		<a class="buttonstab things">moments</a> -->
 	</div>
 
-	<div class="row flex margin-top150 toronto_content visible_favs">
+	<div class="grid margin-top100">
+		<div class="row flex">
 		<div class="col3">
 			<h4>Imanishi</h4>
 			<p class="margin-top80">I want more endless nights at this place. Perfect izakaya food every time, and the dai dai orange sour is amazing.</p>
 
 		</div>
 		<div class="col3">
-			<h4>Ramen Isshin</h4>
-			<p class="margin-top80">The Tan Tan Ramen makes me forget where I am for 20 minutes. It's a powerful magical potion that will keep you alive year-round.</p>
+			<h4>Dumpling House</h4>
+			<p class="margin-top80">Not sure why I always think of ordering dumplings on a Tuesday (they're closed on Tuesdays). Get the juciest fried pork and chives and forget everything that's wrong with the world with the first bite.</p>
 		</div>
 		<div class="col3 empty">
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		</div>
 		<div class="col3">
-			<h4>Dumpling House</h4>
-			<p class="margin-top80">Not sure why I always think of ordering dumplings on a Tuesday (they're closed on Tuesdays). Get the juciest fried pork and chives and forget everything that's wrong with the world with the first bite.</p>
+			<h4>Ramen Isshin</h4>
+			<p class="margin-top80">I forget where I am for 20 minutes when I order the tan tan ramen. It's good.</p>
 		</div>
 
-		<div class="col3">
+		<div class="col3 margin-top50">
 			<h4>The island &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
 			<p class="margin-top80">No cell reception in some parts and if you're facing south then it feels like you're in a different country. I never understood the haters. The sound of the waves and the sunsets are a great vibe. It's next level if you bike there.</p>
 		</div>
-		<div class="col9">
+		<div class="col9 margin-top50">
 		  <!-- Swiper -->
 		  <div class="swiper-container">
 		    <div class="swiper-wrapper">
@@ -297,19 +543,19 @@
 		  </script>
 		</div>
 
-		<div class="col3">
+		<div class="col3 margin-top100">
 			<h4>North of Brooklyn</h4>
 			<p class="margin-top80"><!-- Everyone's got their pizza spot, you know something close by, something that always hits right.  -->This place makes NY—style slices and is unpretentious about it. I like to walk around the area for an extra layer of comfy sensations.</p>
 		</div>
-		<div class="col3">
+		<div class="col3 margin-top100">
 			<h4>Poetry</h4>
 			<p class="margin-top80">When returning from a trip, it's always good to reset at a place that has great live jazz and an atmosphere that sends you elsewhere once more.</p>
 		</div>
-		<div class="col3">
+		<div class="col3 margin-top100">
 			<h4>Kinton Ramen</h4>
 			<p class="margin-top80">When I first moved to the city I went here 2x a week no problem. The one that really gets to me is the Monday special: shoyu ramen topped with juicy pieces of karaage and an egg. Thanks to these fine folks, I once won tickets to see Tampopo at TIFF. Still thankful. Watch the movie if you haven't.<!--  <a href="">This</a> is the photo is submitted. --></p>
 		</div>
-		<div class="col3">
+		<div class="col3 margin-top100">
 			<h4>Ruru Baked</h4>
 			<p class="margin-top80">New hype cream. Thankful for the friends that came through with the free drops. So blessed. So lucky. I've since had to try my luck at buying this extremely quick-selling ice cream. Third time was the charm.</p>
 		</div>
@@ -317,17 +563,17 @@
 </section>
 
 <section class="section" data-color="white">
-	<div class="row flex margin-top250">
+	<div class="row margin-top250">
 		<h3 class="massive centered">5—9</h3>
 	</div>
 
-	<div class="row margin-top150">
+	<div class="row margin-top250">
 		<div class="text centered">
 			52 weekends
 		</div>
 	</div>
 
-	<div class="wide maxwidth1580 margin-top50">
+	<div class="row">
 		<img src="images/52weekends4.png" class="notrounded margin-top50">
 	</div>
 
@@ -336,11 +582,11 @@
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 			</div>
 			<div class="col3">
-				<p>Series of posters I made over the course of a year. Each poster celebrates the events of that week.</p><br>
+				<p>Series of posters I made over the course of a year. Each poster celebrates the events of that week.</p>
 				<p>The style evolved because sometimes I had no time to make a poster, other times I had too much time.</p>
 			</div>
 			<div class="col3">
-				<p>After doing a bunch of 30-day projects prior to this, I found that this structure was more relaxing and enjoyable, since it gives you a chance to step away, but it also makes you miss the process after a few days.</p>
+				<p>I really liked the weekly cadence because it gave me a chance to step away for a few days and get a chance to miss the process.</p>
 			</div>
 			<div class="col3 empty">
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -349,7 +595,7 @@
 </section>
 
 </section><section class="section" data-color="white">
-		<div class="text centered margin-top100">
+		<div class="text centered margin-top250">
 			anything's a canvas
 		</div>
 
@@ -407,7 +653,7 @@
 
 		<!-- <h5 class="row caption mobile-description project_extra"> -->
 
-	<div class="row flex">
+	<div class="row flex margin-top50">
 		<div class="col3">
 			<p>GIFs cured my insanity and boredom last year. It's a weird one, but then again what's not weird ;)</p>
 		</div>
@@ -434,38 +680,46 @@
 
 
 
-<section class="darkroom section margin-top150" data-color="black" id="darkroom">
-	<div class="row flex">
-		<h3 class="massive inverted">Dark<br>room</h3>
+<section class="darkroom section margin-top250" data-color="black" id="darkroom">
+	<div class="row">
+		<div class="inverted text centered">The darkroom</div>
 	</div>
 
-	<div class="row flex margin-top200">
-		<img src="images/photos/osheaga.jpg" class="margin-left40">
-		<img src="images/photos/monochromatictokyo.jpg" class="margin-top150 margin-right40">
-	</div>
-
-	<div class="row flex margin-top200">
-		<img src="images/photos/stepoutside.jpg" class="margin-left40">
-		<img src="images/photos/brightmoment.jpg" class="margin-top150 margin-right40">
-	</div>
-
-	<div class="row flex margin-top200">
-		<img src="images/photos/porter.jpg" class="margin-left40">
-		<img src="images/photos/boston.jpg" class="margin-top150 margin-right40">
-	</div>
-
-	<div class="row flex margin-top200">
-		<img src="images/photos/standard.jpg" class="margin-left40">
-		<img src="images/photos/ifyouknowyouknow.jpg" class="margin-top150 margin-right40">
-	</div>
-
-	<div class="row flex margin-top200">
-		<img src="images/photos/telica.jpg" class="margin-left40">
-		<img src="images/photos/whistlermoment.jpg" class="margin-top150 margin-right40">
+	<div class="row flex margin-top150">
+		<div class="col6">
+			<img src="images/photos/osheaga.jpg">
+		</div>
+		<div class="col6">
+			<img src="images/photos/monochromatictokyo.jpg">
+		</div>
+		<div class="col6">
+			<img src="images/photos/stepoutside.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/brightmoment.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/porter.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/boston.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/standard.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/ifyouknowyouknow.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/telica.jpg" class="margin-top100">
+		</div>
+		<div class="col6">
+			<img src="images/photos/whistlermoment.jpg" class="margin-top100">
+		</div>
 	</div>
 
 	<div class="row margin-top250 margin-bottom150">
-		<div class="text inverted">
+		<div class="text centered inverted">
 			<!-- Thanks for making it this far.<br> -->
 			2020 has changed everything so let's change everything. Say hey.
 		</div>
@@ -624,297 +878,6 @@
   });
 </script>
 
-
-<script>
-let canvas, ctx;
-let render, init;
-let blob;
-
-class Blob {
-  constructor() {
-    this.points = [];
-  }
-  
-  init() {
-    for(let i = 0; i < this.numPoints; i++) {
-      let point = new Point(this.divisional * ( i + 1 ), this);
-      // point.acceleration = -1 + Math.random() * 2;
-      this.push(point);
-    }
-  }
-  
-  render() {
-    let canvas = this.canvas;
-    let ctx = this.ctx;
-    let position = this.position;
-    let pointsArray = this.points;
-    let radius = this.radius;
-    let points = this.numPoints;
-    let divisional = this.divisional;
-    let center = this.center;
-    
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    
-    pointsArray[0].solveWith(pointsArray[points-1], pointsArray[1]);
-
-    let p0 = pointsArray[points-1].position;
-    let p1 = pointsArray[0].position;
-    let _p2 = p1;
-
-    ctx.beginPath();
-    ctx.moveTo(center.x, center.y);
-    ctx.moveTo( (p0.x + p1.x) / 2, (p0.y + p1.y) / 2 );
-
-    for(let i = 1; i < points; i++) {
-      
-      pointsArray[i].solveWith(pointsArray[i-1], pointsArray[i+1] || pointsArray[0]);
-
-      let p2 = pointsArray[i].position;
-      var xc = (p1.x + p2.x) / 2;
-      var yc = (p1.y + p2.y) / 2;
-      ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
-      // ctx.lineTo(p2.x, p2.y);
-
-      ctx.fillStyle = 'blue';
-      // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
-
-      p1 = p2;
-    }
-
-    var xc = (p1.x + _p2.x) / 2;
-    var yc = (p1.y + _p2.y) / 2;
-    ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
-    // ctx.lineTo(_p2.x, _p2.y);
-
-    // ctx.closePath();
-    ctx.fillStyle = this.color;
-    ctx.fill();
-    ctx.strokeStyle = 'blue';
-    // ctx.stroke();
-    
-/*
-    ctx.fillStyle = '#000000';
-    if(this.mousePos) {
-      let angle = Math.atan2(this.mousePos.y, this.mousePos.x) + Math.PI;
-      ctx.fillRect(center.x + Math.cos(angle) * this.radius, center.y + Math.sin(angle) * this.radius, 5, 5);
-    }
-*/
-    requestAnimationFrame(this.render.bind(this));
-  }
-  
-  push(item) {
-    if(item instanceof Point) {
-      this.points.push(item);
-    }
-  }
-  
-  set color(value) {
-    this._color = value;
-  }
-  get color() {
-    return this._color || 'blue';
-  }
-  
-  set canvas(value) {
-    if(value instanceof HTMLElement && value.tagName.toLowerCase() === 'canvas') {
-      this._canvas = canvas;
-      this.ctx = this._canvas.getContext('2d');
-    }
-  }
-  get canvas() {
-    return this._canvas;
-  }
-  
-  set numPoints(value) {
-    if(value > 2) {
-      this._points = value;
-    }
-  }
-  get numPoints() {
-    return this._points || 50;
-  }
-  
-  set radius(value) {
-    if(value > 0) {
-      this._radius = value;
-    }
-  }
-  get radius() {
-    return this._radius || 400;
-  }
-  
-  set position(value) {
-    if(typeof value == 'object' && value.x && value.y) {
-      this._position = value;
-    }
-  }
-  get position() {
-    return this._position || { x: 0.5, y: 0.5 };
-  }
-  
-  get divisional() {
-    return Math.PI * 2 / this.numPoints;
-  }
-  
-  get center() {
-    return { x: this.canvas.width * this.position.x, y: this.canvas.height * this.position.y };
-  }
-  
-  set running(value) {
-    this._running = value === true;
-  }
-  get running() {
-    return this.running !== false;
-  }
-}
-
-class Point {
-  constructor(azimuth, parent) {
-    this.parent = parent;
-    this.azimuth = Math.PI - azimuth;
-    this._components = { 
-      x: Math.cos(this.azimuth),
-      y: Math.sin(this.azimuth)
-    };
-    
-    this.acceleration = -0.3 + Math.random() * 0.5;
-  }
-  
-  solveWith(leftPoint, rightPoint) {
-    this.acceleration = (-0.3 * this.radialEffect + ( leftPoint.radialEffect - this.radialEffect ) + ( rightPoint.radialEffect - this.radialEffect )) * this.elasticity - this.speed * this.friction;
-  }
-  
-  set acceleration(value) {
-    if(typeof value == 'number') {
-      this._acceleration = value;
-      this.speed += this._acceleration * 2;
-    }
-  }
-  get acceleration() {
-    return this._acceleration || 0;
-  }
-  
-  set speed(value) {
-    if(typeof value == 'number') {
-      this._speed = value;
-      this.radialEffect += this._speed * 1;
-    }
-  }
-  get speed() {
-    return this._speed || 0;
-  }
-  
-  set radialEffect(value) {
-    if(typeof value == 'number') {
-      this._radialEffect = value;
-    }
-  }
-  get radialEffect() {
-    return this._radialEffect || 0;
-  }
-  
-  get position() {
-    return { 
-      x: this.parent.center.x + this.components.x * (this.parent.radius + this.radialEffect), 
-      y: this.parent.center.y + this.components.y * (this.parent.radius + this.radialEffect) 
-    }
-  }
-  
-  get components() {
-    return this._components;
-  }
-
-  set elasticity(value) {
-    if(typeof value === 'number') {
-      this._elasticity = value;
-    }
-  }
-  get elasticity() {
-    return this._elasticity || 0.001;
-  }
-  set friction(value) {
-    if(typeof value === 'number') {
-      this._friction = value;
-    }
-  }
-  get friction() {
-    return this._friction || 0.0085;
-  }
-}
-
-blob = new Blob;
-
-init = function() {
-  canvas = document.createElement('canvas');
-  canvas.setAttribute('touch-action', 'manipulation');
-
-  document.body.appendChild(canvas);
-
-  let resize = function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  window.addEventListener('resize', resize);
-  resize();
-  
-  let oldMousePoint = { x: 0, y: 0};
-  let hover = false;
-  let mouseMove = function(e) {
-    
-    let pos = blob.center;
-    let diff = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-    let dist = Math.sqrt((diff.x * diff.x) + (diff.y * diff.y));
-    let angle = null;
-    
-    blob.mousePos = { x: pos.x - e.clientX, y: pos.y - e.clientY };
-    
-    if(dist < blob.radius && hover === false) {
-      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-      angle = Math.atan2(vector.y, vector.x);
-      hover = true;
-      // blob.color = '#77FF00';
-    } else if(dist > blob.radius && hover === true){ 
-      let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
-      angle = Math.atan2(vector.y, vector.x);
-      hover = false;
-      blob.color = null;
-    }
-    
-    if(typeof angle == 'number') {
-      
-      let nearestPoint = null;
-      let distanceFromPoint = 100;
-      
-      blob.points.forEach((point)=> {
-        if(Math.abs(angle - point.azimuth) < distanceFromPoint) {
-          // console.log(point.azimuth, angle, distanceFromPoint);
-          nearestPoint = point;
-          distanceFromPoint = Math.abs(angle - point.azimuth);
-        }
-        
-      });
-      
-      if(nearestPoint) {
-        let strength = { x: oldMousePoint.x - e.clientX, y: oldMousePoint.y - e.clientY };
-        strength = Math.sqrt((strength.x * strength.x) + (strength.y * strength.y)) * 10;
-        if(strength > 2000) strength = 2000;
-        nearestPoint.acceleration = strength / 100 * (hover ? -1 : 1);
-      }
-    }
-    
-    oldMousePoint.x = e.clientX;
-    oldMousePoint.y = e.clientY;
-  }
-  // window.addEventListener('mousemove', mouseMove);
-  window.addEventListener('pointermove', mouseMove);
-  
-  blob.canvas = canvas;
-  blob.init();
-  blob.render();
-}
-
-init();
-</script>
 
 
 
