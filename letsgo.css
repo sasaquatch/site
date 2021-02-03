@@ -614,11 +614,11 @@ a.buttonstabblue:hover{
 		}*/
 
 
-/*		*{
-			font-size: 90px;
+		.mobiletext{
+			font-size: 140px;
 			line-height: 105px;
 			letter-spacing: -2px;
-		}*/
+		}
 
 		h3{font-size: 200px;}
 		h4{
