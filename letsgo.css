@@ -602,10 +602,23 @@ a.buttonstabblue:hover{
   and (-webkit-min-device-pixel-ratio: 2) {
 
 		*{
+			font-size: 60px;
+			line-height: 65px;
+			letter-spacing: -1px;
+		}
+
+/*		h3{font-size: 200px;}
+		h4{
+			font-size: 40px;
+			line-height: 34px;
+		}*/
+
+
+/*		*{
 			font-size: 90px;
 			line-height: 105px;
 			letter-spacing: -2px;
-		}
+		}*/
 
 		h3{font-size: 200px;}
 		h4{
@@ -635,6 +648,15 @@ a.buttonstabblue:hover{
 	  .swiper-pagination-bullet {
 	    width: 20px !important;
 	    height: 20px !important;
+	  }
+
+	  .alfa_swiper .swiper-pagination-bullet-active{
+	  	background: white !important;
+	  }
+
+	  .alfa_swiper .swiper-pagination-bullet{
+	  	background: inherit;
+	  	border: 2px solid white;
 	  }
 
 	.hiddenondesktop{display: block;}
