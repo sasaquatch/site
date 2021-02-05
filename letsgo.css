@@ -223,10 +223,13 @@ nav a:hover{
 	float: left;
 }*/
 
-.col3 img,
-.col3 video{
+.col3 img{
 	width: 100%;
 	max-width: 280px;
+}
+
+.col3 video{
+	width: 100%;
 }
 
 .col6 img,
@@ -564,8 +567,10 @@ a.buttonstabblue:hover{
 	}
 
 	p, p a {
-    font-size: 20px;
-    line-height: 28px;
+/*    font-size: 20px;
+    line-height: 28px;*/
+    font-size: 22px;
+    line-height: 42px;
     letter-spacing: 0;
   }
 
@@ -622,8 +627,8 @@ a.buttonstabblue:hover{
   and (-webkit-min-device-pixel-ratio: 2) {
 
 		*{
-			font-size: 58px;
-			line-height: 64px;
+			font-size: 78px;
+			line-height: 80px;
 			letter-spacing: -1px;
 		}
 
@@ -642,11 +647,12 @@ a.buttonstabblue:hover{
 		h3{font-size: 200px;}
 		h4{
 			font-size: 70px;
-			line-height: 70px;
+			line-height: 74px;
 			letter-spacing: -1px;
 		}
 
-		p, p a {
+		.swiper-slide p,
+		.swiper-slide p a{
 	    font-size: 48px;
 	    line-height: 60px;
 	    letter-spacing: 0;
@@ -680,6 +686,7 @@ a.buttonstabblue:hover{
 
 		.hiddenondesktop{display: block;}
 		.hiddenonmobile{display: none;}
+		.margin-top-mobile10{margin-top: 10px;}
 		.margin-top-mobile50{margin-top: 50px;}
 		.margin-top-mobile100{margin-top: 100px;}
 		.margin-top-mobile800{margin-top: 800px;}
