@@ -576,7 +576,7 @@ a.buttonstabblue:hover{
 
 	/* GLOBALSMALL */
 	.margin-top-mobile150{margin-top: 0;}
-	.margin-top-mobile600{margin-top: 600px;}
+	.margin-top-tablet600{margin-top: 600px;}
 
 	.fullheight{
 		height: 600px;
@@ -633,7 +633,6 @@ a.buttonstabblue:hover{
 			line-height: 34px;
 		}*/
 
-
 		.mobiletext{
 			font-size: 140px;
 			line-height: 105px;
@@ -682,6 +681,7 @@ a.buttonstabblue:hover{
 		.hiddenondesktop{display: block;}
 		.hiddenonmobile{display: none;}
 		.margin-top-mobile100{margin-top: 100px;}
+		.margin-top-mobile800{margin-top: 800px;}
 
 		.col3 img,
 		.col3 video{
