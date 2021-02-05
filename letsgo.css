@@ -622,8 +622,8 @@ a.buttonstabblue:hover{
   and (-webkit-min-device-pixel-ratio: 2) {
 
 		*{
-			font-size: 60px;
-			line-height: 66px;
+			font-size: 58px;
+			line-height: 64px;
 			letter-spacing: -1px;
 		}
 
