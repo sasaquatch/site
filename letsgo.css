@@ -411,7 +411,7 @@ nav a:hover{
 a.buttonsreg{
 	padding: 6px 24px 9px;
 	display: inline;
-	font-size: 30px !important;
+	font-size: 30px;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: -1px;
@@ -425,7 +425,7 @@ a.buttonsreg:hover{background: black;}
 a.buttonsalt{
 	padding: 6px 0 9px;
 	display: inline;
-	font-size: 30px !important;
+	font-size: 30px;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: -1px;
@@ -442,7 +442,7 @@ a.buttonsalt.nohover:hover{
 a.buttonstab{
 	padding: 6px 24px 9px;
 	display: inline;
-	font-size: 30px !important;
+	font-size: 30px;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: -1px;
@@ -686,6 +686,20 @@ a.buttonstabblue:hover{
 		.col3 img,
 		.col3 video{
 		  max-width: 100%;
+		}
+
+		/* BUTTONS */
+		a.buttonsreg{
+			padding: 10px 32px 14px;
+			font-size: 60px !important;
+			border-radius: 225px;
+		}
+		a.buttonsalt{
+			margin: 50px 0;
+			padding: 22px 30px 28px;
+			display: inline-block;
+			font-size: 60px !important;
+			line-height: 95px;
 		}
 }
 
