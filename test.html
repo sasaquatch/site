@@ -3,18 +3,20 @@
 <head>
 	<title>Saša Djukic — Systems & Experiences Portfolio</title>
 	<link rel="stylesheet" href="letsgo.css">
-	<link rel="icon" type="image/png" href="images/cursor.png"/>
-	<link rel="icon" type="image/png" href="https://example.com/cursor.png"/>
   <link rel="stylesheet" href="swiper-bundle.min.css">
+	<link rel="icon" type="image/png" href="images/cursor.png"/>
 
-	<!-------------------- JQUERY -------------------->
+	<!-- ~~~~~~~~~~~~~~~~~~~~ JQUERY ~~~~~~~~~~~~~~~~~~~~ -->
 	<script src="jquery-3.5.1.min.js"></script>
 </head>
 
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~~~~~~~ -->
 <!-- Release 1.0 -->
 <body class="light">
 	<!-- <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script> -->
 	<!-- <canvas touch-action="manipulation"></canvas> -->
+	<!-- canvas is hidden in line 18 -->
 	<script>
 		let canvas, ctx;
 		let render, init;
@@ -315,28 +317,29 @@
 	<div class="row" data-color="white">
 		<nav>
 			<div class="name">
-				<div id="name-1"><a href="http://sasadjukic.com">Sa&scaron;a</a></div>
-        <div id="name-4"><a href="http://sasadjukic.com">Sasha</a></div>
-        <div id="name-9"><a href="http://sasadjukic.com">Sacha</a></div>
-        <div id="name-2"><a href="http://sasadjukic.com">Саша</a></div>
-        <div id="name-3"><a href="http://sasadjukic.com">サシャ</a></div>
-        <div id="name-5"><a href="http://sasadjukic.com">사샤</a></div>
-        <div id="name-6"><a href="http://sasadjukic.com">沙紗</a></div>
-        <div id="name-7"><a href="http://sasadjukic.com">ساشا</a></div>
-        <div id="name-8"><a href="http://sasadjukic.com">薩沙</a></div>
-        <div id="name-10"><a href="http://sasadjukic.com">סשה</a></div>
-        <div id="name-11"><a href="http://sasadjukic.com">Σάσα</a></div>
+				<div id="name-1"><a href="http://sasadjukic.com">Sa&scaron;a Đukić</a></div>
+        <div id="name-2"><a href="http://sasadjukic.com">Саша Ђуkић</a></div>
+        <div id="name-3"><a href="http://sasadjukic.com">サシャ Djukic</a></div>
+        <div id="name-4"><a href="http://sasadjukic.com">Sasha Djukic</a></div>
+        <div id="name-9"><a href="http://sasadjukic.com">Sacha Djukic</a></div>
+        <div id="name-7"><a href="http://sasadjukic.com">ساشا Djukic</a></div>
+        <div id="name-5"><a href="http://sasadjukic.com">사샤 Djukic</a></div>
+        <div id="name-10"><a href="http://sasadjukic.com">סשה Djukic</a></div>
+        <div id="name-8"><a href="http://sasadjukic.com">薩沙 Djukic</a></div>
+        <div id="name-6"><a href="http://sasadjukic.com">沙紗 Djukic</a></div>
+        <div id="name-11"><a href="http://sasadjukic.com">Σάσα Djukic</a></div>
 			</div>
-			<div class="info"><a href="#about">Info</a></div>
+			<!-- <div class="lastname">Djukic</a></div> -->
+			<div class="info"><a href="#info">Info</a></div>
 			
-			<div class="text row margin-top150 margin-top-mobile150">
+			<div class="text row margin-top-mobile150">
 				Systems, logic & experiences<br>
 				*<span><a href="#amongotherthings" class="hover">among other things</a></span>
 			</div>
 		</nav>
 	</div>
 
-	<div class="row margin-top150 margin-top-mobile700" id="latest_work" data-color="white">
+	<div class="row margin-top300 margin-top-mobile600" id="latest_work" data-color="white">
 		<div class="text" id="trx">
 			TRX Augmented Reality App &#x21b4;
 		</div>
@@ -344,7 +347,7 @@
 
 	<div class="wide zoomin margin-top70">
 		<a href="trx-ar-app.html">
-			<img src="images/trx_phone5.png" class="rounded">
+			<img loading="lazy" src="images/trx_phone5.png" class="rounded">
 		</a>
 	</div>
 
@@ -360,11 +363,11 @@
 
 		<div class="wide zoomin margin-top10">
 			<a href="alfa-romeo-build-and-price.html">
-				<img src="images/alfa_hero2.png" id="alfa" class="rounded">
+				<img loading="lazy" src="images/alfa_hero2.png" id="alfa" class="rounded">
 			</a>
 		</div>
 
-	<div class="buttons margin-top-minus40 mobile-margin-top50">
+	<div class="buttons mobile-margin-top50">
 		<a href="alfa-romeo-build-and-price.html" class="buttonsreg">open project</a>
 	</div>
 
@@ -377,7 +380,7 @@
 
 		<div class="wide zoomin margin-top70">
 			<a href="quadrifoglio-design-system.html">
-				<video autoplay loop muted playsinline id="qf" class="rounded">
+				<video loading="lazy" autoplay loop muted playsinline id="qf" class="rounded">
 				  <source src="videos/qf.mp4" type="video/mp4">
 				  <source src="videos/qf.ogg" type="video/ogg">
 				  Your browser does not support HTML video.
@@ -390,15 +393,29 @@
 	</div>
 </section>
 
-<section class="section" data-color="yellow" id="about">
-	<div class="row maxwidth1440 bio">
+<section class="section" data-color="yellow" id="info">
+	<div class="row">
 		<div class="text margin-top50">
-			<span>Hi</span> there.<br>
+			<div class="pop_hi hidden">šta ima?</div>
+			<span id="pop_hi">Hi</span> there.<br>
 		</div>
 		<div class="text">
-			My name is Saša Đukić. 
-			I help humans <span>interact</span> with technology.<br><br>
-			I lead Systems and Experience Design @Razorfish, working with some really clever and funny folk.<br><br>Been coding for 20 years and designing for 15 — first half as a Graphic Designer and the second in UX. Form always follows function, unless it's <span>fashion</span> ☺
+			My name is Saša Đukić.
+			I work in technology and design.<br><br>
+			I started writing code for fun when I was 14, then fell in love with typography so I decided to study and become a Graphic Designer.<br><br>
+			I did that from 2006 until 2012, when I decided to move to UX. I lead design projects @Razorfish, building things with some really clever and funny folk. Form always follows function, unless it's <span>fashion</span> ☺<br><br>
+			From a <span>country</span> that doesn’t exist anymore, via the —40°C winters of Québec, along <span>mountainous</span> apéros of Genève, and under some proper rain in the <span>PNW</span>. Been biking through the <span>streets</span> of Toronto since 2014 🌳
+		</div>
+	</div>
+	<div class="row margin-top100">
+		<div class="text">
+			
+			<!-- I currently lead Systems and Experience Design @Razorfish, working with some really clever and funny folk.<br><br>Been coding for 20 years and designing for 15 — first half as a Graphic Designer and the second in UX. --> 
+		</div>
+	</div>
+	<div class="row margin-top100">
+		<div class="text">
+
 		</div>
 	</div>
 </section>
@@ -412,22 +429,17 @@
 	</svg>
 </div> -->
 
-<div class="row marquee yellow margin-top100 margin-bottom100">
+<!-- <div class="row marquee yellow margin-top100 margin-bottom100">
   <div>
     <span>That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. That's nice. </span>
   </div>
-</div>
+</div> -->
 
-<section data-color="yellow">
-	<div class="row maxwidth1440 bio">
-		<div class="text">
-			From a <span>country</span> that doesn’t exist anymore, via the —40°C winters of Québec, along <span>mountainous</span> apéros of Genève, under some proper rain in the <span>PNW</span>, now biking through the <span>streets</span> of Toronto for 6 years 🌳
-		</div>
-	</div>
+<section data-color="yellow margin-top100">
 
 	<div class="row photosofme margin-top100">
-		<img src="images/me1.jpg">
-		<img src="images/me2.jpg" class="margin-top80 alignment">
+		<img loading="lazy" src="images/me1.jpg">
+		<img loading="lazy" src="images/me2.jpg" class="margin-top80 alignment">
 	</div>
 
 	<div class="row margin-top50 margin-bottom20">
@@ -445,16 +457,17 @@
 <section class="section" data-color="yellow">
 	&nbsp;
 </section>
+<div id="amongotherthings"></div>
 
-<section class="section margin-top500" data-color="blue" id="amongotherthings">
+<section class="section margin-top400" data-color="blue">
 	<div class="row">
 		<h2 class="text centered amongotherthings">*<span>among other things</span><!-- <br>maybe it's weird, maybe it's not --></h2>
 	</div>
 </section>
 
 <section class="section blue" data-color="blue" id="favourites">
-	<div class="row margin-top500">
-		<h3>Favourites</h3>
+	<div class="row margin-top400">
+		<h3 class="centered">Favourites</h3>
 	</div>
 
 	<div class="row tabs">
@@ -481,41 +494,41 @@
 		<div class="row flex">
 		<div class="col3 margin-top50">
 			<h4>Imanishi</h4>
-			<p class="margin-top80">I want more endless nights at this place. Perfect izakaya food every time, and the dai dai orange sour is amazing.</p>
+			<p class="margin-top40">I want more endless nights at this place. Perfect izakaya food every time, and the dai dai orange sour is amazing.</p>
 
 		</div>
 		<div class="col3 margin-top50">
 			<h4>Dumpling House</h4>
-			<p class="margin-top80">Not sure why I always think of ordering dumplings on a Tuesday (they're closed on Tuesdays). Get the juciest fried pork and chives and forget everything that's wrong with the world with the first bite.</p>
+			<p class="margin-top40">Not sure why I always think of ordering dumplings on a Tuesday (they're closed on Tuesdays). Get the juciest fried pork and chives and forget everything that's wrong with the world with the first bite.</p>
 		</div>
 		<div class="col3 empty">
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		</div>
 		<div class="col3 margin-top50">
 			<h4>Ramen Isshin</h4>
-			<p class="margin-top80">I forget where I am for 20 minutes when I order the tan tan ramen. It's good.</p>
+			<p class="margin-top40">I forget where I am for 20 minutes when I order the tan tan ramen. It's good.</p>
 		</div>
 
 		<div class="col3 margin-top50">
 			<h4>The island &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
-			<p class="margin-top80">No cell reception in some parts and if you're facing south then it feels like you're in a different country. I never understood the haters. The sound of the waves and the sunsets are a great vibe. It's next level if you bike there.</p>
+			<p class="margin-top40">No cell reception in some parts and if you're facing south then it feels like you're in a different country. I never understood the haters. The sound of the waves and the sunsets are a great vibe. It's next level if you bike there.</p>
 		</div>
 		<div class="col9 margin-top50">
 		  <!-- Swiper -->
 		  <div class="swiper-container">
 		    <div class="swiper-wrapper">
-		      <div class="swiper-slide"><img src="images/kinton.jpeg" class="fullheight"></div>
+		      <div class="swiper-slide"><img loading="lazy" src="images/kinton.jpeg" class="fullheight"></div>
 		      <div class="swiper-slide">
-		      	<img src="images/wave.jpg" class="fullheight">
-		      	<img src="images/theisland.jpg" class="fullheight">
+		      	<img loading="lazy" src="images/wave.jpg" class="fullheight">
+		      	<img loading="lazy" src="images/theisland.jpg" class="fullheight">
 		      </div>
 		      <div class="swiper-slide">
-		      	<img src="images/dumplings.jpg" class="fullheight">
-		      	<img src="images/citynight.jpg" class="fullheight">
+		      	<img loading="lazy" src="images/dumplings.jpg" class="fullheight">
+		      	<img loading="lazy" src="images/citynight.jpg" class="fullheight">
 		      </div>
 		      <div class="swiper-slide">
-		      	<img src="images/kensington.jpg" class="fullheight">
-		      	<img src="images/cntower.jpg" class="fullheight">
+		      	<img loading="lazy" src="images/kensington.jpg" class="fullheight">
+		      	<img loading="lazy" src="images/cntower.jpg" class="fullheight">
 		      </div>
 		    </div>
 		    <!-- Add Pagination -->
@@ -523,7 +536,7 @@
 		  </div>
 
 		  <!-- Swiper JS -->
-		  <script src="../package/swiper-bundle.min.js"></script>
+		  <script src="swiper-bundle.min.js"></script>
 
 		  <!-- Initialize Swiper -->
 		  <script>
@@ -539,19 +552,19 @@
 
 		<div class="col3 margin-top100">
 			<h4>North of Brooklyn</h4>
-			<p class="margin-top80"><!-- Everyone's got their pizza spot, you know something close by, something that always hits right.  -->This place makes NY—style slices and is unpretentious about it. I like to walk around the area for an extra layer of comfy sensations.</p>
+			<p class="margin-top40"><!-- Everyone's got their pizza spot, you know something close by, something that always hits right.  -->This place makes NY—style slices and is unpretentious about it. I like to walk around the area for an extra layer of comfy sensations.</p>
 		</div>
 		<div class="col3 margin-top100">
 			<h4>Poetry</h4>
-			<p class="margin-top80">When returning from a trip, it's always good to reset at a place that has great live jazz and an atmosphere that sends you elsewhere once more.</p>
+			<p class="margin-top40">When returning from a trip, it's always good to reset at a place that has great live jazz and an atmosphere that sends you elsewhere once more.</p>
 		</div>
 		<div class="col3 margin-top100">
 			<h4>Kinton Ramen</h4>
-			<p class="margin-top80">When I first moved to the city I went here 2x a week no problem. The one that really gets to me is the Monday special: shoyu ramen topped with juicy pieces of karaage and an egg. Thanks to these fine folks, I once won tickets to see Tampopo at TIFF. Still thankful. Watch the movie if you haven't.<!--  <a href="">This</a> is the photo is submitted. --></p>
+			<p class="margin-top40">When I first moved to the city I went here 2x a week no problem. The one that really gets to me is the Monday special: shoyu ramen topped with juicy pieces of karaage and an egg. Thanks to these fine folks, I once won tickets to see Tampopo at TIFF. Still thankful. Watch the movie if you haven't.<!--  <a href="">This</a> is the photo is submitted. --></p>
 		</div>
 		<div class="col3 margin-top100">
 			<h4>Ruru Baked</h4>
-			<p class="margin-top80">New hype cream. Thankful for the friends that came through with the free drops. So blessed. So lucky. I've since had to try my luck at buying this extremely quick-selling ice cream. Third time was the charm.</p>
+			<p class="margin-top40">New hype cream. Thankful for the friends that came through with the free drops. So blessed. So lucky. I've since had to try my luck at buying this extremely quick-selling ice cream. Third time was the charm.</p>
 		</div>
 	</div>
 </section>
@@ -568,7 +581,7 @@
 	</div>
 
 	<div class="row">
-		<img src="images/52weekends4.png" class="notrounded margin-top50">
+		<img loading="lazy" src="images/52weekends4.png" class="notrounded margin-top50">
 	</div>
 
 		<div class="row flex margin-top50">
@@ -596,49 +609,49 @@
 	<div class="grid margin-top50">
 		<div class="row flex">
 		<div class="col3">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/01.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/02.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/04.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/09.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/11.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/16.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/17.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video autoplay loop muted playsinline class="rounded"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
 			  <source src="videos/18.mp4" type="video/mp4">
 			  Your browser does not support HTML video.
 			</video>
@@ -648,24 +661,25 @@
 		<!-- <h5 class="row caption mobile-description project_extra"> -->
 
 	<div class="row flex margin-top50">
+		<div class="col3 empty">
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		</div>
 		<div class="col3">
 			<p>GIFs cured my insanity and boredom last year. It's a weird one, but then again what's not weird ;)</p>
+			<p>The links will open each song in Spotify. Have a listen.</p>
 		</div>
 		<div class="col3">
 			<p>1 — Money flying Chengdu<br>
 			2 — Mediterannean glam<br>
 			3 — Sweet and sticky smash<br>
 			4 — Murican romance dipped in football</p>
-		</div>
-		<div class="col3">
-			<p>
-			5 — Well sampled<br>
+			<p>5 — Well sampled<br>
 			6 — Wobbly off-beat hyperpop<br>
 			7 — Mesmerizing Osheaga hipnosis<br>
 			8 — A moment in time you want to last forever.</p>
 		</div>
-		<div class="col3">
-			<p>The links will open each song in Spotify. Have a listen.</p>
+		<div class="col3 empty">
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EMPTY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 		</div>
 	</div>
 </section>
@@ -676,46 +690,46 @@
 
 <section class="darkroom section margin-top250" data-color="black" id="darkroom">
 	<div class="row">
-		<div class="inverted text centered">double-tap to zoom in/out</div>
+		<div class="inverted text centered">This <span>&</span> Here</div>
 	</div>
 
-	<div class="row flex margin-top150">
+	<div class="row flex margin-top50">
 		<div class="col6">
-			<img src="images/photos/osheaga.jpg">
+			<img loading="lazy" src="images/photos/osheaga.jpg">
 		</div>
 		<div class="col6">
-			<img src="images/photos/monochromatictokyo.jpg">
+			<img loading="lazy" src="images/photos/monochromatictokyo.jpg">
 		</div>
 		<div class="col6">
-			<img src="images/photos/stepoutside.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/stepoutside.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/brightmoment.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/brightmoment.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/porter.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/porter.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/boston.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/boston.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/standard.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/standard.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/ifyouknowyouknow.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/ifyouknowyouknow.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/telica.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/telica.jpg" class="margin-top100">
 		</div>
 		<div class="col6">
-			<img src="images/photos/whistlermoment.jpg" class="margin-top100">
+			<img loading="lazy" src="images/photos/whistlermoment.jpg" class="margin-top100">
 		</div>
 	</div>
 
 	<div class="row margin-top250 margin-bottom150">
-		<div class="text centered inverted">
+		<div class="text centered inverted margin-bottom20">
 			<!-- Thanks for making it this far.<br> -->
-			2020 has changed everything so let's change everything. Say hey.
+			2020 has changed everything so let's change <span>everything</span>. Say <span>hey</span>.
 		</div>
 		<div id="contact" class="buttons margin-top10 margin-bottom100">
 			<a href="mailto:sasadjukic@protonmail.com" class="buttonsreg">email</a>
@@ -755,6 +769,16 @@
 	})
 </script>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~ POPS ~~~~~~~~~~~~~~~~~~~~ -->
+<script>
+	$("#pop_hi").click(function() {
+		// $('body').css('background-color', 'black');
+    $('.pop_hi').removeClass('hidden');
+    $('.pop_hi').addClass('visible');
+	})
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ PROGRESS BAR ~~~~~~~~~~~~~~~~~~~~ -->
 <script>
 	function on() {
 	  document.getElementById("overlay").style.display = "block";
@@ -791,13 +815,13 @@
 	$(window).on('mousemove', moveCursor);
 </script> -->
 
-<script>
+<!-- <script>
 	$('a.multilink').click(function(e) {
     e.preventDefault();
     window.open('https://www.jeep.com/wrangler.html');
     window.open('https://www.ramtrucks.com/trx.html');
 	});
-</script>
+</script> -->
 
 <!-------------------- PROJECTS -------------------->
 <!-------------------- NEXT PROJECT -------------------->

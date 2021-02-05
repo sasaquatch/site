@@ -1,4 +1,5 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Say hey → sasadjukic@protonmail.com ~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~~~~~~~~~~~ Written by hand for fun and to learn ~~~~~~~~~~~~~~~~~~~~*/
 
 *{transition: background-color 1s ease;}
 
@@ -38,7 +39,7 @@ h3{
 
 h4{
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 32px;
 	letter-spacing: -0.6px;
 	font-weight: 100;
 }
@@ -56,7 +57,7 @@ p,
 p a{
 	font-size: 16px;
 	line-height: 24px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0;
 	font-weight: 100;
 	text-decoration: none;
 	display: block;
@@ -125,6 +126,7 @@ nav a:hover{
 .margin-top200{margin-top: 200px;}
 .margin-top250{margin-top: 250px;}
 .margin-top300{margin-top: 300px;}
+.margin-top400{margin-top: 400px;}
 .margin-top500{margin-top: 500px;}
 .margin-top750{margin-top: 750px;}
 .margin-top-minus20{margin-top: -20px;}
@@ -142,6 +144,7 @@ nav a:hover{
 .margin-left40{margin-left: 40px;}
 .margin-right40{margin-right: 40px;}
 .padding-top350{padding-top: 350px;}
+.padding-bottom50{padding-bottom: 50px;}
 .padding-bottom60{padding-bottom: 60px;}
 .padding-bottom80{padding-bottom: 80px;}
 .padding-bottom100{padding-bottom: 100px;}
@@ -150,7 +153,7 @@ nav a:hover{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BACKGROUND COLOURS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*.color-yellow{background-color: #FFAE4D;}*/
-.color-darkred{background-color: #380000;}
+.color-darkred{background-color: #1b0000;}
 .color-darkblue{background-color: #00002D;}
 .color-lightteal{background-color: #F7FFF8;}
 .color-lightgray{background-color: #eee;}
@@ -187,16 +190,16 @@ nav a:hover{
 .empty{display: block;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ VISIBILITY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*.visible{display: block;}
-.visible_favs{display: flex;}
-.hidden{display: none;}*/
+.visible{display: block;}
+/*.visible_favs{display: flex;}*/
+.hidden{display: none;}
 .hiddenondesktop{display: none;}
 .hiddenonmobile{display: block;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .rounded{border-radius: 15px;}
 .notrounded{border-radius: 0 !important;}
-.mediaborder_dark{border: 1px solid white;}
+.mediaborder_dark{border: 1px solid #333;}
 .mediaborder_light{border: 1px solid black;}
 
 .wide{
@@ -223,6 +226,7 @@ nav a:hover{
 .col3 img,
 .col3 video{
 	width: 100%;
+	max-width: 280px;
 }
 
 .col6 img,
@@ -338,7 +342,7 @@ nav a:hover{
 .text span{ /* #favourites h3 */
 	font-family: "MigraItalic-ExtralightItalic";
 	letter-spacing: -2px;
-	line-height: inherit;
+	line-height: 95px;
 }
 
 .original_source{
@@ -355,6 +359,23 @@ nav a:hover{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #757575;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ POPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.pop_hi{
+	/*display: none;*/
+	position: absolute;
+	/*width: 150px;*/
+	height: 105px;
+	background: #ccc;
+	border-radius: 105px 105px 105px 0;
+	text-align: left;
+	padding: 5px 35px 5px 30px;
+	margin-top: -140px;
+}
+#pop_hi:hover{
+	cursor: pointer;
+	animation: hover .5s infinite;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MARQUEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -431,7 +452,7 @@ a.buttonstab{
 	border: 2px white solid;
 }
 a.buttonstab:hover{
-	color: blue;
+	color: blue !important;
 	border: 2px blue solid;
 	cursor: pointer;
 }
@@ -591,7 +612,6 @@ a.buttonstabblue:hover{
 	}
 
 	.hiddenondesktop{display: none;}
-	.hiddenonmobile{display: none;}
 
 }
 
@@ -628,8 +648,8 @@ a.buttonstabblue:hover{
 		}
 
 		p, p a {
-	    font-size: 45px;
-	    line-height: 58px;
+	    font-size: 48px;
+	    line-height: 60px;
 	    letter-spacing: 0;
 	  }
 
@@ -642,7 +662,7 @@ a.buttonstabblue:hover{
 	  }
 
 	  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    	margin: 0 20px 0 0 !important;
+    	margin: 0 10px !important;
 		}
 
 	  .swiper-pagination-bullet {
@@ -650,18 +670,23 @@ a.buttonstabblue:hover{
 	    height: 20px !important;
 	  }
 
-	  .alfa_swiper .swiper-pagination-bullet-active{
+	  .dark_swiper .swiper-pagination-bullet-active{
 	  	background: white !important;
 	  }
 
-	  .alfa_swiper .swiper-pagination-bullet{
+	  .dark_swiper .swiper-pagination-bullet{
 	  	background: inherit;
 	  	border: 2px solid white;
 	  }
 
-	.hiddenondesktop{display: block;}
-	.hiddenonmobile{display: none;}
+		.hiddenondesktop{display: block;}
+		.hiddenonmobile{display: none;}
+		.margin-top-mobile100{margin-top: 100px;}
 
+		.col3 img,
+		.col3 video{
+		  max-width: 100%;
+		}
 }
 
 
