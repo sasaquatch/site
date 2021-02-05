@@ -623,7 +623,7 @@ a.buttonstabblue:hover{
 
 		*{
 			font-size: 60px;
-			line-height: 65px;
+			line-height: 66px;
 			letter-spacing: -1px;
 		}
 
@@ -690,15 +690,15 @@ a.buttonstabblue:hover{
 
 		/* BUTTONS */
 		a.buttonsreg{
-			padding: 10px 32px 14px;
-			font-size: 60px !important;
+			padding: 12px 40px 16px;
+			font-size: 60px;
 			border-radius: 225px;
 		}
 		a.buttonsalt{
 			margin: 50px 0;
 			padding: 22px 30px 28px;
 			display: inline-block;
-			font-size: 60px !important;
+			font-size: 60px;
 			line-height: 95px;
 		}
 }
