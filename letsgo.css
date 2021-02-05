@@ -342,7 +342,7 @@ nav a:hover{
 .text span{ /* #favourites h3 */
 	font-family: "MigraItalic-ExtralightItalic";
 	letter-spacing: -2px;
-	line-height: 95px;
+	/*line-height: 95px;*/
 }
 
 .original_source{
@@ -680,6 +680,7 @@ a.buttonstabblue:hover{
 
 		.hiddenondesktop{display: block;}
 		.hiddenonmobile{display: none;}
+		.margin-top-mobile50{margin-top: 50px;}
 		.margin-top-mobile100{margin-top: 100px;}
 		.margin-top-mobile800{margin-top: 800px;}
 
