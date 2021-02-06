@@ -783,7 +783,9 @@ a.buttonstabblue:hover{
 	}
 
 	/* BUTTONS */
-	a.buttonsreg{
+	a.buttonsreg,
+	a.buttonsreg_blue,
+	a.buttonstab{
 		padding: 12px 40px 16px;
 		font-size: 60px;
 		border-radius: 225px;
@@ -795,6 +797,7 @@ a.buttonstabblue:hover{
 		font-size: 60px;
 		line-height: 95px;
 	}
+
 	.original_source a {
   	font-size: 18px;
   	line-height: 18px;
