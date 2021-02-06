@@ -593,7 +593,7 @@ a.buttonstabblue:hover{
 
 	p, p a {
     font-size: 22px;
-    line-height: 42px;
+    line-height: 32px;
     letter-spacing: 0;
   }
 
@@ -606,10 +606,7 @@ a.buttonstabblue:hover{
 	.margin-top-mobile150{margin-top: 0;}
 	.margin-top-tablet600{margin-top: 600px;}
 
-	.fullheight{
-		height: 600px;
-	}
-
+	.fullheight{height: 600px;}
 	.empty{display: none;}
 
 	.info,
@@ -635,10 +632,7 @@ a.buttonstabblue:hover{
 		display: none;
 	}
 
-	.photosofme img {
-		width: 54%;
-	}
-
+	.photosofme img {width: 54%;}
 	.hiddenondesktop{display: none;}
 
 }
@@ -670,12 +664,12 @@ a.buttonstabblue:hover{
 		letter-spacing: -1px;
 	}
 
-/*	p, p a {
+	p, p a {
     font-size: 22px;
     line-height: 54px;
     letter-spacing: 0;
     margin: 0 0 80px;
-  }*/
+  }
 
 	.col3,
 	.col6{
