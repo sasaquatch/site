@@ -406,6 +406,38 @@ nav a:hover{
 	animation: hover .5s infinite;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PROGRESS BAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.progress_container{
+	width: 100%;
+	margin-left: -40px;
+	height: 5px;
+	z-index: 100;
+	position: fixed;
+	bottom: 0;
+}
+
+.progress_indicator{
+	height: 5px;
+	/*background: #ff8000;*/
+	background: blue; /* #ffbf00 */
+	width: 0%;
+	position: relative;
+}
+
+.progress_indicator_alfa{
+	height: 5px;
+	background: red;
+	width: 0%;
+	position: relative;
+}
+
+.progress_indicator_qf{
+	height: 5px;
+	background: #278125;
+	width: 0%;
+	position: relative;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MARQUEE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .marquee{
   height: 100px;
@@ -450,6 +482,21 @@ a.buttonsreg{
 	color: white;
 }
 a.buttonsreg:hover{background: black;}
+
+a.buttonsreg_blue{
+	padding: 6px 24px 9px;
+  margin: 0 5px;
+	display: inline;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: -1px;
+	background: white;
+	border-radius: 225px;
+	text-decoration: none;
+	color: blue;
+}
+a.buttonsreg_blue:hover{background: black;}
 
 a.buttonsalt{
 	padding: 6px 0 9px;
@@ -648,7 +695,7 @@ a.buttonstabblue:hover{
 /*		font-size: 78px;
 		line-height: 80px;*/
 		font-size: 74px;
-		line-height: 80px;
+		line-height: 81px;
 		letter-spacing: -1px;
 	}
 
@@ -683,11 +730,16 @@ a.buttonstabblue:hover{
 		width: 100%;
 	}
 
+	.mobile_p p,
+	.mobile_p p a{
+    font-size: 30px;
+    line-height: 64px;
+    letter-spacing: 0;
+  }
+
 	/* SWIPER MOBILE */
 	.swiper-slide p,
 	.swiper-slide p a{
-/*    font-size: 48px;
-    line-height: 58px;*/
     font-size: 50px;
     line-height: 64px;
     letter-spacing: 0;
@@ -747,6 +799,11 @@ a.buttonstabblue:hover{
   	font-size: 18px;
   	line-height: 18px;
   }
+
+  .progress_container{
+		width: 100%;
+		margin-left: -60px;
+	}
 }
 
 
