@@ -699,7 +699,7 @@ a.buttonstabblue:hover{
 		letter-spacing: -1px;
 	}
 
-	body{margin: 0 60px;}
+	body{margin: 0 50px;}
 
 	.name, .info, .back, .lastname {
     margin-top: 55px;
@@ -805,7 +805,7 @@ a.buttonstabblue:hover{
 
   .progress_container{
 		width: 100%;
-		margin-left: -60px;
+		margin-left: -50px;
 	}
 }
 
