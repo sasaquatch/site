@@ -195,6 +195,7 @@ nav a:hover{
 .hidden{display: none;}
 .hiddenondesktop{display: none;}
 .hiddenonmobile{display: block;}
+.hiddenonmobileflex{display: flex;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .rounded{border-radius: 15px;}
@@ -763,8 +764,8 @@ a.buttonstabblue:hover{
   }
 
   /* GLOBAL MOBILE */
-	.hiddenondesktop{display: block;}
-	.hiddenonmobile{display: none;}
+	.hiddenondesktop{display: inherit;}
+	.hiddenonmobile, .hiddenonmobileflex{display: none;}
 	.margin-top-mobile10{margin-top: 10px;}
 	.margin-top-mobile20{margin-top: 20px;}
 	.margin-top-mobile50{margin-top: 50px;}
