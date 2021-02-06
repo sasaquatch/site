@@ -651,6 +651,10 @@ a.buttonstabblue:hover{
 
 	body{margin: 0 60px;}
 
+	.name, .info, .back, .lastname {
+    margin-top: 55px;
+	}
+
 	.mobiletext{
 		font-size: 140px;
 		line-height: 105px;
