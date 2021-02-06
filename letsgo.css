@@ -644,8 +644,10 @@ a.buttonstabblue:hover{
   and (-webkit-min-device-pixel-ratio: 2) {
 
 	*{
-		font-size: 78px;
-		line-height: 80px;
+/*		font-size: 78px;
+		line-height: 80px;*/
+		font-size: 68px;
+		line-height: 82px;
 		letter-spacing: -1px;
 	}
 
@@ -714,6 +716,7 @@ a.buttonstabblue:hover{
 	.margin-top-mobile20{margin-top: 20px;}
 	.margin-top-mobile50{margin-top: 50px;}
 	.margin-top-mobile100{margin-top: 100px;}
+	.margin-top-mobile300{margin-top: 300px;}
 	.margin-top-mobile700{margin-top: 700px;}
 
 	.col3 img,
