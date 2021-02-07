@@ -36,7 +36,7 @@
 		      <div id="name-6"><a href="http://sasadjukic.com">沙紗 Djukic</a></div>
 		      <div id="name-11"><a href="http://sasadjukic.com">Σάσα Djukic</a></div>
 				</div>
-			<div class="info"><a href="http://sasadjukic.com/test.html#info">Info</a></div>
+			<div class="info"><a href="http://sasadjukic.com#info">Info</a></div>
 			<!-- <div class="back"><a href="index.html#trx">&larr;</a></div> -->
 			
 			</nav>
@@ -210,32 +210,31 @@
 		<div class="col6 lfa">
 			<a href="quadrifoglio-design-system.html">
 				<video loading="lazy" autoplay loop muted playsinline class="rounded"> <!-- controls -->
-				  <source src="videos/qf.mp4" type="video/mp4">
-				  <source src="videos/qf.ogg" type="video/ogg">
+				  <source src="videos/qf2_mini.mp4" type="video/mp4">
 				  Your browser does not support HTML video.
 				</video>
 				<h4 class="centered margin-top20">Quadrifoglio Design System<!-- . Scroll—based interactions because scrolling is simple. --> &#x21b4;</h4>
 			</a>
 		</div>
 
-		<div class="col6 lfa margin-bottom100">
+		<div class="col6 lfa margin-bottom50">
 			<a href="alfa-romeo-build-and-price.html">
-				<img loading="lazy" src="images/alfa_hero2.png" class="rounded">
+				<img loading="lazy" src="images/alfa_hero2_mini.png" class="rounded">
 				<h4 class="centered margin-top20">Alfa Romeo Build & Price<!-- . Mobile—first configuration that does the hard work for you. --> &#x21b4;</h4>
 			</a>
 		</div>
 	</div>
 
 	<div class="buttons padding-bottom50">
-		<a class="buttonsalt nohover">sasadjukic.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</a>
-		<a href="index.html#trx" class="buttonstab">latest projects</a>
-		<a href="index.html#info" class="buttonstab">info</a>
-		<a href="index.html" class="buttonstab">home</a>
+		<!-- <a class="buttonsalt nohover">sasadjukic.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &rarr;</a> -->
+		<a href="http://sasadjukic.com" class="buttonsreg">home</a>
+		<a href="http://sasadjukic.com#info" class="buttonsalt">info</a>
+		<!-- <a href="index.html" class="buttonstab">home</a> -->
 	</div>
 </section>
 
-<!---------------------------------------- SCRIPTS ---------------------------------------->
-<!-------------------- NAME -------------------->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCRIPTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~~ NAME ~~~~~~~~~~~~~~~~~~~~ -->
 <script id="rendered-js">
   var divs = $('div[id^="name-"]').hide(),
   i = 0;
@@ -249,6 +248,19 @@
     i = ++i % divs.length;
 
   })();
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ SWIPER JS ~~~~~~~~~~~~~~~~~~~~ -->
+<script src="swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 </script>
 
 <script>
@@ -272,7 +284,7 @@
 	}
 </script>
 
-<!-------------------- BACKGROUND COLOUR -------------------->
+<!-- ~~~~~~~~~~~~~~~~~~~~ BACKGROUND COLOUR ~~~~~~~~~~~~~~~~~~~~ -->
 <script>
 	$(window).scroll(function() {
   
@@ -304,6 +316,18 @@
   
 	}).scroll();
 </script>
+
+<script> 
+    var v = document.getElementById("alfa_luxury"); 
+      
+    function My_VideoRate() {  
+        alert(v.playbackRate); 
+    }  
+      
+    function Set_VideoRate() {  
+        v.playbackRate = .5; 
+    }  
+</script> 
 
 
 
