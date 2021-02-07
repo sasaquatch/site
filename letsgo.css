@@ -41,7 +41,7 @@ h3{
 
 h4{
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 38px;
 	letter-spacing: -0.6px;
 	font-weight: 100;
 }
@@ -214,6 +214,11 @@ nav a:hover{
 	margin: 0 auto;*/
 }
 
+.narrow{
+	width: 75%;
+	margin: 50px auto 0;
+}
+
 .mini{
 	margin: 0 auto;
 	display: block;
@@ -229,6 +234,10 @@ nav a:hover{
 	max-width: 50%;
 	float: left;
 }*/
+
+.col3 h4{
+	line-height: 30px;
+}
 
 .col3 img{
 	width: 100%;
@@ -670,7 +679,7 @@ a.buttonstabblue:hover{
 	h3{font-size: 200px;}
 	h4{
 		font-size: 40px;
-		line-height: 38px;
+		line-height: 44px;
 	}
 
 	p, p a {
@@ -683,6 +692,10 @@ a.buttonstabblue:hover{
 	.col6{width: 45%;}
 	.col9{width: 100%;}
 	.col12{max-width: 1440px;}
+
+	.col3 h4{
+		line-height: 40px;
+	}
 
 	/* GLOBAL TABLET */
 	.margin-top-mobile150{margin-top: 0;}
@@ -835,6 +848,10 @@ a.buttonstabblue:hover{
 	.col3,
 	.col6{
 		width: 100%;
+	}
+
+	.col3 h4{
+		line-height: 74px;
 	}
 
 	.mobile_p p,
