@@ -713,12 +713,13 @@ a.buttonstabblue:hover{
 
 	/* 3D */
 	.graphic{
-	display: block;
+
 	position: absolute;
 	left: 0;
 	right: 0;
 	z-index: -100;
 	width: 100%;
+	overflow: hidden;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -730,6 +731,7 @@ a.buttonstabblue:hover{
 	#cube{
 		width: 600px;
 		height: 600px;
+	overflow: hidden;
 		/*margin: 0 auto 150px;*/
 		position: relative;
 		transform-style: preserve-3d;
@@ -739,6 +741,7 @@ a.buttonstabblue:hover{
 	.side{
 		width: 600px;
 		height: 600px;
+	overflow: hidden;
 		position: absolute;
 		opacity: 0.9;
 	}
