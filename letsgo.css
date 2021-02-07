@@ -868,7 +868,7 @@ a.buttonstabblue:hover{
     line-height: 64px;
     letter-spacing: 0;
   }
-	.swiper-pagination{
+	.swiper-pagination_centered{
     text-align: center !important;
   }
   .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
