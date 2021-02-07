@@ -20,6 +20,8 @@ body video{
 	width: 100%;
 }
 
+.green{background-color: #3b963b;} /*3c9e3c*/
+
 .dark,
 .dark nav a{
 	background: #111;
@@ -39,7 +41,7 @@ h3{
 
 h4{
 	font-size: 30px;
-	line-height: 32px;
+	line-height: 30px;
 	letter-spacing: -0.6px;
 	font-weight: 100;
 }
@@ -98,7 +100,11 @@ canvas{
 .maxwidth1440{max-width: 1440px;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.name, .info, .back, .lastname{display: inline-block; margin-top: 25px;}
+.name, .info, .back, .lastname{
+	display: inline-block;
+	margin-top: 40px
+}
+
 .info, .back{float: right; font-family: "MigraItalic-ExtralightItalic"; letter-spacing: -2px;}
 nav a{
 	color: black;
@@ -363,8 +369,8 @@ nav a:hover{
 .original_source a{
 	font-size: 9px;
 	line-height: 9px;
-	letter-spacing: 1px;
-	font-weight: 400;
+	letter-spacing: 2px;
+	font-weight: 100;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #757575;
@@ -411,14 +417,14 @@ nav a:hover{
 .progress_container{
 	width: 100%;
 	margin-left: -40px;
-	height: 5px;
+	height: 2px;
 	z-index: 100;
 	position: fixed;
 	bottom: 0;
 }
 
 .progress_indicator{
-	height: 5px;
+	height: 2px;
 	/*background: #ff8000;*/
 	background: blue; /* #ffbf00 */
 	width: 0%;
@@ -426,14 +432,14 @@ nav a:hover{
 }
 
 .progress_indicator_alfa{
-	height: 5px;
-	background: red;
+	height: 2px;
+	background: white;
 	width: 0%;
 	position: relative;
 }
 
 .progress_indicator_qf{
-	height: 5px;
+	height: 2px;
 	background: #278125;
 	width: 0%;
 	position: relative;
@@ -664,7 +670,7 @@ a.buttonstabblue:hover{
 	h3{font-size: 200px;}
 	h4{
 		font-size: 40px;
-		line-height: 34px;
+		line-height: 38px;
 	}
 
 	p, p a {
@@ -680,6 +686,8 @@ a.buttonstabblue:hover{
 
 	/* GLOBAL TABLET */
 	.margin-top-mobile150{margin-top: 0;}
+	.margin-top-tablet0{margin-top: 0px;}
+	.margin-top-tablet50{margin-top: 50px;}
 	.margin-top-tablet600{margin-top: 600px;}
 
 	.fullheight{height: 600px;}
@@ -831,7 +839,7 @@ a.buttonstabblue:hover{
 
 	.mobile_p p,
 	.mobile_p p a{
-    font-size: 30px;
+    font-size: 41px;
     line-height: 64px;
     letter-spacing: 0;
   }
@@ -864,14 +872,17 @@ a.buttonstabblue:hover{
   /* GLOBAL MOBILE */
 	.hiddenondesktop{display: inherit;}
 	.hiddenonmobile, .hiddenonmobileflex{display: none;}
+	.margin-top-mobile0{margin-top: 0px;}
 	.margin-top-mobile10{margin-top: 10px;}
 	.margin-top-mobile20{margin-top: 20px;}
+	.margin-top-mobile30{margin-top: 30px;}
 	.margin-top-mobile50{margin-top: 50px;}
 	.margin-top-mobile100{margin-top: 100px;}
 	.margin-top-mobile250{margin-top: 250px;}
 	.margin-top-mobile300{margin-top: 300px;}
 	.margin-top-mobile400{margin-top: 400px;}
 	.margin-top-mobile800{margin-top: 800px;}
+	.margin-top-mobile-minus20{margin-top: -20px;}
 	.margin-top-mobile-minus250{margin-top: -250px;}
 
 	.col3 img,
