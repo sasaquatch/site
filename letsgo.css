@@ -719,7 +719,6 @@ a.buttonstabblue:hover{
 	right: 0;
 	z-index: -100;
 	width: 100%;
-	overflow: hidden;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -731,7 +730,6 @@ a.buttonstabblue:hover{
 	#cube{
 		width: 600px;
 		height: 600px;
-	overflow: hidden;
 		/*margin: 0 auto 150px;*/
 		position: relative;
 		transform-style: preserve-3d;
@@ -741,7 +739,6 @@ a.buttonstabblue:hover{
 	.side{
 		width: 600px;
 		height: 600px;
-	overflow: hidden;
 		position: absolute;
 		opacity: 0.9;
 	}
@@ -798,7 +795,10 @@ a.buttonstabblue:hover{
 		letter-spacing: -2px;
 	}
 
-	body{padding: 0 60px;}
+	body{
+		margin: 0;
+		padding: 0 60px;
+	}
 
 	.name, .info, .back, .lastname {
     margin-top: 55px;
