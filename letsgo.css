@@ -711,7 +711,7 @@ a.buttonstabblue:hover{
 	.photosofme img {width: 54%;}
 	.hiddenondesktop{display: none;}
 
-	/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+	/* 3D */
 	.graphic{
 		height: 100vh;
 		position: absolute;
@@ -735,8 +735,8 @@ a.buttonstabblue:hover{
 	}
 
 	.side{
-		width: 100%;
-		height: 100%;
+		width: 600px;
+		height: 600px;
 		position: absolute;
 		opacity: 0.9;
 	}
