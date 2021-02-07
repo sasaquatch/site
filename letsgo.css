@@ -695,8 +695,10 @@ a.buttonstabblue:hover{
 	*{
 /*		font-size: 78px;
 		line-height: 80px;*/
-		font-size: 72px;
-		line-height: 80px;
+/*		font-size: 72px;
+		line-height: 80px;*/
+		font-size: 69px;
+		line-height: 76px;
 		letter-spacing: -2px;
 	}
 
