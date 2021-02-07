@@ -651,14 +651,14 @@ a.buttonstabblue:hover{
 	.col9{width: 100%;}
 	.col12{max-width: 1440px;}
 
-	/* GLOBALSMALL */
+	/* GLOBAL TABLET */
 	.margin-top-mobile150{margin-top: 0;}
 	.margin-top-tablet600{margin-top: 600px;}
 
 	.fullheight{height: 600px;}
 	.empty{display: none;}
 
-	.info,
+	.info a,
 	.text span{
 		letter-spacing: -1px;
 	}
@@ -771,7 +771,9 @@ a.buttonstabblue:hover{
 	.margin-top-mobile50{margin-top: 50px;}
 	.margin-top-mobile100{margin-top: 100px;}
 	.margin-top-mobile300{margin-top: 300px;}
+	.margin-top-mobile400{margin-top: 400px;}
 	.margin-top-mobile700{margin-top: 700px;}
+	.margin-bottom-mobile400{margin-bottom: 400px;}
 
 	.col3 img,
 	.col3 video{
