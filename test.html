@@ -311,8 +311,18 @@
 <!-- <div class="progress_container">
   <div class="progress_indicator" id="progress_bar"></div>
 </div> -->
-
+	<div class="graphic">
+    <div id="cubeZ"><div id="cubeY"><div id="cube">
+      <div class="side cube_one"></div>
+      <div class="side cube_two"></div>
+      <div class="side cube_three"></div>
+      <div class="side cube_four"></div>
+      <div class="side cube_five"></div>
+      <div class="side cube_six"></div>
+    </div></div></div>
+  </div>
 <section class="section padding-bottom200" data-color="white">
+
 
 	<div class="row" data-color="white">
 		<nav>
@@ -558,15 +568,15 @@
 		<div id="contact" class="buttons margin-top10 margin-bottom200 margin-top-mobile50">
 			<a href="mailto:sasadjukic@protonmail.com" class="buttonsreg">email</a>
 			<a href="http://instagram.com/cevapi_papi_" target="_blank" class="buttonsreg">instagram</a>
-			<a href="#latest_work" class="buttonstab inverted">menu</a>
+			<!-- <a href="#latest_work" class="buttonstab inverted">menu</a> -->
 			<!-- <a href="#latest_work" class="buttonstab inverted">list of services</a> -->
 		</div>
 	</div>
 </section>
 
 
-<!---------------------------------------- SCRIPTS ---------------------------------------->
-<!-------------------- NAME -------------------->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCRIPTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~~ NAME ~~~~~~~~~~~~~~~~~~~~ -->
 <script id="rendered-js">
   var divs = $('div[id^="name-"]').hide(),
   i = 0;
@@ -580,6 +590,39 @@
     i = ++i % divs.length;
 
   })();
+</script>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~ -->
+<script>
+ if (!window.DeviceOrientationEvent) {
+    document.getElementById('do-unsupported').classList.remove('hidden');
+ } else {
+    window.addEventListener('deviceorientation', function(event) {
+      document.getElementById('cube').style.webkitTransform =
+      document.getElementById('cube').style.transform =
+        'rotateX(' + event.beta + 'deg) ' +
+        'rotateY(' + event.gamma + 'deg) ' +
+        'rotateZ(' + event.alpha + 'deg)';
+    });
+ }
+
+ if (!window.DeviceMotionEvent) {
+    document.getElementById('dm-unsupported').classList.remove('hidden');
+ } else {
+    window.addEventListener('devicemotion', function(event) {
+      document.getElementById('acceleration-x').innerHTML = Math.round(event.acceleration.x);
+      document.getElementById('acceleration-y').innerHTML = Math.round(event.acceleration.y);
+      document.getElementById('acceleration-z').innerHTML = Math.round(event.acceleration.z);
+    });
+ }
+
+ if (!('oncompassneedscalibration' in window)) {
+    document.getElementById('cnc-unsupported').classList.remove('hidden');
+ } else {
+    window.addEventListener('compassneedscalibration', function(event) {
+      alert('To calibrate your compass, wave your device in a figure-eight motion');
+    });
+ }
 </script>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~ POPS ~~~~~~~~~~~~~~~~~~~~ -->

@@ -623,6 +623,99 @@ a.buttonstabblue:hover{
 	animation: amongotherthings 3s infinite;
 }
 
+#cube{
+    transform-style: preserve-3d;
+  	animation: spinzoneX 30s infinite linear;
+  }
+  @keyframes spinzoneX{
+  	from {transform: rotateX(0);}
+  	to {transform: rotateX(360deg);}
+	}
+
+  #cubeY{
+    transform-style: preserve-3d;
+  	animation: spinzoneY 30s infinite linear;
+  }
+  @keyframes spinzoneY{
+  	from {transform: rotateY(0);}
+  	to {transform: rotateY(360deg);}
+	}
+
+  #cubeZ{
+    transform-style: preserve-3d;
+  	animation: spinzoneZ 30s infinite linear;
+  }
+  @keyframes spinzoneZ{
+  	from {transform: rotateZ(0);}
+  	to {transform: rotateZ(360deg);}
+	}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 3D ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.graphic{
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
+	-webkit-transform: translate3d(0,0,0); /* SAFARI Z-INDEX FIX */
+	z-index: -100;
+}
+/* CUBE */
+#cube{
+	width: 600px;
+	height: 600px;
+	/*margin: 0 auto 150px;*/
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.side{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.9;
+}
+
+.cube_one{
+	transform: translateZ(300px);
+	-webkit-transform: translateZ(300px);
+	background-color: red;
+}
+
+.cube_two{
+	transform: rotateY(90deg) translateZ(300px);
+	-webkit-transform: rotateY(90deg) translateZ(300px);
+	background-color: #ffff00; /* YELLOW */ /* ORANGE: #FF7000 */
+}
+
+.cube_three{
+	transform: rotateY(180deg) translateZ(300px);
+	-webkit-transform: rotateY(180deg) translateZ(300px);
+	background-color: #00ff00; /* GREEN */
+}
+
+.cube_four{
+	transform: rotateY(-90deg) translateZ(300px);
+	-webkit-transform: rotateY(-90deg) translateZ(300px);
+	background-color: #7BFFBB; /* TEAL */;
+}
+
+.cube_five{
+	transform: rotateX(90deg) translateZ(300px);
+	-webkit-transform: rotateX(90deg) translateZ(300px);
+	background-color: white;
+}
+
+.cube_six{
+	transform: rotateX(-90deg) translateZ(300px) rotate(0deg);
+	-webkit-transform: rotateX(-90deg) translateZ(300px) rotate(0deg);
+	background-color: blue;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TABLET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media all and (max-width: 999px) and (min-width: 412px) {
 
@@ -791,6 +884,7 @@ a.buttonstabblue:hover{
 		padding: 10px 40px 16px;
 		font-size: 60px;
 		border-radius: 225px;
+		margin: 0 5px;
 	}
 	a.buttonsalt{
 		margin: 50px 0;
