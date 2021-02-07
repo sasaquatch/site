@@ -713,10 +713,12 @@ a.buttonstabblue:hover{
 
 	/* 3D */
 	.graphic{
-		height: 100vh;
-		position: absolute;
-		left: 0;
-		right: 0;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -100;
+	width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -863,6 +865,7 @@ a.buttonstabblue:hover{
 	.margin-top-mobile20{margin-top: 20px;}
 	.margin-top-mobile50{margin-top: 50px;}
 	.margin-top-mobile100{margin-top: 100px;}
+	.margin-top-mobile250{margin-top: 250px;}
 	.margin-top-mobile300{margin-top: 300px;}
 	.margin-top-mobile400{margin-top: 400px;}
 	.margin-top-mobile800{margin-top: 800px;}
