@@ -809,7 +809,7 @@ a.buttonstabblue:hover{
 	}
 
 	.name, .info, .back, .lastname {
-    margin-top: 55px;
+    margin-top: 50px;
 	}
 
 	.mobiletext{
@@ -860,6 +860,13 @@ a.buttonstabblue:hover{
   .swiper-pagination-bullet {
     width: 20px !important;
     height: 20px !important;
+  }
+  .swiper-pagination-bullet-active{
+  	background: white !important;
+  }
+  .swiper-pagination-bullet{
+  	background: inherit;
+  	border: 2px solid black;
   }
   .dark_swiper .swiper-pagination-bullet-active{
   	background: white !important;
