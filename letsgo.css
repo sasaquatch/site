@@ -203,6 +203,10 @@ nav a:hover{
 .hiddenondesktop{display: none;}
 .hiddenonmobile{display: block;}
 .hiddenonmobileflex{display: flex;}
+.spacer{
+	display: block;
+	height: 1px;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ IMAGES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .rounded{border-radius: 15px;}
