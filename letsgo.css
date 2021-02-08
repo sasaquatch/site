@@ -258,8 +258,13 @@ nav a:hover{
 	width: 100%;
 }
 
-.col3 img.fullheight{
-	/*max-height: 150px;*/
+.col3.fullheight img{
+	width: auto;
+  max-height: 150px;
+}
+
+/*.col3 img.fullheight{
+	max-height: 150px;
 	width: auto;
 }
 
@@ -269,7 +274,7 @@ nav a:hover{
 	width: auto;
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 .swiper-slide img{float: left;}
 /*.slide_text{
@@ -277,12 +282,12 @@ nav a:hover{
 	background: pink;
 }*/
 
-.fullheight{
+/*.fullheight{
 	max-height: 666px;
 	width: auto;
 	display: inline-block;
-	/*float: left;*/
-}
+	float: left;
+}*/
 
 .photosofme{
 	display: flex;
@@ -345,6 +350,8 @@ nav a:hover{
 .inverted,
 .whitetext{color: #eee !important;}
 .blue{color: white;}
+.black{color: black}
+.lightgreen{color: #69cd7d}
 .yellow{
   background-color: black;
   color: #FFC122;
@@ -709,7 +716,7 @@ a.buttonstabblue:hover{
 	.margin-top-tablet50{margin-top: 50px;}
 	.margin-top-tablet600{margin-top: 600px;}
 
-	.fullheight{height: 600px;}
+	/*.fullheight{height: 600px;}*/
 	.empty{display: none;}
 
 	.info a,
@@ -740,12 +747,11 @@ a.buttonstabblue:hover{
 
 	/* 3D */
 	.graphic{
-
-	position: absolute;
-	left: 0;
-	right: 0;
-	z-index: -100;
-	width: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: -100;
+		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -921,10 +927,10 @@ a.buttonstabblue:hover{
 	  max-width: 100%;
 	}
 
-	.col3 img.fullheight{
+	/*.col3 img.fullheight{
 		max-height: 150px;
 		width: auto;
-	}
+	}*/
 
 	/* BUTTONS */
 	a.buttonsreg,
