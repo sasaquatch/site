@@ -165,6 +165,7 @@ nav a:hover{
 .color-lightteal{background-color: #F7FFF8;}
 .color-lightgray{background-color: #eee;}
 .color-darkgray{background-color: #111;}
+.color-midgray{background-color: #222;}
 .color-blue{background-color: blue;}
 .color-green{background-color: #3b963b;}
 .color-darkgreen{background-color: #092808;}
@@ -986,6 +987,9 @@ a.buttonstabblue:hover{
 	  transform-style: none;
 		animation: none;
 	}
+
+.mediaborder_dark{border: 2px solid #333;}
+.mediaborder_light{border: 2px solid black;}
 }
 
 
