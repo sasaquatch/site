@@ -24,7 +24,7 @@ body video{
 
 .dark,
 .dark nav a{
-	background: #111;
+	background: black;
 	color: white;
 	animation: fadein 1s;
 }
@@ -100,7 +100,7 @@ canvas{
 .maxwidth1440{max-width: 1440px;}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.name, .info, .back, .lastname{
+.name, .info, .back, .lastname, .name2{
 	display: inline-block;
 	margin-top: 40px
 }
@@ -174,7 +174,7 @@ nav a:hover{
 .color-orange{background-color: #ff8077;}
 .color-black{background-color: black}
 .color-white{background-color: white}
-.color-bottom{background-color: #FFA337;
+.color-desertcream{background-color: #e1dfc9}
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ GRID ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -248,8 +248,9 @@ nav a:hover{
 
 .col3 img{
 	width: 100%;
-	max-width: 280px;
 }
+
+.maxwidth280{max-width: 280px;}
 
 .col3 video{
 	width: 100%;
@@ -263,12 +264,13 @@ nav a:hover{
 .col3.fullheight img{
 	width: auto;
   max-height: 150px;
+  object-fit: contain;
 }
 
-.col3.fullheight_mobile img{
+/*.col3.fullheight_mobile img{
 	width: auto;
   max-height: 450px;
-}
+}*/
 
 /*.col3 img.fullheight{
 	max-height: 150px;
@@ -296,6 +298,15 @@ nav a:hover{
 	display: inline-block;
 	float: left;
 }*/
+
+.stopmotion{
+	width: 45%;
+	height: 450px;
+	display: block;
+	animation: stopmotion 20s infinite;
+	background-position: top;
+	background-size: cover;
+}
 
 .photosofme{
 	display: flex;
@@ -352,14 +363,15 @@ nav a:hover{
 	font-style: normal;
 }
 
-.leftaligned{text-align: left;}
-.rightaligned{text-align: right;}
+.leftaligned{text-align: left !important;}
+.rightaligned{text-align: right !important;}
 .centered{text-align: center;}
 .inverted,
 .whitetext{color: #eee !important;}
 .blue{color: white;}
 .black{color: black}
 .lightgreen{color: #69cd7d}
+.tealsunset{color: #a3bca6 !important;}
 .yellow{
   background-color: black;
   color: #FFC122;
@@ -367,6 +379,39 @@ nav a:hover{
 .regular{
 	background-color: black;
 	color: white;
+}
+
+.credits{
+	display: block;
+	position: relative;
+	width: 300px;
+	/* float: right; */
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 112px;
+	letter-spacing: 1px;
+	color: darkblue;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.credits a{
+	color: darkblue;
+	text-decoration: none;
+}
+
+.credits a:hover{color: white;}
+
+.code{
+	background: #333;
+	font-family: monospace;
+	font-style: italic;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	color: #55ff55;
+	border-radius: 4px;
+	padding: 4px 7px 4px 4px;
+	cursor: progress;
 }
 
 /*.massive{
@@ -387,6 +432,13 @@ nav a:hover{
 	font-family: "MigraItalic-ExtralightItalic";
 	letter-spacing: -1px;
 	/*line-height: 95px;*/
+}
+
+.italic{ /* #favourites h3 */
+	font-family: "MigraItalic-ExtralightItalic";
+	letter-spacing: -20px;
+	font-size: 480px;
+	line-height: 400px;
 }
 
 .original_source{
@@ -469,7 +521,14 @@ nav a:hover{
 
 .progress_indicator_qf{
 	height: 2px;
-	background: #278125;
+	background: #eee;
+	width: 0%;
+	position: relative;
+}
+
+.progress_indicator_trx{
+	height: 2px;
+	background: #a3bca6;
 	width: 0%;
 	position: relative;
 }
@@ -658,7 +717,7 @@ a.buttonstabblue:hover{
 }
 
 .amongotherthings{
-	animation: amongotherthings 3s infinite;
+	animation: amongotherthings 3s ease infinite;
 }
 
 #cube{
@@ -924,6 +983,7 @@ a.buttonstabblue:hover{
 	.margin-top-mobile30{margin-top: 30px;}
 	.margin-top-mobile50{margin-top: 50px;}
 	.margin-top-mobile100{margin-top: 100px;}
+	.margin-top-mobile150{margin-top: 150px;}
 	.margin-top-mobile200{margin-top: 200px;}
 	.margin-top-mobile250{margin-top: 250px;}
 	.margin-top-mobile300{margin-top: 300px;}
@@ -931,6 +991,7 @@ a.buttonstabblue:hover{
 	.margin-top-mobile800{margin-top: 800px;}
 	.margin-top-mobile-minus20{margin-top: -20px;}
 	.margin-top-mobile-minus250{margin-top: -250px;}
+	.leftaligned_mobile{text-align: left !important;}
 
 	.col3 img,
 	.col3 video{
@@ -960,8 +1021,8 @@ a.buttonstabblue:hover{
 	}
 
 	.original_source a {
-  	font-size: 18px;
-  	line-height: 24px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .progress_container{
@@ -987,9 +1048,14 @@ a.buttonstabblue:hover{
 	  transform-style: none;
 		animation: none;
 	}
-
-.mediaborder_dark{border: 2px solid #333;}
-.mediaborder_light{border: 2px solid black;}
+	
+	.swiper-slide img{float: none;}
+	.maxwidth280{
+/*		width: 280px !important;
+		height: 350px;*/
+	}
+	.mediaborder_dark{border: 2px solid #333;}
+	.mediaborder_light{border: 2px solid black;}
 }
 
 
