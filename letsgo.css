@@ -1024,10 +1024,10 @@ a.buttonstabblue:hover{
 		line-height: 95px;
 	}
 
-/*	.original_source a {
-    font-size: 12px;
-    line-height: 16px;
-  }*/
+	.original_source a {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   .progress_container{
 		width: 100%;
