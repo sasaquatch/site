@@ -998,8 +998,8 @@ a.buttonstabblue:hover{
     height: 20px !important;
   }
   .swiper-pagination-bullet-active{
-  	background: none !important;
-  	border: 1px solid black;
+  	background: black !important;
+  	border: 1px solid black
   }
   .swiper-pagination-bullet{
   	background: inherit;
