@@ -120,6 +120,7 @@ nav a:hover{
 .nomargin{margin:0;}
 .margin-top10{margin-top: 10px;}
 .margin-top20{margin-top: 20px;}
+.margin-top25{margin-top: 25px;}
 .margin-top30{margin-top: 30px;}
 .margin-top40{margin-top: 40px;}
 .margin-top50{margin-top: 50px;}
@@ -813,6 +814,7 @@ a.buttonstabblue:hover{
 
 	.photosofme img {width: 54%;}
 	.hiddenondesktop{display: none;}
+	.visibleontablet{display: block;}
 
 	/* 3D */
 	.graphic{
@@ -966,13 +968,13 @@ a.buttonstabblue:hover{
   	background: inherit;
   	border: 2px solid black;
   }
-  .dark_swiper .swiper-pagination-bullet-active{
+/*  .dark_swiper .swiper-pagination-bullet-active{
   	background: white !important;
   }
   .dark_swiper .swiper-pagination-bullet{
   	background: inherit;
   	border: 2px solid white;
-  }
+  }*/
 
   /* GLOBAL MOBILE */
 	.hiddenondesktop{display: inherit;}
@@ -998,10 +1000,12 @@ a.buttonstabblue:hover{
 	  max-width: 100%;
 	}
 
-	/*.col3 img.fullheight{
-		max-height: 150px;
+	.col3.fullheight img{
 		width: auto;
-	}*/
+	  /*max-height: 150px;*/
+	  object-fit: contain;
+	  min-height: 480px;
+	}
 
 	/* BUTTONS */
 	a.buttonsreg,
@@ -1020,10 +1024,10 @@ a.buttonstabblue:hover{
 		line-height: 95px;
 	}
 
-	.original_source a {
+/*	.original_source a {
     font-size: 12px;
     line-height: 16px;
-  }
+  }*/
 
   .progress_container{
 		width: 100%;
