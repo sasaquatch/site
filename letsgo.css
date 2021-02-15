@@ -330,9 +330,33 @@ nav a:hover{
 	cursor: grab;
 }
 
+
 .swiper-container:active{
 	cursor: grabbing;
 }
+
+.swiper-pagination-bullet{
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	border-radius: 50%;
+	/*background: red !important;*/
+	border: 1px solid black !important;
+}
+
+.swiper-pagination_centered{
+    text-align: center !important;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  	margin: 0 0 0 6px !important;
+	}
+  .swiper-pagination-bullet-active{
+  	background: black !important;
+  }
+  .swiper-pagination-bullet{
+  	background: inherit;
+  	border: 2px solid black;
+  }
 
 .reveal{
 	width: 308px;
@@ -456,6 +480,18 @@ nav a:hover{
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #757575;
+}
+
+.instruction_right{
+	position: absolute;
+	top: 7px;
+	right: 70px;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 2px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ POPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -955,14 +991,14 @@ a.buttonstabblue:hover{
     text-align: center !important;
   }
   .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  	margin: 0 10px !important;
+  	margin: 0 20px 0 0 !important;
 	}
   .swiper-pagination-bullet {
     width: 20px !important;
     height: 20px !important;
   }
   .swiper-pagination-bullet-active{
-  	background: white !important;
+  	background: black !important;
   }
   .swiper-pagination-bullet{
   	background: inherit;
