@@ -1003,7 +1003,7 @@ a.buttonstabblue:hover{
   }
   .swiper-pagination-bullet{
   	background: inherit;
-  	border: 2px solid black;
+  	border: 1px solid red;
   }
 /*  .dark_swiper .swiper-pagination-bullet-active{
   	background: white !important;
