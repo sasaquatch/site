@@ -151,7 +151,7 @@
 
 					<p>The picture here shows the plan we had early on; a breakdown of some new, enhanced and existing components that would be used to build a single vehicle page.</p>
 
-					<p>We instead got carte blanche to create whatever was necessary, which ultimately gave way to a more flexible and future-proof cross-brand design.</p>
+					<p>We instead got <i>carte blanche</i> to create whatever was necessary, which ultimately gave way to a more flexible and future-proof cross-brand design.</p>
       	</div>
 
 	  	</div>
@@ -322,8 +322,7 @@
 							<h4>1. Containers & Sections</h4>		
 							<img loading="lazy" src="images/qf_11.png" class="margin-top80 padding-bottom80 maxwidth280">
 							<p>This system uses 2 main types of components.</p>
-							<p>A Section, which is a container that houses content.</p>
-							<p>Containers control the size, position and animation of the content within them, but can also be used to nest sub-containers. They additionally determine which pieces of content work in conjunction.</p>	
+							<p>A Section is a container that houses content. These containers control the size, position and animation of the content within them, but can also be used to nest sub-containers. They additionally determine which pieces of content work in conjunction.</p>
 						</div>
 		      </div>
 
@@ -331,8 +330,8 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>2. Content</h4>		
 							<img loading="lazy" src="images/qf_12.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>The second type is a Block which is the content itself. This ranges across image file types, videos, text and UI elements.</p>
-							<p>A content Block can have required or optional fields. Those fields can also be authorable (with a CMS), which is the functionality that modular design systems rely on the most.</p>
+							<p>The second type is a Block, which is the content itself. This can range across image file types, videos, text and UI elements.</p>
+							<p>A content Block can have required or optional fields. Those fields can also be made authorable (using a CMS), which is the functionality that modular design systems rely on the most.</p>
 							<p>This is what creates large amounts of permutations so that design layouts can vary per page and per amount of content.</p>
 						</div>
 		      </div>
@@ -341,9 +340,10 @@
 						<div class="col3 fullheight margin-top50">
 							<h4>3. Nesting levels</h4>		
 							<img loading="lazy" src="images/qf_13.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>This type of system relies on nesting (or <span class="code">@include</span>) sub-elements.</p>
-							<p>It’s all noticeably flexible if the nesting architecture goes up to 3 levels.</p>
-							<p>Anything that goes beyond 3 levels can function and in some cases is required, but it's best to avoid where possible.</p>
+							<p>This type of system relies on nesting (or <span class="code">@includes</span>) sub-elements.</p>
+							<p>It's important to note that for enterprise level systems, it’s all noticeably flexible if the nesting architecture goes up to 3 levels.</p>
+							<p>Anything that goes beyond 3 levels can function and in some cases is required, but it's best to avoid it where possible. </p>
+							<p>This may be an over simplification, but based on my experience, too much nesting compounds issues in development and during regression testing. This also makes change requests less expensive and less taxing on the entire system.</p>
 						</div>
 		      </div>
 
@@ -351,9 +351,9 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>4. Flexible & sustainable</h4>		
 							<img loading="lazy" src="images/qf_14.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>This may be an over simplification, but based on my experience, too much nesting tends to compound issues when regression testing. Plus it's painful to add new elements in a small spac down the road.</p>
-							<p>When creating a component, it’s clear that we have to design those atomic elements as part of the component itself, rather than treating them separately and including them as standalone atoms.</p>
-							<p>A system ought to be thought out properly at the beginning...because problems become very expensive down the line.</p>
+							<p>When creating a component, it’s obvious that we have to design atomic elements directly in the parent component — instead of treating them separately and <span class="code">@include</span> —ing them.</p>
+							<p>At the same time, this all has to be flexible enough to endure massive amounts of content and variations of layout, hacks and take-overs, authoring interfaces and human error.</p>
+							<p>A system must inherently be designed to change, adapt and expand. The worst kind of system is one that's too rigid.</p>
 						</div>
 		      </div>
 
@@ -385,7 +385,7 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>6. Media Block</h4>		
 							<img loading="lazy" src="images/qf_22.png" class="margin-top80 padding-bottom80">
-							<p>Displays images and videos.</p>
+							<p>Displays all types of images and videos.</p>
 						</div>
 		      </div>
 
@@ -393,7 +393,7 @@
 						<div class="col3 fullheight margin-top50">
 							<h4>7. Description Block</h4>		
 							<img loading="lazy" src="images/qf_23.png" class="margin-top80 padding-bottom80">
-							<p>20 authorable fields made up of double-weighted headlines, pre and post headers, body copy, buttons, audio triggers, timestamps, etc.</p>
+							<p>Has 20 authorable fields that, for example, allow double-weighted headlines, pre and post headers, body copy, buttons, audio triggers, timestamps, etc.</p>
 						</div>
 		      </div>
 
@@ -401,7 +401,7 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>8. Accessibility Controls</h4>		
 							<img loading="lazy" src="images/qf_24.png" class="margin-top80 padding-bottom80">
-							<p>These are included inside Media Blocks that require accessibility controls. In this case, there's Play/Pause, Volume on/off and a transcript modal.</p>
+							<p>These are included inside of Media Blocks that require accessibility controls. In this case, there's Play/Pause, Volume on/off and a transcript modal.</p>
 						</div>
 		      </div>
 
@@ -418,7 +418,7 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>9. Media & Copy</h4>		
 							<img loading="lazy" src="images/qf_31.png" class="margin-top80 padding-bottom80">
-							<p>One of the most commonly used components. Media & Copy is used to display image or video assets inline with a Description Block.</p>
+							<p>One of the most commonly used components on this site, Media & Copy displays image or video assets inline with a Description Block.</p>
 							<p>There's a variety of alignment options illustrated further below.</p>	
 						</div>
 		      </div>
@@ -462,7 +462,7 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>13. Sticky Hotspots</h4>		
 							<img loading="lazy" src="images/qf_41.png" class="margin-top80 padding-bottom80">
-							<p>Behaves like the Sticky Container, but has accessible Hotspots which display a point of interest on top of the image, corresponding to the Description Block that's in view.</p>	
+							<p>Behaves like the Sticky Container, but has accessible Hotspots which display a point of interest on top of the image, corresponding to the Description Block that's in view. This allows a keyboard user for example, to cycle the element focus through the hotspots</p></p>	
 						</div>
 		      </div>
 
@@ -470,7 +470,7 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>14. Scrolling Media</h4>		
 							<img loading="lazy" src="images/qf_42.png" class="margin-top80 padding-bottom80">
-							<p>Cycles through an array of images to create the illusion that a 3D asset is floating and rotating as the user scrolls up or down.</p>
+							<p>Cycles through an array of images to create the illusion that a 3D asset is floating or rotating. This all happens as the user scrolls up or down the page.</p>
 						</div>
 		      </div>
 
