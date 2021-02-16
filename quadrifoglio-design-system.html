@@ -52,14 +52,14 @@
 <section class="section margin-top50 inverted">
 
 	<div class="wide">
-		<video loading="lazy" autoplay loop muted playsinline class="rounded" id="alfa_luxury"> <!-- controls -->
+		<video loading="lazy" autoplay loop muted playsinline class="rounded" id="alfa_luxury">
 		  <source src="videos/alfa_luxury2_mini.mp4" type="video/mp4">
 		</video>
 	</div>
 
 	<div class="row margin-top100 hiddenonmobile">
 		<h4 class="centered inverted">
-			I came close to driving an Alfa a couple years ago,
+			I came close to driving an Alfa a couple years ago...
 		</h4>
 	</div>
 
@@ -75,8 +75,8 @@
 			</div>
 		</div>
 		<div class="col3">
-			<p>but the rental shop didn't have any left when I got there 🙃&nbsp; so I had to settle for the Audi A4 Wagon, which, mind you, gripped the asphalt unlike any car I had driven before.</p>
-			<p>Anyway...I rented a penthouse in Milan one summer (...live a little) and started coding a prototype for the Cinematic Hero video component. I was excited at the prospect of designing something that will wear the four-leaf clover insigne... it's a pretty lucky opportunity, also I might be a nerd.</p>
+			<p>...however the rental shop didn't have any left when I got there 🙃&nbsp; so I settled for an Audi A4 Wagon, which, mind you, grips the asphalt like you wouldn't believe.</p>
+			<p>Anyway...the idea was to fly to Milan, get a penthouse, drive an Alfa and pretent to be Italian for a summer (...live a little) and started coding a prototype for the Cinematic Hero video component (see photos of the drive). I was excited at the prospect of designing something that will wear the four-leaf clover insigne... it's a pretty lucky opportunity, also I might be a nerd.</p>
 			<p>Thank you to Graham Ameron for the countless creative jams and guidance, and to Dave Jackson for his openness and collaboration.</p>
 			<p>Below, is a recollection of the decisions I've made while building the experience strategy and design system for Quadrifoglio, the performance branch of Alfa Romeo...strap in, this one's got even more diagrams.</p>
 		</div>
@@ -88,14 +88,14 @@
 <!-- Swiper -->
   <div class="swiper-container hiddenondesktop margin-top50">
   	<div class="text" id="knowgo">
-			I came close to driving an Alfa a couple years ago,
+			I came close to driving an Alfa a couple years ago...
 		</div>
     <div class="swiper-wrapper margin-top30">
       <div class="swiper-slide"><!-- ~~~~~~~~~~ SLIDE 1 ~~~~~~~~~~ -->
 
       	<div>
-					<p>but the rental shop didn't have any left when I got there 🙃&nbsp; so I had to settle for the Audi A4 Wagon, which, mind you, gripped the asphalt unlike any car I had driven before.</p>
-					<p>Anyway...I rented a penthouse in Milan one summer (...live a little) and started coding a prototype for the Cinematic Hero video component. I was excited at the prospect of designing something that will wear the four-leaf clover insigne... it's a pretty lucky opportunity, also I might be a nerd.</p>
+					<p>...however the rental shop didn't have any left when I got there 🙃&nbsp; so I settled for an Audi A4 Wagon, which, mind you, grips the asphalt like you wouldn't believe.</p>
+					<p>Anyway...the ideas was o fly go to Mget, rent a penthouse, drive an Alfa pretent to be Italian  for a summer(...live a little) and started coding a prototype for the Cinematic Hero video component.  (see photos of the drive)I was excited at the prospect of designing something that will wear the four-leaf clover insigne... it's a pretty lucky opportunity, also I might be a nerd.</p>
 					<p>Thank you to Graham Ameron for the countless creative jams and guidance, and to Dave Jackson for his openness and collaboration.</p>
 					<p>Below, is a recollection of the decisions I've made while building the experience strategy and design system for Quadrifoglio, the performance branch of Alfa Romeo...strap in, this one's got even more diagrams.</p>
       	</div>
@@ -193,10 +193,10 @@
 		<div class="col3 fullheight margin-top100">
 			<h4>Nesting levels</h4>		
 			<img loading="lazy" src="images/qf_13.png" class="margin-top50">
-			<p class="margin-top30">This type of system relies on nesting (or including) sub-elements, but up to a certain degree.</p>
-			<p>It’s all noticeably flexible if the nesting architecture stops at the 3rd level.</p>
-			<p>Systems that go beyond 3 levels can function and in some cases are required, but it's best to avoid them where possible.</p>
-			<p>This may be an over simplification, but based on my experience too much nesting tends to compound issues when regression testing. Plus it's painful to add new elements in a small space, sometime down the road when that inevitably becomes a requirement.</p>
+			<p class="margin-top30">This type of system relies on nesting (or <span class="code">@includes</span>) sub-elements.</p>
+			<p>It’s all noticeably flexible if the nesting architecture goes up to 3 levels.</p>
+			<p>Anything that goes beyond 3 levels can function and in some cases is required, but it's best to avoid where possible.</p>
+			<p>This may be an over simplification, but based on my experience, too much nesting tends to compound issues when regression testing. Plus it's painful to add new elements in a small space down the road.</p>
 		</div>
 		<div class="col3 fullheight margin-top100">
 			<h4>Flexible & sustainable</h4>		
@@ -239,24 +239,24 @@
 	</div>
 
 	<div class="row flex inverted margin-top20 hiddenonmobileflex">
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Media & Copy</h4>		
 			<img loading="lazy" src="images/qf_31.png" class="margin-top80">
 			<p class="margin-top30">One of the most commonly used components. Media & Copy is used to display image or video assets inline with a Description Block.</p>
 			<p>There's a variety of alignment options illustrated further below.</p>
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Offset and Full-Height Containers</h4>		
 			<img loading="lazy" src="images/qf_32.png" class="margin-top50">
 			<p class="margin-top30">The Offset container lets components overlap one another.</p>
 			<p>While the Full-Height container fills the device viewport with an image or video.</p>
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Multi-panel Layout</h4>		
 			<img loading="lazy" src="images/qf_33.png" class="margin-top80">
 			<p class="margin-top30">An elaborate layout component that displays multiple animated Offset Containers, which themselves house Media & Copy components.</p>
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Sticky Container</h4>
 			<img loading="lazy" src="images/qf_34.png" class="margin-top80">
 			<p class="margin-top30">A series of corresponding Media Blocks and Description Blocks that cycle in and out of view, when the user scrolls.</p>
@@ -265,22 +265,22 @@
 	</div>
 
 	<div class="row flex inverted margin-top20 hiddenonmobileflex">
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Sticky Hotspots</h4>		
 			<img loading="lazy" src="images/qf_41.png" class="margin-top50">
 			<p class="margin-top30">Behaves like the Sticky Container, but has accessible Hotspots which display a point of interest on top of the image, corresponding to the Description Block that's in view.</p>
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Scrolling Media</h4>		
 			<img loading="lazy" src="images/qf_42.png" class="margin-top50">
 			<p class="margin-top30">Cycles through an array of images to create the illusion that a 3D asset is floating and rotating as the user scrolls up or down.</p>
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Cinematic Hero</h4>		
 			<img loading="lazy" src="images/qf_43.png" class="margin-top50">
 			<p class="margin-top30">An immersive component with background videos that are triggered depending on the mouse position.</p>
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Navigation</h4>
 			<img loading="lazy" src="images/qf_44.png" class="margin-top50">
 			<p class="margin-top30">On desktop, scrolling up and down the page will update the status indicator in the navigation.</p>
@@ -289,74 +289,24 @@
 	</div>
 
 	<div class="row flex inverted margin-top20 hiddenonmobileflex">
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Column range</h4>		
 			<img loading="lazy" src="images/qf_51.png" class="margin-top50">
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Row alignment</h4>		
 			<img loading="lazy" src="images/qf_52.png" class="margin-top50">
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Offsets</h4>		
 			<img loading="lazy" src="images/qf_53.png" class="margin-top50">
 		</div>
-		<div class="col3 fullheight margin-top100">
+		<div class="col3 margin-top100">
 			<h4>Floats</h4>
 			<img loading="lazy" src="images/qf_54.png" class="margin-top50">
 		</div>
 	</div>
 </section>
-
-<section data-color="green">
-	<div class="row hiddenondesktop">
-		<div class="row margin-top150">
-			<div class="mobiletext">
-				Speed
-			</div>
-		</div>
-		  <!-- Swiper -->
-		  <div class="swiper-container margin-top100">
-		    <div class="swiper-wrapper">
-		      <div class="swiper-slide"><!-- ~~~~~~~~~~ SLIDE 1 ~~~~~~~~~~ -->
-
-		      	<div class="col3 margin-top50">
-							<h4>1. Onboarding speed</h4>		
-							<img loading="lazy" src="images/qf_11.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>Bringing the user into the main application is done in 2 steps. The first is a cinematic vehicle selection page and the second is a grid view of the vehicle trims (models), thus increasing the difficulty and amount of options slowly, before getting to the main part of the configurator.</p>
-						</div>
-		      </div>
-
-		      <div class="swiper-slide"><!-- ~~~~~~~~~~ SLIDE 2 ~~~~~~~~~~ -->
-		      	<div class="col3 margin-top50">
-							<h4>2. Loading speed</h4>		
-							<img loading="lazy" src="images/qf_12.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>To achieve fast load times (and fast perceived load times), this application uses: lazy loading for images and sections of the page, as well as a re-organized dynamic data feed in order to show contextual options together (for example some Exterior options were part of Packages but were moved to the Exterior section).</p>
-						</div>
-		      </div>
-
-		      <div class="swiper-slide"><!-- ~~~~~~~~~~ SLIDE 3 ~~~~~~~~~~ -->
-						<div class="col3 margin-top50">
-							<h4>3. Cognitive load</h4>		
-							<img loading="lazy" src="images/qf_13.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>The way in which the application is laid out on desktop, tablet and mobile viewports makes it easy to orient yourself quickly. Within a single scroll, it's evident that the left side is dedicated to the product and the right to the feed of selectors.</p>
-						</div>
-		      </div>
-
-		      <div class="swiper-slide"><!-- ~~~~~~~~~~ SLIDE 4 ~~~~~~~~~~ -->
-		      	<div class="col3 margin-top50">
-							<h4>4. Speed of completion</h4>		
-							<img loading="lazy" src="images/qf_14.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>By using a single page design (with alternating layouts in each section) this application can provide exciting moments with highly engaging content and quiter moments with content that's made to be read or analysed. It's easy to find yourself at the bottom of the page having completed a build without a lot of effort.</p>
-						</div>
-		      </div>
-
-		  	</div>
-			  <!-- Add Pagination -->
-			 	<div class="swiper-pagination dark_swiper"></div>
-			</div>
-			</div>
-		</section>
 
 <section>
 	<div class="row hiddenondesktop">
@@ -370,7 +320,7 @@
 		    <div class="swiper-wrapper">
 		      <div class="swiper-slide swiper-slide_nofloat"><!-- ~~~~~~~~~~ SLIDE 1 ~~~~~~~~~~ -->
 
-		      	<div class="col3 fullheight fullheight margin-top50">
+		      	<div class="col3 fullheight margin-top50">
 							<h4>1. Containers & Sections</h4>		
 							<img loading="lazy" src="images/qf_11.png" class="margin-top80 padding-bottom80 maxwidth280">
 							<p>This system uses 2 main types of components.</p>
@@ -393,9 +343,9 @@
 						<div class="col3 fullheight margin-top50">
 							<h4>3. Nesting levels</h4>		
 							<img loading="lazy" src="images/qf_13.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>This type of system relies on nesting (or including) sub-elements, but up to a certain degree.</p>
-							<p>It’s all noticeably flexible if the nesting architecture stops at the 3rd level.</p>
-							<p>Systems that go beyond 3 levels can function and in some cases are required, but it's best to avoid them where possible.</p>
+							<p>This type of system relies on nesting (or <span class="code">@include</span>) sub-elements.</p>
+							<p>It’s all noticeably flexible if the nesting architecture goes up to 3 levels.</p>
+							<p>Anything that goes beyond 3 levels can function and in some cases is required, but it's best to avoid where possible.</p>
 						</div>
 		      </div>
 
@@ -403,7 +353,7 @@
 		      	<div class="col3 fullheight margin-top50">
 							<h4>4. Flexible & sustainable</h4>		
 							<img loading="lazy" src="images/qf_14.png" class="margin-top80 padding-bottom80 maxwidth280">
-							<p>This may be an over simplification, but based on my experience too much nesting tends to compound issues when regression testing. Plus it's painful to add new elements in a small space, sometime down the road when that inevitably becomes a requirement.</p>
+							<p>This may be an over simplification, but based on my experience, too much nesting tends to compound issues when regression testing. Plus it's painful to add new elements in a small spac down the road.</p>
 							<p>When creating a component, it’s clear that we have to design those atomic elements as part of the component itself, rather than treating them separately and including them as standalone atoms.</p>
 							<p>A system ought to be thought out properly at the beginning...because problems become very expensive down the line.</p>
 						</div>
@@ -598,22 +548,22 @@
 
 	<div class="row flex margin-top50 inverted hiddenonmobileflex">
 		<div class="col3 margin-top50">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_mobile11_mini.mov" type="video/mp4">
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_mobile12_mini.mov" type="video/mp4">
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_mobile13_mini.mov" type="video/mp4">
 			</video>
 		</div>
 		<div class="col3 margin-top50">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_mobile14_mini.mov" type="video/mp4">
 			</video>
 		</div>
@@ -670,22 +620,22 @@
 
 	<div class="row flex margin-top150 inverted">
 		<div class="col6">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_trx_desktop1_mini.mov" type="video/mp4">
 			</video>
 		</div>
 		<div class="col6 margin-top-mobile50">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_trx_desktop2_mini.mov" type="video/mp4">
 			</video>
 		</div>
 
 
-		<div class="wide maxwidth1440 margin-top100 margin-top-mobile50">
-			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark"> <!-- controls -->
+<!-- 		<div class="wide maxwidth1440 margin-top100 margin-top-mobile50">
+			<video loading="lazy" autoplay loop muted playsinline class="rounded mediaborder_dark">
 			  <source src="videos/qf_desktop13_mini.mov" type="video/mp4">
 			</video>
-		</div>
+		</div> -->
 </section>
 
 	<div class="row">
