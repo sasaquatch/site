@@ -102,7 +102,7 @@ canvas{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .name, .info, .back, .lastname, .name2{
 	display: inline-block;
-	margin-top: 40px
+	margin-top: 30px
 }
 
 .info, .back{float: right; font-family: "MigraItalic-ExtralightItalic"; letter-spacing: -2px;}
@@ -245,6 +245,10 @@ nav a:hover{
 
 .col3 h4{
 	line-height: 30px;
+}
+
+.col3 i{
+	font-size: inherit;
 }
 
 .col3 img{
@@ -1005,13 +1009,13 @@ a.buttonstabblue:hover{
   	background: inherit;
   	border: 1px solid black;
   }
-/*  .dark_swiper .swiper-pagination-bullet-active{
+  .dark_swiper .swiper-pagination-bullet-active{
   	background: white !important;
   }
   .dark_swiper .swiper-pagination-bullet{
   	background: inherit;
-  	border: 2px solid white;
-  }*/
+  	border: 2px solid white !important;
+  }
 
   /* GLOBAL MOBILE */
 	.hiddenondesktop{display: inherit;}
