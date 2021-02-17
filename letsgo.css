@@ -824,7 +824,10 @@ a.buttonstabblue:hover{
 	/* GLOBAL TABLET */
 	.margin-top-mobile150{margin-top: 0;}
 	.margin-top-tablet0{margin-top: 0px;}
+	.margin-top-tablet-minus15{margin-top: -15px;}
+	.margin-top-tablet20{margin-top: 20px;}
 	.margin-top-tablet50{margin-top: 50px;}
+	.margin-top-tablet200{margin-top: 200px;}
 	.margin-top-tablet600{margin-top: 600px;}
 
 	/*.fullheight{height: 600px;}*/
