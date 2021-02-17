@@ -498,6 +498,10 @@ nav a:hover{
 	text-decoration: none;
 }
 
+.instructions_dark{
+	color: white;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ POPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .pop_hi{
 	/*display: none;*/
@@ -1019,7 +1023,7 @@ a.buttonstabblue:hover{
 
 	.instruction_right{
     position: absolute;
-    top: 14px;
+    top: 13px;
     right: 0;
     font-size: 22px;
     line-height: 16px;
