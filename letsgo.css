@@ -498,6 +498,18 @@ nav a:hover{
 	text-decoration: none;
 }
 
+.instruction_right{
+	position: absolute;
+	top: 7px;
+	left: 70px;
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: 2px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ POPS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .pop_hi{
 	/*display: none;*/
@@ -1016,6 +1028,18 @@ a.buttonstabblue:hover{
   	background: inherit;
   	border: 2px solid white !important;
   }
+
+	.instruction_left{
+    position: absolute;
+    top: 14px;
+    left: 170px;
+    font-size: 22px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
+	}
 
   /* GLOBAL MOBILE */
 	.hiddenondesktop{display: inherit;}
