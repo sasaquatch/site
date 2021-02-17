@@ -832,6 +832,7 @@ a.buttonstabblue:hover{
 
 	/*.fullheight{height: 600px;}*/
 	.empty{display: none;}
+	.displayontabletonly{display: block !important;}
 
 	.info a,
 	.text span{
