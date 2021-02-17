@@ -216,6 +216,7 @@ nav a:hover{
 .notrounded{border-radius: 0 !important;}
 .mediaborder_dark{border: 1px solid #333;}
 .mediaborder_light{border: 1px solid black;}
+.displayontabletonly{display: none !important;}
 
 .wide{
 /*	width: calc(200% - 80px);
