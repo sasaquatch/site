@@ -152,6 +152,7 @@ nav a:hover{
 .margin-left40{margin-left: 40px;}
 .margin-right40{margin-right: 40px;}
 .padding-top350{padding-top: 350px;}
+.padding-bottom10{padding-bottom: 10px;}
 .padding-bottom50{padding-bottom: 50px;}
 .padding-bottom60{padding-bottom: 60px;}
 .padding-bottom80{padding-bottom: 80px;}
@@ -441,7 +442,7 @@ nav a:hover{
 	letter-spacing: 0.2px;
 	color: #55ff55;
 	border-radius: 4px;
-	padding: 4px 7px 4px 4px;
+	padding: 2px 7px 4px 4px;
 	cursor: progress;
 }
 
@@ -859,10 +860,11 @@ a.buttonstabblue:hover{
 		font-family: monospace;
 		font-style: italic;
 		font-size: 22px;
+		line-height: 22px;
 		letter-spacing: 0.2px;
 		color: #55ff55;
 		border-radius: 10px;
-		padding: 4px 8px 5px 6px;
+		padding: 4px 8px 4px 6px;
 		cursor: progress;
 	}
 
@@ -994,7 +996,7 @@ a.buttonstabblue:hover{
 		letter-spacing: 0.2px;
 		color: #55ff55;
 		border-radius: 14px;
-		padding: 8px 14px 8px 8px;
+		padding: 6px 14px 8px 8px;
 		cursor: progress;
 	}
 
