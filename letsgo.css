@@ -935,7 +935,7 @@ a.buttonstabblue:hover{
 	.cube_five{
 		transform: rotateX(90deg) translateZ(300px);
 		-webkit-transform: rotateX(90deg) translateZ(300px);
-		background-color: black;
+		background-color: #7700ff;
 	}
 
 	.cube_six{
