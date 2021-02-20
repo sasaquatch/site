@@ -463,7 +463,7 @@ nav a:hover{
 .text span{ /* #favourites h3 */
 	font-family: "MigraItalic-ExtralightItalic";
 	letter-spacing: -1px;
-	/*line-height: 95px;*/
+	line-height: 95px;
 }
 
 .italic{ /* #favourites h3 */
@@ -839,6 +839,7 @@ a.buttonstabblue:hover{
 	.info a,
 	.text span{
 		letter-spacing: -1px;
+		line-height: 65px;
 	}
 
 	/* MARQUEESMALL */
@@ -988,6 +989,10 @@ a.buttonstabblue:hover{
     margin: 0 0 80px;
   }
 
+	.text span{
+		line-height: 76px;
+	}
+
 	.code{
 		background: #333;
 		font-family: monospace;
@@ -996,7 +1001,7 @@ a.buttonstabblue:hover{
 		letter-spacing: 0.2px;
 		color: #55ff55;
 		border-radius: 14px;
-		padding: 6px 14px 8px 8px;
+		padding: 6px 14px 6px 8px;
 		cursor: progress;
 	}
 
@@ -1096,7 +1101,7 @@ a.buttonstabblue:hover{
 	a.buttonsreg,
 	a.buttonsreg_blue,
 	a.buttonstab{
-		padding: 10px 40px 16px;
+		padding: 12px 40px 16px;
 		font-size: 60px;
 		border-radius: 225px;
 		margin: 0 5px;
