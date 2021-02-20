@@ -13,7 +13,7 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~ BODY ~~~~~~~~~~~~~~~~~~~~ -->
 <!-- Release 1.0 -->
-<body class="light">
+<body class="light padding-bottom10">
 	<!-- <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script> -->
 	<!-- <canvas touch-action="manipulation"></canvas> -->
 	<!-- canvas is hidden in line 18 -->
@@ -583,7 +583,14 @@
 </section>
 
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCRIPTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCRIPTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~ KEEP THE WEB OPEN, KEEP SHARING AND TEACHING THE NEXT GENERATION ~~~~~~~~~~
+~~~~~~~~~~ I LITERALLY LEARNED BY BREAKING THINGS ~~~~~~~~~~
+~~~~~~~~~~ THANK YOU TO ALL THE GENEROUS MINDS, SHARING THEIR JS PACKAGES AND TALENT ~~~~~~~~~~
+~~~~~~~~~~ PEACE! ~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SCRIPTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <!-- ~~~~~~~~~~~~~~~~~~~~ NAME ~~~~~~~~~~~~~~~~~~~~ -->
 <script id="rendered-js">
   var divs = $('div[id^="name-"]').hide(),
@@ -715,35 +722,6 @@
   });    
   
 	}).scroll();
-</script>
-
-<!-- ~~~~~~~~~~~~~~~~~~~~ OH NICE! ~~~~~~~~~~~~~~~~~~~~ -->
-<script>
-	const textPath = document.querySelector("#text-path");
-
-	const h = document.documentElement, 
-	      b = document.body,
-	      st = 'scrollTop',
-	      sh = 'scrollHeight';
-
-	document.addEventListener("scroll", e => {
-	  let percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
-	  textPath.setAttribute("startOffset", (-percent * 35) + 500)
-	});
-</script>
-
-<!-- Swiper JS -->
-<script src="swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
 </script>
 
 
