@@ -1123,7 +1123,7 @@ a.buttonstabblue:hover{
 	}
 
 	/* GRAPHIC */
-	#cube{
+/*	#cube{
   	transform-style: none;
 		animation: none;
 	}
@@ -1134,7 +1134,7 @@ a.buttonstabblue:hover{
 	#cubeZ{
 	  transform-style: none;
 		animation: none;
-	}
+	}*/
 	
 	.swiper-slide img{float: none;}
 	.maxwidth280{
